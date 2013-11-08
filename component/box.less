@@ -1,0 +1,75 @@
+/**
+    带边框和标题的标准区块
+*/
+.mp-box {
+    margin: 0;
+    padding: 0;
+    border: 1px solid #cccccc;
+    border-bottom: 0;
+    zoom: 1;
+}
+
+.mp-box2 {
+    padding-bottom: 3px;
+    background: #e3e4e4;
+    zoom: 1;
+}
+
+.mp-box-head {
+    position: relative;
+    padding: 7px 13px 7px 8px;
+    height: 24px;
+    line-height: 24px;
+    border-bottom: 1px solid #ccc;
+    background: #f1f1f1;
+    zoom: 1;
+    .mp-box-head-title {
+        margin-left: 30px;
+        float: left;
+        display: inline;
+        font-size: 16px;
+        color: #333333;
+    }
+    .mp-box-head-more {
+        float: right;
+        font-size: 12px;
+        color: #666666;
+    }
+    .mp-box-head-more:hover {
+        text-decoration: underline;
+    }
+    .mp-box-head-icon {
+        position: absolute;
+        left: 7px;
+        top: 7px;
+    }
+}
+
+.mp-box-container, .mp-box2-container {
+    background: #fff;
+    .mp-box-content {
+        padding: 10px;
+    }
+}
+
+.mp-box-container {
+    border-bottom: 1px solid #ccc;
+}
+
+.mp-box2-container {
+    border: 1px solid #ccc;
+}
+
+.mp-box-table {
+    width: 100%;
+    font-size: 14px;
+    tr, td {
+        height: 32px;
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+    .item-hover td {
+        background: #f1f1f1;
+    }
+}

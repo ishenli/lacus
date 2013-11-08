@@ -1,4 +1,5 @@
 lacus
 =====
 
-a simple css framework
+一个简单的基于less的css框架
+

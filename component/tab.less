@@ -1,0 +1,48 @@
+@import "../tool";
+@import "color";
+/*导航栏tab切换*/
+.mp-tab-nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+}
+.mp-tab-nav li {
+    float: left;
+    position: relative;
+    .lh(47px);
+    font-size: 16px;
+}
+.mp-tab-nav li a {
+    float: left;
+    .lh(47px);
+    padding: 0 34px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #fff;
+}
+.mp-tab-nav a:hover {
+    color: #ff9600;
+}
+.mp-tab-nav .active {
+    background: @mainColor;
+}
+.mp-tab-nav .active a,.mp-tab-nav .active a:hover {
+    border-left: 1px solid #2f2f2f;
+    border-right: 1px solid #2f2f2f;
+    color: #fff;
+    cursor: default;
+}
+.mp-tab-nav .mp-arrow-up {
+    position: absolute;
+    left: 50%;
+    bottom: -16px;
+    margin-left: -4px;
+    border-width: 8px;
+    border-color: @mainColor transparent transparent transparent;
+    _border-color: @mainColor #F9F9F9 #F9F9F9 #F9F9F9;
+    visibility: hidden;
+}
+.mp-tab-nav .active .mp-arrow-up {
+    visibility: visible;
+}

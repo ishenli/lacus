@@ -1,0 +1,101 @@
+@import "../tool";
+@import "color";
+.mp-game-pager{
+    margin-top: 3px;
+    margin-bottom: 20px;
+    text-align: right;
+    height: 32px;
+    a {
+        display: inline-block;
+        height: 30px;
+        line-height: 30px;
+        border:1px solid #d5d5d5;
+        padding:0 12px;
+        margin-right: 10px;
+        background-color: #fff;
+        font-size: 14px;
+        text-align: center;
+        color: #666666;
+        cursor: pointer;
+        font-family: arial;
+        vertical-align: top;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
+    .mp-game-pager-current {
+        background-color: #ff7a01;
+        border: none;
+        cursor: default;
+        color: #fff;
+    }
+    .mp-game-pager-ellipsis{
+        border: 0;
+        background-color: transparent;
+        cursor: text;
+    }
+    .mp-game-pager-next{
+        margin-right: 0;
+    }
+
+}
+
+//顶部分页条
+.mp-game-sub-pager {
+    position: absolute;
+    top: -35px;
+    right: 0;
+    width: 706px;
+    height: 35px;
+    padding-left: 20px;
+    line-height: 35px;
+    font-size: 16px;
+    em{
+        color: @mainColor;
+        font-style: normal;
+    }
+    .mp-game-sub-pager-operate {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding-right: 64px;
+        text-align: right;
+        a {
+            position: absolute;
+            top: 7px;
+            width: 23px;
+            height: 23px;
+            cursor: pointer;
+        }
+        .mp-game-sub-pager-prev {
+            right: 30px;
+            background: url(../img/sub-pager.gif) no-repeat 0 -23px;
+            cursor: pointer;
+        }
+        .mp-game-sub-pager-next {
+            right: 0;
+            background: url(../img/sub-pager.gif) no-repeat 0 -69px;
+            cursor: pointer;
+        }
+        .mp-game-sub-pager-prev.mp-game-sub-pager-disable {
+            background: url(../img/sub-pager.gif) no-repeat 0 0;
+            cursor: default;
+        }
+        .mp-game-sub-pager-next.mp-game-sub-pager-disable {
+            background: url(../img/sub-pager.gif) no-repeat 0 -46px;
+            cursor: default;
+        }
+    }
+}
+.mp-game-sub-pager-fixed {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    margin-left: -235px;
+    background: #f9f9f9;
+    border: 1px solid #d1d1d1;
+    z-index: 100;
+    .mp-game-sub-pager-operate {
+        right: 20px;
+    }
+}
