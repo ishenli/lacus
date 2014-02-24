@@ -2,3 +2,171 @@
  * @file 边框
  * @author shenli 
  */
+
+.mp-box {
+    margin: 0;
+    padding: 0;
+    border: 1px solid #cccccc;
+    border-bottom: 0;
+    zoom: 1;
+}
+.mp-box-highlight{
+    border-top: 3px solid @mainColor;
+}
+
+.mp-box-head,.mp-box-foot{
+    position: relative;
+    padding: 7px 13px 7px 8px;
+    .lh(24px);
+    background: #f1f1f1;
+    zoom: 1;
+}
+.mp-box-head {
+    border-bottom: 1px solid #ccc;
+    .mp-box-head-title{
+        float: left;
+        display: inline;
+        font-size: 16px;
+        color: #333333;
+        .iconfont{
+            padding-right: 10px;
+        }
+    }
+    .mp-box-head-more {
+        float: right;
+        font-size: 12px;
+        color: #666666;
+    }
+    a.mp-box-head-more:hover {
+        text-decoration: underline;
+    }
+    //标题icon
+    .mp-box-head-icon {
+       float: left;
+       margin-right: 10px;
+    }
+}
+//带梯形图片的标题栏
+.mp-box-head2{
+    .lh(30px);
+    border-bottom: 3px solid @mainColor;
+    .mp-box-head-title{
+        float: left;
+        padding-left: 15px;
+        font-size: 16px;
+        color: @white;
+    }
+    .mp-box-head-more2{
+        margin-top: 5px;
+    }
+}
+
+//底部
+.mp-box-foot{
+    border-bottom: 1px solid #ccc;
+}
+//box内容区域，默认右边距
+.mp-box-content {
+    padding: 10px;
+}
+
+.mp-box-container {
+    border-bottom: 1px solid #ccc;
+}
+
+//更多按钮，带箭头
+.mp-box-head-more2{
+    position: relative;
+    float: right;
+    width: 47px;
+    .lh(18px);
+    color:@fontColor;
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid @borderColor;
+    .border-radius(3px);
+    .vertical-gradient(#ffffff,#efefef);
+    .arrow-r{
+        .abrt(0,6px);
+        border-width: 3px;
+        border-color: transparent;
+        _border-color: #efefef;
+        border-left-color: @mainColor;
+    }
+    &:hover {
+        text-decoration: underline;
+        color: @mainColor;
+    }
+}
+
+/**
+*  带有tab标签的box
+*/
+.mp-box-tab{
+    .mp-box-head{
+        padding: 0;
+        height: 37px;
+        font-size: 15px;
+        //默认两个，宽度平分
+        .line{
+            .ablt(50%,0);
+            width: 1px;
+            height: 100%;
+            background: @borderColor;
+
+        }
+        .active{
+            margin-top: -1px;
+            border-top: 2px solid @mainColor;
+            background: @white;
+            color: @textBlack;
+            .lh(37px);
+            strong{
+                color: @mainColor;
+            }
+        }
+    }
+    .mp-box-head-tab{
+        _position: relative;
+        float: left;
+        width: 50%;
+        color: @textGray;
+        text-align: center;
+        margin-bottom: -1px;
+        strong{
+            font-weight: normal;
+        }
+    }
+
+}
+/**
+*  签的box
+*/
+.mp-box-tab2{
+    padding: 0 14px;
+    border: 1px solid @borderGray;
+    border-top:3px solid @mainColor;
+    .mp-box-head3{
+        height: 31px;
+        padding: 8px 0 0;
+        background:@white ;
+        border-bottom: 1px solid @borderGray;
+    }
+    .mp-box-head-more2{
+        top: 5px;
+    }
+    .mp-box-head-tab{
+        _position:relative;
+        width: 90px;
+        float: left;
+        margin-right: 5px;
+        .lh(30px);
+        font-size: 15px;
+        text-align: center;
+        border: 1px solid @borderGray;
+    }
+    .active{
+        border-bottom-color: @white;
+        color: @mainColor;
+    }
+}
