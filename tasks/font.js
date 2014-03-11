@@ -13,12 +13,12 @@ module.exports = function (grunt) {
 
         less: {
             files: {
-                '<%=asset%>/box.css': '<%=src%>/box.less'
+                '<%=asset%>/font.css': '<%=src%>/../elements/font.less'
             }
         },
         cssmin: {
             files: {
-                '<%=asset%>/box.css': '<%=asset%>/box.css'
+                '<%=asset%>/font.css': '<%=asset%>/font.css'
             }
         }
         

@@ -1,0 +1,56 @@
+/**
+ * @file 下拉按钮，需要与js配合
+ * @author shenli （meshenli@gmail.com）
+ */
+
+//下拉菜单
+.btn-dropdown-wrap {
+    position: relative;
+    .inline-block();
+}
+
+.btn-dropdown {
+    display: none;
+    .ablt(0,22px);
+    width: 97%;
+    background: #fff;
+    list-style: none;
+    border: 1px solid #cbcbcb;
+    border-top: 0;
+    border-bottom: 0;
+    zoom: 1;
+    z-index: 1000;
+    a {
+        .lh(20px);
+    }
+}
+
+.btn-dropdown-middle {
+    top: 28px;
+    font-size: 14px;
+    a {
+        .lh(26px);
+    }
+}
+
+//open 由js添加
+.open {
+    z-index: 100;
+}
+
+.open .btn-dropdown {
+    display: block;
+}
+
+.btn-dropdown-item {
+    border-bottom: 1px solid #cbcbcb;
+    a {
+        display: block;
+        color: @textBlack;
+        cursor: pointer;
+        text-align: center;
+        &:hover {
+            background: #ececec;
+        }
+    }
+}

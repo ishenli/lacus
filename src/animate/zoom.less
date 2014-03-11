@@ -1,0 +1,25 @@
+/**
+ * @file 缩放动画
+ * @author shenli （meshenli@gmail.com）
+ */
+.zoomIn(@scaleFrom:1.8,@scaleTo:1){
+    @-webkit-keyframes zoomIn {
+        0% { opacity: 0; -webkit-transform: scale(@scaleFrom); }
+        100% { opacity: 1; -webkit-transform: scale(@scaleTo); }
+    }
+
+    @-moz-keyframes zoomIn {
+        0% { opacity: 0; -moz-transform: scale(@scaleFrom); }
+        100% { opacity: 1; -moz-transform: scale(@scaleTo); }
+    }
+
+    @-o-keyframes zoomIn {
+        0% { opacity: 0; -o-transform: scale(@scaleFrom); }
+        100% { opacity: 1; -o-transform: scale(@scaleTo); }
+    }
+
+    @keyframes zoomIn {
+        0% { opacity: 0; transform: scale(@scaleFrom); }
+        100% { opacity: 1; transform: scale(@scaleTo); }
+    }
+}

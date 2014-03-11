@@ -5,7 +5,12 @@ module.exports = function (grunt) {
         dev: ['less'],
 
         watch: {
-            files: ['<%=src%>/**'],
+            files: [
+                'src/all/*.less',
+                'src/reset/*.less',
+                'src/elements/**/*.less',
+                'src/collections/**/*.less'
+            ],
             tasks: ['<%=name%>']
         },
 
@@ -13,12 +18,12 @@ module.exports = function (grunt) {
 
         less: {
             files: {
-                '<%=asset%>/box.css': '<%=src%>/box.less'
+                '<%=asset%>/all.css': '<%=src%>/all.less'
             }
         },
         cssmin: {
             files: {
-                '<%=asset%>/box.css': '<%=asset%>/box.css'
+                '<%=asset%>/all.css': '<%=asset%>/all.css'
             }
         }
         

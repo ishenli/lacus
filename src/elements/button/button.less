@@ -1,0 +1,144 @@
+/**
+ * @file 按钮样式
+ * @author shenli （meshenli@gmail.com）
+ * thanks to https://github.com/yui/pure/blob/master/src/btns/css/buttons.css
+ */
+
+@import "../../base/main";
+
+.ui-btn {
+    position: relative;
+    .inline-block();
+    .border-radius(2px);
+    padding: 0.5em 1em;
+    vertical-align: middle;
+    text-align: center;
+    word-wrap: normal;
+    white-space: nowrap;
+    text-decoration: none;
+    font-family: inherit;
+    border: 1px solid #999;  /*IE 6/7/8*/
+    border: none rgba(0, 0, 0, 0);  /*IE9 + everything else*/
+    background: @mainColor;
+    font-size: 100%;
+    *font-size: 90%; /*IE 6/7 - To reduce IE's oversized button text*/
+    *overflow: visible; /*IE 6/7 - Because of IE's overly large left/right padding on buttons */
+    color: @white; /* rgba not supported (IE 8) */
+    cursor: pointer;
+}
+
+.ui-btn-hover,
+.ui-btn:hover,
+.ui-btn:focus{
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000',GradientType=0);
+    .linear-gradient(to bottom,transparent , rgba(0,0,0, 0.10));
+
+}
+
+//去掉浏览器的默认虚线
+.ui-btn:focus{
+    outline: none;
+}
+
+//不添加颜色等变化，由修饰类定义
+.ui-btn-active,
+.ui-btn:active{
+    box-shadow: 0 0 0 1px rgba(0,0,0, 0.15) inset, 0 0 6px rgba(0,0,0, 0.20) inset;
+}
+
+.ui-btn-disable{
+    &,&:hover,&:focus,&:active{
+        border: none;
+        background-image: none;
+        filter: progid:DXImageTransform.Microsoft.gradient(enabled = false); /* 去除IE滤镜*/
+        .opacity(40);
+        border-shadow:none;
+    }
+}
+
+.ui-btn-hidden{
+    display: none;
+}
+
+/*---尺寸大小----*/
+.ui-btn-xsmall {
+    font-size: 70%;
+}
+
+.ui-btn-small {
+    font-size: 85%;
+}
+
+.ui-btn-large {
+    font-size: 110%;
+}
+
+.ui-btn-xlarge {
+    font-size: 125%;
+}
+
+/*---颜色----*/
+.ui-btn-primary {
+    background: #ff9600;
+    .vertical-gradient(#ff9600,#ff8400);
+    border: 1px solid #e27913;
+    .box-shadow( 0 1px 1px 0 rgba(0, 0, 0, 0.25));
+    color: @white;
+    &:hover{
+        background: #fe7300;
+        .vertical-gradient(#fe7b00,#fe7300);
+        border: 1px solid #c15604;
+        color: #fff;
+    }
+}
+
+//默认样式
+.ui-btn-default {
+    border: 1px solid #d1d1d1;
+    color: #666666;
+    background: #fbfbfb;
+    .vertical-gradient(#ffffff,#fbfbfb);
+}
+
+//高亮的样式,扁平一点
+.ui-btn.ui-btn-focus {
+    border: 1px solid @mainColor;
+    color: #fff;
+    background: @mainColor;
+    &:hover{
+        background: #fc531f;
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+.ui-btn-success {
+    background: rgb(28, 184, 65); /* this is a green */
+}
+
+.ui-btn-error {
+    background: rgb(202, 60, 60); /* this is a maroon */
+}
+
+.ui-btn-warning {
+    background: rgb(223, 117, 20); /* this is an orange */
+}
+
+.ui-btn-secondary {
+    background: rgb(66, 184, 221); /* this is a light blue */
+}
+
+//表单按钮的时候，可能要嵌套一个文本标签
+.ui-btn-txt {
+    .inline-block();
+    overflow: visible;
+    border: 0;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.ui-btn a.ui-btn-txt:hover {
+    text-decoration: none;
+}

@@ -1,0 +1,22 @@
+/**
+ * @file reset
+ * @author shenli （meshenli@gmail.com）
+ * 直接用est函数
+ * 参考地址：http://ecomfe.github.io/est/#reset
+ */
+@import "../base/main";
+
+.global-normalize();
+.global-reset();
+
+//基本的样式
+a:link,a:visited{
+    color: @textBlack;
+    text-decoration: none;
+}
+
+//浏览器默大小为16px,将默认字体大小转为15px,方便计算
+//chrome 新版最小字体大小为12px，故不采用10px;
+body{
+    font-size: 15px;
+}

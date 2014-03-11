@@ -1,0 +1,81 @@
+/**
+ * @file 进度条
+ * @author shenli （meshenli@gmail.com）
+ */
+
+/*******************************
+             Basic
+*******************************/
+.ui-progress{
+    height: 23px;
+    background: #fafafa;
+    padding: 5px;
+    .border-radius(3px);
+    border:1px solid @borderGray;
+    .ui-bar{
+        height: 100%;
+        background-color: #cccccc;
+        .transition(width 1s ease-in-out,background-color 1s ease-out);
+        .animation(finish 10s ease-in-out infinite);
+    }
+}
+
+/*******************************
+             Types
+*******************************/
+/*******************************
+             States
+*******************************/
+.ui-progress.active{
+    .ui-bar:after{
+        content: '';
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: @white;
+        .border-radius(3px);
+        .animation(progress-active 2s ease-out infinite);
+    }
+}
+.ui-progress.warning{
+    .ui-bar{
+        background-color:@warningColor;
+    }
+}
+.ui-progress.success{
+    .ui-bar{
+        background-color:@successColor;
+    }
+}
+
+.ui-progress.disabled{
+    .ui-bar{
+        background-color: @disabledColor;
+        .transition(none);
+        .animation(none);
+    }
+
+}
+/*******************************
+             Variations
+*******************************/
+.ui-striped{
+    .ui-bar{
+        -webkit-background-size: 30px 30px;
+        background-size: 30px 30px;
+        .linear-gradient(135deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    }
+}
+.ui-striped.success{
+    .ui-bar{
+        .linear-gradient(135deg,@successColorDeep 25%,transparent 25%,transparent 50%,@successColorDeep 50%,@successColorDeep 75%,transparent 75%,transparent);
+    }
+}
+.ui-striped.warning{
+    .ui-bar{
+        .linear-gradient(135deg,@warningColorDeep 25%,transparent 25%,transparent 50%,@warningColorDeep 50%,@warningColorDeep 75%,transparent 75%,transparent);
+    }
+}

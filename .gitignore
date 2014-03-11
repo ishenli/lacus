@@ -1,0 +1,17 @@
+*~
+.classpath
+.project
+.settings/
+lib/
+logs/
+target/
+bin/
+node_modules/
+.DS_Store
+.metadata
+*.log
+*.log.*
+.idea/
+*.iml
+.vagrant/
+.#*

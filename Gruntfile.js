@@ -96,7 +96,6 @@ module.exports = function(grunt) {
                     assetRoot: meta.asset,
                     asset: path.join(meta.asset, name)
                 };
-                console.log(templateData);
                 config = JSON.parse(
                     grunt.template.process(
                         JSON.stringify(config), 

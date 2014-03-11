@@ -5,7 +5,7 @@ module.exports = function (grunt) {
         dev: ['less'],
 
         watch: {
-            files: ['<%=src%>/**'],
+            files: ['<%=src%>/../demo'],
             tasks: ['<%=name%>']
         },
 
@@ -13,7 +13,7 @@ module.exports = function (grunt) {
 
         less: {
             files: {
-                '<%=asset%>/box.css': '<%=src%>/box.less'
+                '<%=src%>/../../test/demo/demo.css': '<%=src%>/demo.less'
             }
         },
         cssmin: {

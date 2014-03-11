@@ -1,0 +1,38 @@
+/**
+ * @file list
+ * @author shenli 
+ */
+
+@import "../base/main";
+
+.ui-list{
+    .ui-list-item{
+        position: relative;
+        padding: 10px 9px;
+        border-bottom: 1px solid @borderGray;
+        color: #999999;
+        vertical-align: middle;
+        &:hover{
+            background: #f3f3f3;
+        }
+    }
+    .list-btn{
+        &:hover{
+            background: @white;
+        }
+        .ui-list-more{
+            .abrt(.5em,.5em);
+        }
+        .ui-btn{
+            padding: 0.3em .5em;
+        }
+    }
+    .ui-list-more{
+        float: right;
+        font-size: 13px;
+        color: @mainColor;
+        .btn{
+            margin-top: -3px;
+        }
+    }
+}

@@ -1,0 +1,100 @@
+/**
+ * @file label
+ * @author shenli （meshenli@gmail.com）
+ */
+
+@import "../../base/main";
+
+.ui-label {
+    .inline-block();
+    padding: 0.5em 1em;
+    font-size: 1em;
+    background-color: @defaultColor;
+    .border-radius(2px);
+    .transition(background .1s linear);
+
+    a{
+        cursor: pointer;
+        color: inherit;
+        .opacity(80);
+    }
+}
+a.ui-label{
+    cursor: pointer;
+    color: @textBlack;//去掉浏览器的默认样式
+}
+.ui-label.ui-skin-teal{
+    i{
+        border-right-color:@tealBorder;
+    }
+}
+
+/*******************************
+             Types
+*******************************/
+.ui-label-image{
+    width: auto !important;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    line-height: 1.5em;
+    img{
+        vertical-align: top;
+        .border-radius(2px 0 0 2px);
+    }
+}
+
+/*******************************
+             Status
+*******************************/
+
+/*disabled*/
+.ui-label-disabled{
+    .opacity(50);
+}
+
+/*hover*/
+a.ui-labels .ui-label,.ui-label{
+    &:hover {
+        background: @mainColor;
+        color: @white;
+        .transition(0.3s);
+    }
+}
+.ui-label-corner {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/*******************************
+             Variations
+*******************************/
+
+//tag
+.ui-label-tags .ui-lable-tag,
+.ui-label-tag{
+    position: relative;
+}
+
+
+//Ribbon
+.ui-label-ribbon{
+    position: relative;
+    left: -1em;
+    .border-radius(0 2px 2px 0);
+    background: @mainColor;
+    color: @white;
+    i{//模拟下方的三角形
+        position: absolute;
+        top: 100%;
+        left:0;
+        overflow: hidden;
+        .lh(0);
+        border-top: 0 solid transparent;
+        border-right-width: 1em;
+        border-right-color: @yellowBorder;
+        border-right-style: solid;
+        border-bottom: 1em solid transparent;
+        border-left: 0 solid transparent;
+    }
+}

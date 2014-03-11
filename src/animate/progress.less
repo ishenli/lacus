@@ -1,0 +1,81 @@
+/**
+ * @file
+ * @author shenli （meshenli@gmail.com）
+ */
+.progress-finish(){
+    @-webkit-keyframes finish {
+        0% {
+            width: 0%;
+        }
+        40% {
+            width: 100%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+    @-moz-keyframes finish {
+        0% {
+            width: 0%;
+        }
+        40% {
+            width: 100%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+    @keyframes finish {
+        0% {
+            width: 0%;
+        }
+        40% {
+            width: 100%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+}
+
+.progress-active(@opacity:0.3){
+    @-webkit-keyframes progress-active {
+        0% {
+            opacity: 0;
+            width: 0;
+        }
+        50% {
+            opacity: @opacity;
+        }
+        100% {
+            opacity: 0;
+            width: 95%;
+        }
+    }
+    @-moz-keyframes progress-active {
+        0% {
+            opacity: 0;
+            width: 0;
+        }
+        50% {
+            opacity: @opacity;
+        }
+        100% {
+            opacity: 0;
+            width: 100%;
+        }
+    }
+    @keyframes progress-active {
+        0% {
+            opacity: 0;
+            width: 0;
+        }
+        50% {
+            opacity: @opacity;
+        }
+        100% {
+            opacity: 0;
+            width: 100%;
+        }
+    }
+}

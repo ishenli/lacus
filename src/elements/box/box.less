@@ -3,27 +3,32 @@
  * @author shenli 
  */
 
-.mp-box {
+@import "../base/main";
+
+.ui-box {
+    position: relative;
     margin: 0;
     padding: 0;
     border: 1px solid #cccccc;
     border-bottom: 0;
     zoom: 1;
 }
-.mp-box-highlight{
+.ui-box-highlight{
     border-top: 3px solid @mainColor;
 }
-
-.mp-box-head,.mp-box-foot{
+.ui-box-wrap{
+    padding-right: 1em;
+}
+.ui-box-head,.ui-box-foot{
     position: relative;
     padding: 7px 13px 7px 8px;
     .lh(24px);
     background: #f1f1f1;
     zoom: 1;
 }
-.mp-box-head {
+.ui-box-head {
     border-bottom: 1px solid #ccc;
-    .mp-box-head-title{
+    .ui-box-head-title{
         float: left;
         display: inline;
         font-size: 16px;
@@ -32,54 +37,36 @@
             padding-right: 10px;
         }
     }
-    .mp-box-head-more {
+    .ui-box-head-more {
         float: right;
         font-size: 12px;
         color: #666666;
     }
-    a.mp-box-head-more:hover {
+    a.ui-box-head-more:hover {
         text-decoration: underline;
     }
     //标题icon
-    .mp-box-head-icon {
+    .ui-box-head-icon {
        float: left;
-       margin-right: 10px;
-    }
-}
-//带梯形图片的标题栏
-.mp-box-head2{
-    .lh(30px);
-    border-bottom: 3px solid @mainColor;
-    .mp-box-head-title{
-        float: left;
-        padding-left: 15px;
-        font-size: 16px;
-        color: @white;
-    }
-    .mp-box-head-more2{
-        margin-top: 5px;
+       margin:5px 10px 0 0;
     }
 }
 
 //底部
-.mp-box-foot{
+.ui-box-container ,.ui-box-foot{
     border-bottom: 1px solid #ccc;
 }
-//box内容区域，默认右边距
-.mp-box-content {
-    padding: 10px;
-}
-
-.mp-box-container {
-    border-bottom: 1px solid #ccc;
+//ui-box内容区域，默认右边距
+.ui-box-content {
+    padding: 1em;
 }
 
 //更多按钮，带箭头
-.mp-box-head-more2{
+.ui-box-head-more-btn{
     position: relative;
     float: right;
     width: 47px;
-    .lh(18px);
+    .lh(20px);
     color:@fontColor;
     font-size: 13px;
     text-align: center;
@@ -90,7 +77,6 @@
         .abrt(0,6px);
         border-width: 3px;
         border-color: transparent;
-        _border-color: #efefef;
         border-left-color: @mainColor;
     }
     &:hover {
@@ -99,13 +85,17 @@
     }
 }
 
+/*******************************
+             Types
+*******************************/
+
 /**
-*  带有tab标签的box
+*  带有tab标签的ui-box
 */
-.mp-box-tab{
-    .mp-box-head{
+.ui-box-tab{
+    .ui-box-head{
         padding: 0;
-        height: 37px;
+        .lh(37px);
         font-size: 15px;
         //默认两个，宽度平分
         .line{
@@ -120,16 +110,14 @@
             border-top: 2px solid @mainColor;
             background: @white;
             color: @textBlack;
-            .lh(37px);
             strong{
                 color: @mainColor;
             }
         }
     }
-    .mp-box-head-tab{
+    .ui-box-head-tab,.ui-box-head-tab2{
         _position: relative;
         float: left;
-        width: 50%;
         color: @textGray;
         text-align: center;
         margin-bottom: -1px;
@@ -137,25 +125,32 @@
             font-weight: normal;
         }
     }
+    .ui-box-head-tab{
+        width: 50%;
+    }
 
+    .ui-box-head-tab2{
+        width: 100px;
+        border-right: 1px solid @borderGray;
+    }
 }
 /**
-*  签的box
+*  tab box
 */
-.mp-box-tab2{
+.ui-box-tab2{
     padding: 0 14px;
     border: 1px solid @borderGray;
     border-top:3px solid @mainColor;
-    .mp-box-head3{
+    .ui-box-head3{
         height: 31px;
         padding: 8px 0 0;
         background:@white ;
         border-bottom: 1px solid @borderGray;
     }
-    .mp-box-head-more2{
+    .ui-box-head-more2{
         top: 5px;
     }
-    .mp-box-head-tab{
+    .ui-box-head-tab{
         _position:relative;
         width: 90px;
         float: left;
@@ -169,4 +164,40 @@
         border-bottom-color: @white;
         color: @mainColor;
     }
+}
+
+//折叠效果
+.ui-box-piled{
+    border-bottom: 1px solid #cccccc;
+    &:after,&:before{
+        background:#fff;
+        visibility: visible;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        left: -1px;
+        width: 100%;
+        top: 0;
+        .box-shadow( 0 0 1px 1px rgba(0,0,0,.1));
+    }
+
+    &:after{
+        .transform(rotate(1.2deg));
+        z-index: -1;
+    }
+    &:before{
+        .transform(rotate(-1.2deg));
+        z-index: -2;
+    }
+
+}
+
+/*******************************
+             Status
+*******************************/
+//disabled
+.ui-box.disabled{
+    .opacity(80);
+    color: @gray;
 }
