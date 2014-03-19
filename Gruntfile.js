@@ -71,6 +71,11 @@ module.exports = function(grunt) {
             grunt.registerTask(name, appendKey(config.dev, name));
             delete config.dev;
         }
+
+        if (config.pub instanceof Array) {
+            grunt.registerTask(name + '-pub', appendKey(config.pub, name));
+            delete config.pub;
+        }
     };
     
     // 为了在子 task 中可使用元数据模板

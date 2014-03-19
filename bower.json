@@ -1,0 +1,27 @@
+{
+  "name": "lacus",
+  "version": "0.0.1",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "est": "https://github.com/ecomfe/est.git"
+  },
+  "devDependencies": {
+    "underscore": "~1.5.2"
+  },
+  "homepage": "https://github.com/ishenli/lacus",
+  "authors": [
+    "ishenli <meshenli@gmail.com>"
+  ],
+  "description": "a sample css framework",
+  "keywords": [
+    "css"
+  ]
+}

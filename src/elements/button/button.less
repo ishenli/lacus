@@ -5,7 +5,6 @@
  */
 
 @import "../../base/main";
-
 .ui-btn {
     position: relative;
     .inline-block();
@@ -27,13 +26,13 @@
     cursor: pointer;
 }
 
-.ui-btn-hover,
-.ui-btn:hover,
-.ui-btn:focus{
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000',GradientType=0);
-    .linear-gradient(to bottom,transparent , rgba(0,0,0, 0.10));
-
-}
+//.ui-btn-hover,
+//.ui-btn:hover,
+//.ui-btn:focus{
+//    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000',GradientType=0);
+//    .linear-gradient(to bottom,transparent , rgba(0,0,0, 0.10));
+//
+//}
 
 //去掉浏览器的默认虚线
 .ui-btn:focus{
@@ -112,22 +111,35 @@
     }
 }
 
-.ui-btn-success {
-    background: rgb(28, 184, 65); /* this is a green */
+.ui-btn.ui-btn-success {
+    background: @green; /* this is a green */
+    color: @white;
+    border:1px solid @greenHover ;
+    &:hover{
+        background-color: @greenHover;
+    }
 }
 
-.ui-btn-error {
+.ui-btn.ui-btn-error {
     background: rgb(202, 60, 60); /* this is a maroon */
 }
 
-.ui-btn-warning {
+.ui-btn.ui-btn-warning {
     background: rgb(223, 117, 20); /* this is an orange */
 }
 
-.ui-btn-secondary {
+.ui-btn.ui-btn-secondary {
     background: rgb(66, 184, 221); /* this is a light blue */
 }
 
+.ui-btn.ui-btn-blue{
+    background-color: @blue;
+    color: @white;
+    &:hover{
+        background-color: @blueHover;
+    }
+
+}
 //表单按钮的时候，可能要嵌套一个文本标签
 .ui-btn-txt {
     .inline-block();
