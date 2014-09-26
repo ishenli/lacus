@@ -1,4 +1,5 @@
 ##Lacus
+
 ###简介
 Lacus是动漫高达seed的女主角，是一套用less编写的适用于PC端的前端样式库，同时也是[百度爱玩](http://iwan.baidu.com)使用的CSS库。
 
@@ -7,15 +8,16 @@ Lacus是动漫高达seed的女主角，是一套用less编写的适用于PC端�
 ###目标
 尝试打造一套编写完善，在IE渲染时不会被破坏（或只有一些小问题）的样式库，同时又保持CSS的高效性和可维护性。
 
-**注：不完美支持ie6及更低版本**
+**注：不完美支持ie8以下及更低版本**
 
-###结构
+###结
 #####基础框架
 + reset
 + function
 + font
 + layout
 + variable
++ mixin
 
 #####通用样式
 + elements
@@ -27,7 +29,7 @@ Lacus是动漫高达seed的女主角，是一套用less编写的适用于PC端�
     + icon
     + list
     + tip
-    + te'x't'tip
+    + texttip
 
 + collections
     + breadcrumb 
@@ -36,6 +38,16 @@ Lacus是动漫高达seed的女主角，是一套用less编写的适用于PC端�
     + pagination
     + tab
     + table
+
++ modules
+    + album
+    + bobble
+    + calendar
+    + dialog
+    + dropdown
+    + poplayer
+    + select
+    + sidenav
 
   
 
@@ -63,3 +75,6 @@ variations是ui元素与各种其他基本特征结合起来。如invert，circu
 
 ###依赖
 Lacus的编写依赖于[est](http://ecomfe.github.io/est/)，est提供了一系列方便快捷的 mixin，只在调用时才输出代码。所以Lacus以它搭建样式类库，提供类名接口来进行快速开发.
+
+###Demo
+可访问doc文件夹的`styleguide\index.html`进行浏览
