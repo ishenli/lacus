@@ -1,0 +1,57 @@
+/**
+ * @file 无搜索框导航栏
+ * @author yumao <zhangyu38@baidu.com>
+ * @date 2014-9-1
+ */
+
+.mp-head {
+
+    @headHeight: 57px;
+
+    width: 100%;
+    height: @headHeight;
+    border-bottom: 3px solid @mainColor;
+    background: @white;
+    z-index: 3;
+
+    .mp-grid-container {
+        overflow: hidden;
+    }
+
+    .logo {
+        float: left;
+        margin-top: 5px;
+        width: 100px;
+    }
+
+    .link {
+        a {
+            padding: 0 10px;
+            line-height: @headHeight;
+        }
+    }
+
+    .login-wrap {
+        float: right;
+        margin-right: -11px;
+        height: @headHeight;
+
+        a {
+            border-right: 1px solid @borderGray;
+        }
+    }
+
+    .game-wrap {
+        margin-left: 138px;
+        height: @headHeight;
+        overflow: hidden;
+
+        .inner {
+            margin-left: -1px;
+        }
+
+        a {
+            border-left: 1px solid @borderGray;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.mp-game-pager{
+    margin: 3px 0 20px;
+    text-align: right;
+    height: 32px;
+    a {
+        display: inline-block;
+        height: 30px;
+        line-height: 30px;
+        border:1px solid #d5d5d5;
+        padding:0 12px;
+        margin-right: 10px;
+        background-color: #fff;
+        font-size: 14px;
+        text-align: center;
+        cursor: pointer;
+        font-family: arial;
+        vertical-align: top;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .mp-game-pager-current {
+        background-color: #ff7a01;
+        border: none;
+        cursor: default;
+        color: #fff;
+    }
+    .mp-game-pager-ellipsis{
+        border: 0;
+        background-color: transparent;
+        cursor: text;
+    }
+    .mp-game-pager-next{
+        margin-right: 0;
+    }
+}
+
+.ie6 .mp-game-pager{
+    /*ie6/7 hover 优先级过高的bug*/
+    a,a:hover{
+        color: #666666;
+    }
+    .mp-game-pager-current {
+        color: #fff;
+    }
+}

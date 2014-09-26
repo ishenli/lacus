@@ -1,0 +1,100 @@
+/**
+ * @file   工具类
+ * @author shenli <shenli03@baidu.com>
+ */
+
+/*******************************
+             Basic
+*******************************/
+
+//清除浮动
+.mp-clearfix {
+    .clearfix();
+}
+
+//浮动
+body {
+    .mp-left,.fn-left{
+        float: left;
+    }
+    .mp-right,.fn-right {
+        float: right;
+    }
+    .mp-hidden {
+        display: none;
+    }
+    //不可见，但影响布局
+    .mp-visible-no {
+        visibility: hidden;
+    }
+}
+
+//格式化文本,出现滚动条
+.mp-scrollable-text {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    resize: both;
+}
+
+//滚动元素的边框
+.mp-scrollable-box {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    resize: both;
+}
+
+//创建bfc
+.mp-bfc {
+    overflow: hidden;
+    *zoom: 1;
+}
+
+.mp-nbfc-alt {
+    display: table-cell;
+    width: 10000px;
+}
+
+
+//左图右文的排列
+.mp-media{
+    .img {
+        float:left;
+        margin-right: 10px;
+        img{
+            display: block;
+        }
+    }
+    .bd {
+        overflow:hidden;
+        _overflow:visible;
+        zoom:1;
+    }
+    .mp-media-title{
+        color: @text-black;
+        .vertical-align(23px);
+    }
+    .mp-media-des{
+        color: @text-gray;
+    }
+}
+
+//不可见，但影响布局
+.mp-no-visible{
+    visibility: hidden;
+}
+
+.mp-sticky {
+    position: fixed!important;
+    top: 0!important;
+}
+
+
+// 去除多次点击的内容蓝屏
+.mp-prev,
+.mp-next,
+.next,
+.prev{
+    .user-select(none);
+}

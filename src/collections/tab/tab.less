@@ -1,0 +1,78 @@
+/**
+ * @tab tab
+ * @author shenli <shenli03@baidu.com>
+ */
+
+
+/*******************************
+             Basic
+*******************************/
+/*doc
+---
+title: tab
+name: tab
+category: collections
+---
+tab
+
+```html_example
+
+<ul class="mp-tab mp-tab-secondary">
+  <li class="mp-tab-item active">
+    <p class="mp-tab-line mp-tab-line-no">
+      <span class="mp-tab-txt">游戏名字</span>
+    </p>
+  </li>
+  <li class="mp-tab-item">
+    <p class="mp-tab-line">
+      <span class="mp-tab-txt">游戏名字</span>
+    </p>
+  </li>
+</ul>
+
+```
+*/
+.mp-tab{
+    .mp-tab-item{
+        float: left;
+    }
+}
+
+.mp-tab-secondary{
+    height: 25px;
+    font-size: 15px;
+    .border-bottom(@border-gray,2px);
+    .mp-tab-item {
+        _position: relative;
+        height: 25px;
+        width: 88px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .mp-tab-line{
+        margin: 8px 0 8px -1px ;
+        border-left: 1px solid @border-gray;
+        line-height: 10px;
+    }
+    .mp-tab-line-no{
+        border-color: @white;
+    }
+    .active{
+        color: @main-color;
+        border-bottom: 2px solid @main-color;
+    }
+}
+/*******************************
+             Types
+*******************************/
+
+
+/*******************************
+             States
+*******************************/
+
+
+/*******************************
+             Variations
+*******************************/
+

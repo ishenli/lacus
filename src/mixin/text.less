@@ -1,0 +1,19 @@
+/**
+ * @file 文本
+ * @author shenli <shenli03@baidu.com>
+ */
+//行高和高度相等，常用文本居中
+.vertical-align(@height:24px) {
+    height: @height;
+    line-height: @height;
+}
+
+// 兼容老代码
+.lh(@height:24px) {
+    height: @height;
+    line-height: @height;
+}
+.hover-main(@color:@main-color) {
+    text-decoration: underline;
+    color: @color;
+}

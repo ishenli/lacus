@@ -1,40 +1,7 @@
-//@file 常用less函数封装
-//@author shenli （meshenli@gmail.com）
-
-//行高和高度相等，常用文本居中
-.lh(@height:18px){
-    height: @height;
-    line-height: @height;
-}
-
-//绝对定位
-.ablt(@l,@t){
-    position: absolute;
-    top: @t;
-    left: @l;
-}
-
-.abrt(@r,@t){
-    position: absolute;
-    top: @t;
-    right: @r;
-}
-.ablb(@l,@b){
-    position: absolute;
-    left: @l;
-    bottom: @b;
-}
-.abrb(@r,@b){
-    position: absolute;
-    right: @r;
-    bottom: @b;
-}
-
-.hoverMain(@color:#ff7a01) {
-    text-decoration: underline;
-    color: @color;
-}
-.btnHover(@color:#ff7a01){
-    background: @color;
-    color: #fff;
-}
+/**
+ * @file 常用less函数封装
+ * @author shenli <shenli03@baidu.com>
+ */
+@import "./layout.less";
+@import "./text.less";
+@import "./compatibility.less";

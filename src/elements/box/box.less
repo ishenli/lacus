@@ -1,87 +1,95 @@
 /**
  * @file 边框
- * @author shenli 
+ * @author shenli <shenli03@baidu.com>
  */
 
-@import "../base/main";
+/*******************************
+             Basic
+*******************************/
+/*doc
+---
+title: box-primary
+name: box(primary)
+category: elements
+---
+带边框和标题的标准区块,默认样式没有父类，带有前缀，不会和业务样式产生冲突
 
-.ui-box {
-    position: relative;
+
+```html_example
+    <div class="mp-box mp-box-primary">
+        <div class="mp-box-head">
+            <h3 class="mp-box-head-title"><strong class="mp-highlight">最新</strong>游戏</h3>
+        </div>
+        <div class="mp-box-container">
+            <div class="mp-box-content">box内容</div>
+        </div>
+    </div>
+```
+*/
+.mp-box {
     margin: 0;
     padding: 0;
-    border: 1px solid #cccccc;
-    border-bottom: 0;
     zoom: 1;
-}
-.ui-box-highlight{
-    border-top: 3px solid @mainColor;
-}
-.ui-box-wrap{
-    padding-right: 1em;
-}
-.ui-box-head,.ui-box-foot{
-    position: relative;
-    padding: 7px 13px 7px 8px;
-    .lh(24px);
-    background: #f1f1f1;
-    zoom: 1;
-}
-.ui-box-head {
-    border-bottom: 1px solid #ccc;
-    .ui-box-head-title{
+    &-head-icon {
+        //覆盖mp-icon的inline-block
         float: left;
-        display: inline;
-        font-size: 16px;
-        color: #333333;
-        .iconfont{
-            padding-right: 10px;
-        }
     }
-    .ui-box-head-more {
-        float: right;
-        font-size: 12px;
-        color: #666666;
+
+}
+
+.mp-box-head {
+    position: relative;
+    zoom: 1;
+    .iconfont {
+        padding-right: 10px;
     }
-    a.ui-box-head-more:hover {
-        text-decoration: underline;
-    }
-    //标题icon
-    .ui-box-head-icon {
-       float: left;
-       margin:5px 10px 0 0;
-    }
+}
+
+.mp-box-head-title {
+    float: left;
+    display: inline;
+    font-size: 16px;
+    color: @text-black;
+}
+
+.mp-box-head-more {
+    float: right;
+    font-size: 12px;
+    color: @font-default;
 }
 
 //底部
-.ui-box-container ,.ui-box-foot{
+.mp-box-foot, .mp-box-container {
     border-bottom: 1px solid #ccc;
 }
-//ui-box内容区域，默认右边距
-.ui-box-content {
-    padding: 1em;
+
+//box内容
+.mp-box-content {
+    padding: 10px;
 }
 
 //更多按钮，带箭头
-.ui-box-head-more-btn{
+.mp-box-head-btn{
     position: relative;
     float: right;
     width: 47px;
-    .lh(20px);
-    color:@fontColor;
-    font-size: 13px;
-    text-align: center;
-    border: 1px solid @borderColor;
+    margin-top: 5px;
+    .vertical-align(18px);
+    border: 1px solid @border-color;
     .border-radius(3px);
-    .vertical-gradient(#ffffff,#efefef);
-    .arrow-r{
-        .abrt(0,6px);
+    color: @font-default;
+    text-align: center;
+    .vertical-gradient(#ffffff, #efefef);
+    .arrow-r {
+        .abrt(0, 6px);
         border-width: 3px;
         border-color: transparent;
-        border-left-color: @mainColor;
+        _border-color: #efefef;
+        border-left-color: @main-color;
     }
     &:hover {
         text-decoration: underline;
-        color: @mainColor;
+        color: @main-color;
     }
 }
 
@@ -89,115 +97,321 @@
              Types
 *******************************/
 
-/**
-*  带有tab标签的ui-box
+.mp-box-primary {
+    .border();
+    border-bottom: 0;
+    .mp-box-head {
+        padding: 7px 8px;
+        .vertical-align(24px);
+        background: @header-default;
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+.mp-box-secondary {
+    .iconfont {
+        font-size: 17px;
+    }
+    .mp-box-head {
+        .vertical-align(30px);
+        .border-bottom(@main-color, 3px);
+        background: url(@sprite-url) no-repeat;
+        _background: url(@sprite-url-gif) no-repeat;
+    }
+    .head-large{
+        background-position: 0 -84px;
+    }
+    .mp-box-head-title {
+        padding-left: 10px;
+        font-size: 16px;
+        color: @white;
+    }
+    .mp-box-head-more {
+        margin-top: 5px;
+    }
+}
+
+/*doc
+---
+title: box-secondary
+name: box(secondary)
+category: elements
+---
+爱玩首页带图标的导航无背景色的导航
+
+```html_example
+   <div class="mp-box mp-box-secondary">
+        <div class="mp-box-head">
+            <h3 class="mp-box-head-title"><i class="iconfont">&#x344c;</i>游戏名称</h3>
+            <a class="mp-box-head-btn">更多<i class="mp-arrow arrow-r"></i></a>
+        </div>
+        <div class="mp-box-content">box内容</div>
+    </div>
+```
 */
-.ui-box-tab{
-    .ui-box-head{
-        padding: 0;
-        .lh(37px);
+
+/*doc
+---
+title: box(tertiary)
+name: box-tertiary
+category: elements
+---
+爱玩首页带图标的导航无背景色的导航
+
+```html_example
+    <div class="mp-box mp-box-tertiary">
+        <div class="mp-box-head">
+            <h3 class="mp-box-head-title">游戏名称</h3>
+            <div class="keystone"></div>
+        </div>
+        <div class="mp-box-content">box内容</div>
+    </div>
+```
+*/
+.mp-box-tertiary {
+    .mp-box-head {
+        .vertical-align(44px);
+        .border-bottom(@main-color);
+        .keystone {
+            .abrb(0, 0);
+            width: 195px;
+            height: 0;
+            border: 3px solid transparent;
+            border-bottom-color: @main-color;
+            border-right: 0;
+            _display: none; //ie6 背景不支持不透明，直接hide
+        }
+    }
+    .mp-box-head-more {
+        margin-top: 12px;
+    }
+    .mp-box-head-icon {
+        .ablt(0, 9px);
+    }
+    .mp-box-head-title {
+        font-size: 18px;
+        color: @text-black;
+    }
+}
+
+/*doc
+---
+title: box(five)
+name: box-five
+category: elements
+
+---
+头部直线的box
+
+```html_example
+
+<div class="mp-box mp-box-five">
+    <h3 class="mp-box-head-title mp-png">游戏名称</h3>
+    <p class="mp-box-head-more">展开查看全部</p>
+</div>
+```
+*/
+.mp-box-five {
+    position: relative;
+    height: 24px;
+    .mp-box-head {
+        position: static;
+    }
+    .mp-box-head-title,
+    .mp-box-head-more {
+        position: absolute;
+        top: 0;
+        .vertical-align(24px);
+        z-index: 2;
+    }
+    .mp-box-head-title {
+        left: 0;
+        color: @white;
+        width: 110px;
         font-size: 15px;
-        //默认两个，宽度平分
-        .line{
-            .ablt(50%,0);
+        text-indent: 15px;
+        background: url(@sprite-url) 0 -220px no-repeat;
+    }
+    .mp-box-head-more {
+        right: 0;
+        padding-left: 10px;
+        text-align: right;
+        color: @brown;
+        background: @white;
+    }
+    &:after{
+        content: '';
+        height: 1px;
+        width: 100%;
+        .ablt(0,12px);
+        background: @border-gray;
+    }
+}
+
+/*doc
+---
+title: box(six)
+name: box-six
+category: elements
+
+---
+头部直线的box
+
+```html_example
+
+<div class="mp-box mp-box-six">
+    <div class="mp-box-head">
+        <h3 class="mp-box-head-title">游戏名称</h3>
+        <a class="mp-box-head-more">更多&gt;&gt;</a>
+    </div>
+</div>
+```
+*/
+.mp-box-six {
+    .mp-box-head {
+        height: 24px;
+        .border-bottom(@border-gray);
+    }
+    .mp-box-head-title {
+        float: left;
+        .vertical-align(24px);
+        font-size: 16px;
+        color: @main-color;
+        border-bottom: 1px solid @main-color;
+    }
+    .mp-box-head-more {
+        float: right;
+        color: @font-default;
+        margin-top: 5px;
+        &:hover{
+            color: @main-color;
+        }
+    }
+}
+
+//左边带个线的标题栏
+//demo:iwan.baidu.com/wangyou/lol
+//iwan.baidu.com/mobilegame/gift
+/*doc
+---
+title: box(line)
+name: box-line
+category: elements
+---
+```html_example
+    <div class="mp-box">
+        <div class="mp-box-head-line">
+            <h3 class="mp-box-head-title">游戏名称</h3>
+        </div>
+        <div class="mp-box-content">box内容</div>
+    </div>
+```
+*/
+.mp-box-head-line {
+    .border-left(@main-color, 4px);
+    padding-left: 15px;
+    vertical-align: bottom;
+    .mp-box-head-title {
+        font-size: 16px;
+        float: none;
+    }
+}
+
+/*doc
+---
+title: box(tab)
+name: box-tab
+category: elements
+---
+带有tab切换的box,该组件需要与js相结合
+
+```html_example
+    <div class="mp-box mp-box-tab">
+        <div class="mp-box-head">
+            <h3 class="mp-box-head-title active">游戏名称</h3>
+            <h3 class="mp-box-head-title">游戏名称2</h3>
+            <div class="mp-line"></div>
+        </div>
+        <div class="mp-box-content">box内容</div>
+    </div>
+```
+*/
+.mp-box-tab {
+    .border();
+    .mp-box-head {
+        height: 37px;
+        background: @header-default;
+        border-bottom: 1px solid #ccc;
+        .mp-line {
+            .ablt(50%, 0);
             width: 1px;
             height: 100%;
-            background: @borderColor;
+            background: @border-color;
 
         }
-        .active{
+        .active {
             margin-top: -1px;
-            border-top: 2px solid @mainColor;
+            .border-top(@main-color, 2px);
             background: @white;
-            color: @textBlack;
-            strong{
-                color: @mainColor;
+            strong {
+                color: @main-color;
             }
         }
     }
-    .ui-box-head-tab,.ui-box-head-tab2{
+    .mp-box-head-title {
         _position: relative;
         float: left;
-        color: @textGray;
+        height: 37px;
+        .vertical-align(37px);
+        width: 50%;
+        color: @text-gray;
         text-align: center;
         margin-bottom: -1px;
-        strong{
+        strong {
             font-weight: normal;
         }
     }
-    .ui-box-head-tab{
-        width: 50%;
-    }
 
-    .ui-box-head-tab2{
-        width: 100px;
-        border-right: 1px solid @borderGray;
-    }
 }
-/**
-*  tab box
-*/
-.ui-box-tab2{
+
+/*手游中间页的新游样式*/
+.mp-box-tab2 {
     padding: 0 14px;
-    border: 1px solid @borderGray;
-    border-top:3px solid @mainColor;
-    .ui-box-head3{
+    .border(@border-gray);
+    .border-top(@main-color, 3px);
+    .mp-box-head {
         height: 31px;
         padding: 8px 0 0;
-        background:@white ;
-        border-bottom: 1px solid @borderGray;
+        background: @white;
+        border-bottom: 1px solid @border-gray;
     }
-    .ui-box-head-more2{
-        top: 5px;
-    }
-    .ui-box-head-tab{
-        _position:relative;
+    .mp-box-head-tab {
         width: 90px;
-        float: left;
         margin-right: 5px;
-        .lh(30px);
-        font-size: 15px;
-        text-align: center;
-        border: 1px solid @borderGray;
+        .vertical-align(30px);
+        border: 1px solid @border-color;
     }
-    .active{
-        border-bottom-color: @white;
-        color: @mainColor;
+    .single {
+        border: none;
+        text-align: left;
     }
-}
-
-//折叠效果
-.ui-box-piled{
-    border-bottom: 1px solid #cccccc;
-    &:after,&:before{
-        background:#fff;
-        visibility: visible;
-        content: '';
-        display: block;
-        height: 100%;
-        position: absolute;
-        left: -1px;
-        width: 100%;
-        top: 0;
-        .box-shadow( 0 0 1px 1px rgba(0,0,0,.1));
+    .active {
+        color: @main-color;
     }
-
-    &:after{
-        .transform(rotate(1.2deg));
-        z-index: -1;
-    }
-    &:before{
-        .transform(rotate(-1.2deg));
-        z-index: -2;
-    }
-
 }
 
 /*******************************
-             Status
+             States
 *******************************/
-//disabled
-.ui-box.disabled{
-    .opacity(80);
-    color: @gray;
+.mp-box-highlight {
+    .border-top(@main-color, 3px);
+}
+
+/*******************************
+             Variations
+*******************************/
+.mp-box-secondary.large {
+    .mp-box-head {
+        background-position: 0 -85px;
+    }
 }

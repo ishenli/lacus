@@ -1,46 +1,70 @@
 /**
  * @file 图片处理
- * @author shenli （meshenli@gmail.com）
+ * @author shenli （shenli03@baidu.com）
  */
-.image{
+/*doc
+---
+title: image
+name: image
+category: elements
+---
+
+```html_example
+    <div class="mp-image">
+	    <img src="http://bcscdn.baidu.com/resource/fFhOuUkRuUZSZIsenFvkrUswuWswZmsenGv3XURbZIkRZWjwBIjY.jpg"/>
+    </div>
+    <img class="mp-image-disable" src="http://bcscdn.baidu.com/resource/fFhOuUkRuUZSZIsenFvkrUswuWswZmsenGv3XURbZIkRZWjwBIjY.jpg"/>
+    <img class="mp-image-circular" src="http://bcscdn.baidu.com/resource/fFhOuUkRuUZSZIsenFvkrUswuWswZmsenGv3XURbZIkRZWjwBIjY.jpg"/>
+```
+*/
+
+/*******************************
+             Basic
+*******************************/
+.mp-image{
     position:relative;
-    .inline-block(); //默认换行
-    vertical-align: middle;//去掉行内元素的空白
+    .inline-block(); //默认不换行
     max-width: 100%;
 }
-img.image{
+img.mp-image{
     display: block;
 }
-
-.image-avatar{
-    margin-right: .5em;
-    width: 2em;
-    height: 2em;
-    .border-radius(50%);
-}
-.image-disable{
+/*******************************
+             States
+*******************************/
+.mp-image-disable{
     cursor: default;
     .opacity(30);
 }
 
-.image-circular{
+/*******************************
+             Variations
+*******************************/
+.mp-image-avatar{
+    margin-right: 10px;
+    .size(50px,50px);
+    .border-radius(50%);
+}
 
-    &,& .image,img{
+.mp-image-circular{
+    &,& .mp-image,img{
         .border-radius(50%);
     }
 }
 
 //一排组合
-.images {
+.mp-images {
     font-size: 0; //去掉inline-block产生的空白
-    .image{
+    .mp-image{
         .inline-block();
         margin-right: 2em;
     }
 }
 
 //大小控制
-.small.images .image,.small.image,.small.images img{
+.small.mp-images .mp-image,
+.small.mp-image,
+.small.mp-images img{
     .size(80px,80px);
     font-size: 14px;
 }

@@ -1,0 +1,59 @@
+/**
+ * @file   布局
+ * @author shenli <shenli03@baidu.com>
+ */
+
+//绝对定位
+.ablt(@l,@t){
+    position: absolute;
+    top: @t;
+    left: @l;
+}
+
+.abrt(@r,@t){
+    position: absolute;
+    top: @t;
+    right: @r;
+}
+.ablb(@l,@b){
+    position: absolute;
+    left: @l;
+    bottom: @b;
+}
+.abrb(@r,@b){
+    position: absolute;
+    right: @r;
+    bottom: @b;
+}
+
+//各种边框,没有style的自定义，不常用
+.border(@color:@border-color,@width:1px){
+    border:@width solid @color;
+}
+.border-bottom(@color:@border-color,@width:1px){
+    border-bottom:@width solid @color ;
+}
+.border-left(@color:@border-color,@width:1px){
+    border-left:@width solid @color ;
+}
+.border-right(@color:@border-color,@width:1px){
+    border-right:@width solid @color ;
+}
+.border-top(@color:@border-color,@width:1px){
+    border-top:@width solid @color ;
+}
+
+//兼容ie6最小高度
+.min-height(@height){
+    _height:auto !important;
+    _height:@height; /*假定最低高度是200px*/
+    min-height:@height;
+}
+
+.grid-line() {
+    padding: 0 10px;
+    margin-bottom: 0;
+    border: 1px solid #d3d3d3;
+    border-bottom: none;
+    border-top: none;
+}

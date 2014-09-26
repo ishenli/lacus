@@ -1,0 +1,162 @@
+/**
+ * @file 提示文字
+ * @author shenli <shenli03@baidu.com>
+ * @modify yumao <zhangyu38@baidu.com>
+ */
+
+/*******************************
+             Basic
+*******************************/
+
+/*doc
+---
+title: tiptext
+name: tiptext
+category: elements
+---
+```html_example
+   <div class="mp-tiptext mp-tiptext-yeyou">yeyou</div>
+```
+tiptext                                                | Modifier Class
+----------------------------------------------------- | -----------------
+ <div class="mp-tiptext mp-tiptext-yeyou">网页游戏</div> | `mp-tiptext-yeyou`
+ <div class="mp-tiptext mp-tiptext-wangyou">网洛游戏</div> | `mp-tiptext-wangyou`
+ <div class="mp-tiptext mp-tiptext-xiaoyouxi">小游戏</div> | `mp-tiptext-xiaoyouxi`
+ <div class="mp-tiptext mp-tiptext-shouyou">手机游戏</div> | `mp-tiptext-shouyu`
+ <div class="mp-tiptext mp-tiptext-singlegame">单机游戏</div> | `mp-tiptext-singlegame`
+*/
+.mp-tiptext {
+    display: inline-block;
+    .vertical-align(19px);
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    .border-radius(2px);
+    word-wrap: normal;
+    white-space: nowrap;
+    font-size: 14px;
+    padding:0 4px;
+}
+div.mp-tiptext,
+p.mp-tiptext,
+span.mp-tiptext {
+    *display: inline;
+}
+.mp-tiptext-yeyou {
+    background: #d9e5ff;
+    color: #517ebc;
+    border: 1px solid #517ebc;
+}
+.mp-tiptext-wangyou {
+    background: #fdebec;
+    color: #df8390;
+    border: 1px solid #df8390;
+}
+.mp-tiptext-xiaoyouxi {
+    background: #dff3ce;
+    color: #b5d9a2;
+    border: 1px solid #b5d9a2;
+}
+.mp-tiptext-shouyou {
+    background: #f7e4d3;
+    color: #e38632;
+    border: 1px solid #e38632;
+}
+.mp-tiptext-singlegame {
+    background: #efefef;
+    color: #666666;
+    border: 1px solid #c4c4c4;
+}
+//论坛样式
+/*doc
+---
+title: tiptext(arrow)
+name: tiptext(arrow)
+category: elements
+---
+```html_example
+   <div style="width:80px;" class="mp-tiptext-arrow mp-tiptext-primary mp-tiptext-orange">网页游戏</div>
+```
+tiptext                                                | Modifier Class
+----------------------------------------------------- | -----------------
+ <div class="mp-tiptext-arrow mp-tiptext-primary mp-tiptext-orange">网页游戏</div> | `mp-tiptext-orange`
+ <div class="mp-tiptext-arrow mp-tiptext-primary mp-tiptext-purple">单机游戏</div> | `mp-tiptext-puple`
+ <div class="mp-tiptext-arrow mp-tiptext-primary mp-tiptext-blue">单机游戏</div> | `mp-tiptext-blue`
+*/
+
+.mp-tiptext-arrow{
+    position: relative;
+    .vertical-align(21px);
+    text-align: center;
+}
+/*******************************
+             Types
+*******************************/
+.mp-tiptext-primary{
+    color: @white;
+    &:after {
+        .ablt(100%, 50%);
+        content: '';
+        margin-top: -5px;
+        width: 0;
+        height: 0;
+        border: 4px dashed transparent;
+        border-left-style:solid;
+    }
+}
+.mp-tiptext-secondary{
+    border: 1px solid #f0c49f;
+    color: @main-color;
+    background: #ffefdd;
+    .arrow,.arrow-inner{
+        position: absolute;
+        left: 100%;
+        z-index: 10;
+        border-style: dashed dashed dashed solid;
+    }
+    .arrow-inner{
+        top: 4px;
+        border-width: 6px;
+        border-color: transparent transparent transparent #ffefdd;
+    }
+    .arrow{
+        top: 3px;
+        border-width: 7px;
+        border-color: transparent transparent transparent #f0c49f;
+    }
+}
+
+/*******************************
+             States
+*******************************/
+
+.mp-tiptext(@color) {
+    background-color: @color;
+    &:after{
+        border-left-color: @color;
+    }
+}
+
+.mp-tiptext-orange {
+    .mp-tiptext(@main-color);
+}
+
+.mp-tiptext-blue {
+    .mp-tiptext(@blue);
+}
+
+.mp-tiptext-purple{
+    .mp-tiptext(@purple);
+}
+
+.mp-tiptext-error{
+    .mp-tiptext(@warning-color);
+}
+
+.mp-tiptext-success{
+    .mp-tiptext(@success-color);
+}
+
+/*******************************
+             Variations
+*******************************/

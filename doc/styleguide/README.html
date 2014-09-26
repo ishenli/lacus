@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Iwan Style Guide </title>
+    <link rel="shortcut icon" href="static/brick.png" />
+
+    <!-- Styleguide CSS -->
+    <link rel="stylesheet" href="static/css/doc.css">
+    <link rel="stylesheet" href="static/css/github.css">
+
+    <link rel="stylesheet" href="../../asset/all/all.css">
+    <!-- CSS to be documented -->
+    <link rel="stylesheet" href="build/css/screen.css">
+
+
+
+    <!-- Main libraries -->
+    <script src="http://s1.bdstatic.com/r/www/cache/static/jquery/jquery-1.10.2.min_f2fb5194.js"></script>
+    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>-->
+    <!-- component js and init scripts -->
+    <script src="build/script/components.js"></script>
+
+
+</head>
+
+  <body>
+    <header class="header pbn" role="banner">
+      <div class="backgroundHighlight typeReversed1">
+        <div class="container">
+          <h1 class="h2 mvs">Iwan Style Guide</h1>
+        </div>
+      </div>
+      <div class="backgroundLowlight typeReversed1">
+        <div class="container">
+            <ul class="docNav listInline">
+              <!-- Add you pages here -->
+              <li><a href="index.html">index</a></li>
+              <li><a href="elements.html">elements</a></li>
+              <li><a href="modules.html">modules</a></li>
+              <li><a href="collections.html">collections</a></li>
+              <li><a href="iwan-widget.html">iwan widget</a></li>
+              <li><a href="components.html">Components</a></li>
+              <li><a href="javascript.html">Javascript</a></li>
+            </ul>
+        </div>
+      </div>
+      <!-- //header/container -->
+    </header>
+
+    <div class="content">
+      <section>
+        <div class="line">
+
+          <div class="col cols4">
+            <div class="componentMenu box boxBasic backgroundBasic" id="sideMenu">
+                <ul class="componentList listBorderedHover">
+                    
+                </ul>
+            </div>
+          </div>
+          <div class="main col cols20 lastCol">
+<h2>reset</h2>
+
+<p>重置样式，清除浏览器默认样式，并配置适合设计的基础样式（强调文本是否大多是粗体、主文字色，主链接色，主字体等）。</p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    The source code for this style guide is licensed under the MIT license.
+  </footer>
+</div>
+<script>
+$(document).ready(function() {
+
+  // build simple sidebar navigation
+  var $headers = $('.main > h1');
+  var $componentList = $('#sideMenu');
+
+  // set the active tab
+  var currentHref = document.location.pathname.substr(1);
+  if (currentHref)
+  {
+    $('.docNav').find('a[href^="' + currentHref + '"]').addClass('activeNavElem typeEmphasize');
+  }
+  else
+  {
+    $('.docNav').find('a').eq(0).addClass('activeNavElem typeEmphasize');
+  }
+
+    var header = $('#sideMenu');
+    var origOffsetY = header.offset().top;
+
+    function onScroll(e) {
+        window.scrollY >= origOffsetY
+                ? header.addClass('sticky')
+                : header.removeClass('sticky');
+    }
+
+    document.addEventListener('scroll', onScroll);
+
+});
+</script>
+</body>
+</html>

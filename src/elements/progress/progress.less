@@ -1,33 +1,64 @@
 /**
  * @file 进度条
- * @author shenli （meshenli@gmail.com）
+ * @author shenli （shenli03@baidu.com）
  */
 
 /*******************************
              Basic
 *******************************/
-.ui-progress{
+/*doc
+---
+title: progress
+name: progress
+category: elements
+---
+
+```html_example
+   <div class="mp-progress">
+	    <div class="mp-progress-inner" style="width:80%"></div>
+    </div>
+    <div class="mp-progress success">
+	    <div class="mp-progress-inner" style="width:80%"></div>
+    </div>
+    <div class="mp-progress success active">
+	    <div class="mp-progress-inner"></div>
+    </div>
+    <div class="mp-progress success animate">
+	    <div class="mp-progress-inner" ></div>
+    </div>
+    <div class="mp-progress success mp-striped">
+	    <div class="mp-progress-inner" ></div>
+    </div>
+```
+*/
+.mp-progress{
     height: 23px;
     background: #fafafa;
     padding: 5px;
     .border-radius(3px);
-    border:1px solid @borderGray;
-    .ui-bar{
+    border:1px solid @border-gray;
+    .mp-progress-inner{
         height: 100%;
         background-color: #cccccc;
-        .transition(width 1s ease-in-out,background-color 1s ease-out);
-        .animation(finish 10s ease-in-out infinite);
     }
 }
 
 /*******************************
              Types
 *******************************/
+.mp-progress.animate{
+    .mp-progress-inner{
+        .transition(width 1s ease-in-out,background-color 1s ease-out);
+        -webkit-animation:finish 10s ease-in-out infinite;
+        animation:finish 10s ease-in-out infinite;
+    }
+}
 /*******************************
              States
 *******************************/
-.ui-progress.active{
-    .ui-bar:after{
+.mp-progress.active{
+    position: relative;
+    .mp-progress-inner:after{
         content: '';
         opacity: 0;
         position: absolute;
@@ -37,23 +68,22 @@
         bottom: 0;
         background: @white;
         .border-radius(3px);
-        .animation(progress-active 2s ease-out infinite);
     }
 }
-.ui-progress.warning{
-    .ui-bar{
-        background-color:@warningColor;
+.mp-progress.warning{
+    .mp-progress-inner{
+        background-color:@warning-color;
     }
 }
-.ui-progress.success{
-    .ui-bar{
-        background-color:@successColor;
+.mp-progress.success{
+    .mp-progress-inner{
+        background-color:@success-color;
     }
 }
 
-.ui-progress.disabled{
-    .ui-bar{
-        background-color: @disabledColor;
+.mp-progress.disabled{
+    .mp-progress-inner{
+        background-color: @disable-color;
         .transition(none);
         .animation(none);
     }
@@ -62,20 +92,20 @@
 /*******************************
              Variations
 *******************************/
-.ui-striped{
-    .ui-bar{
-        -webkit-background-size: 30px 30px;
-        background-size: 30px 30px;
-        .linear-gradient(135deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+//纹理
+.mp-striped{
+    .mp-progress-inner{
+        background-size:30px 30px;
+        background-image: linear-gradient(135deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
     }
 }
-.ui-striped.success{
-    .ui-bar{
-        .linear-gradient(135deg,@successColorDeep 25%,transparent 25%,transparent 50%,@successColorDeep 50%,@successColorDeep 75%,transparent 75%,transparent);
+.mp-striped.success{
+    .mp-progress-inner{
+        background-image: linear-gradient(135deg,@success-color-deep 25%,transparent 25%,transparent 50%,@success-color-deep 50%,@success-color-deep 75%,transparent 75%,transparent);
     }
 }
-.ui-striped.warning{
-    .ui-bar{
-        .linear-gradient(135deg,@warningColorDeep 25%,transparent 25%,transparent 50%,@warningColorDeep 50%,@warningColorDeep 75%,transparent 75%,transparent);
+.mp-striped.warning{
+    .mp-progress-inner{
+        background-image: linear-gradient(135deg,@warning-color-deep 25%,transparent 25%,transparent 50%,@warning-color-deep 50%,@warning-color-deep 75%,transparent 75%,transparent);
     }
 }

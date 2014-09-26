@@ -1,0 +1,106 @@
+/**
+ * @file  网游页面的slide
+ * @author shenli <shenli03@baidu.com>
+ */
+
+
+/*******************************
+             Basic
+*******************************/
+.mp-slide-box{
+    position: relative;
+    .overlay {
+        .ablb(0,0);
+        background: url(../img/overlay-black.png) repeat-x;
+        z-index: 1;
+        _bottom:10px;
+    }
+    .next,
+    .prev{
+        position: absolute;
+        bottom: 10px;
+        _bottom:22px;
+        z-index: 100;
+        overflow: hidden;
+        width: 15px;
+        height: 62px;
+        .hide-text();
+        cursor: pointer;
+    }
+    .next{
+        right: 6px;
+        background: url(@banner-arrow-url) no-repeat -27px -20px;
+
+    }
+    .prev{
+        left: 6px;
+        background: url(@banner-arrow-url) no-repeat -10px -87px;
+    }
+    .mp-btn-disable{
+        display: none;
+    }
+    .carousel{
+        .ablb(27px,12px);
+        _bottom:24px;
+        z-index: 100;
+        overflow: hidden;
+    }
+    .carousel-list{
+        width: 1000px;
+        .item{
+            float: left;
+            border: 1px solid @white;
+            margin: 0 3px;
+        }
+        .active{
+            border-color: @main-color;
+        }
+    }
+}
+
+// 中间的大图列表
+.mp-slide-list{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    .panel{
+        height: 100%;
+    }
+}
+.mp-slide-txt{
+    position: absolute;
+    z-index: 200;
+    .txt{
+        text-align: center;
+        z-index: 200;
+        overflow: hidden;
+        color: @white;
+        &:hover{
+            color: @main-color;
+        }
+    }
+    .title{
+        font-size: 22px;
+        .vertical-align(25px);
+    }
+    .title-sub{
+        font-size: 16px;
+        .vertical-align(18px)
+    }
+}
+
+/*******************************
+             Types
+*******************************/
+
+
+/*******************************
+             States
+*******************************/
+
+
+/*******************************
+             Variations
+*******************************/
+

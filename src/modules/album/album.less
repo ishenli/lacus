@@ -1,0 +1,102 @@
+/**
+ * @file 默认album样式
+ * @author ishenli（shenli03@baidu.com）
+ */
+//覆盖dialog的样式
+.mp-dialog{
+    .mp-dialog-close:hover{
+        color: @white;
+    }
+}
+.mp-album{
+    position: relative;
+    .handler{
+        position: absolute;
+        top: 45%;
+        z-index: 10;
+        cursor: pointer;
+        font-size: 30px;
+    }
+    .iconfont{
+        color: @white;
+        .user-select(none);
+    }
+    .prev{
+        left: 35px;
+    }
+    .next{
+        right: 375px;
+    }
+    .box{
+        position: relative;
+        background-color: #191919;
+    }
+    .box-main{
+        position: relative;
+        overflow: hidden;
+    }
+    .box-aside{
+        position: absolute;
+        width: 300px;
+        top: 0;
+        right: 0;
+        background-color: #F5F5F5;
+        overflow-y: auto;
+        .aside-wrap{
+            padding: 10px;
+        }
+        .head{
+            line-height: 38px;
+            font-size: 14px;
+            border-bottom: 1px solid #E0E0E0;
+            .num {
+                font-size: 16px;
+                font-weight: 700;
+                padding-right: 10px;
+                color: @warningColor;
+            }
+        }
+        .desc{
+            line-height: 2em;
+            padding-top: 8px;
+        }
+    }
+}
+
+//没有dialog的交互
+.mp-gallery{
+    .box{
+        position: relative;
+    }
+    .box-main{
+        position: relative;
+        overflow: hidden;
+    }
+    .box-aside{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        height: 50px;
+        line-height: 50px;
+        .head{
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding-left: 10px;
+            .num {
+                font-size: 26px;
+                font-weight: 700;
+                padding-right: 10px;
+                color: @warningColor;
+                font-family: Georgia, 'Monotype Corsiva', Arial, sans-serif;
+                font-style: italic;
+            }
+        }
+        .desc{
+            .lh(50px);
+            font-size: 20px;
+            width: 100%;
+        }
+    }
+}

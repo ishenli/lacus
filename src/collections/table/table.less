@@ -1,0 +1,102 @@
+/**
+ * @file 表格
+ * @author shenli <shenli03@baidu.com>
+ */
+/*******************************
+             Basic
+*******************************/
+/*doc
+---
+title: table
+name: table
+category: collections
+---
+表哥
+
+```html_example
+
+```
+*/
+.mp-table{
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    width: 100%;
+    text-align: left;
+    th,td{
+        padding: 0 20px;
+        height: 40px;
+        line-height: _20px;
+        text-align: left;
+        border-bottom: 1px solid #e2e2e2;
+    }
+    th{
+        font-size: 14px;
+        background-color: #F1F1F1;
+    }
+}
+/*******************************
+             Types
+*******************************/
+.mp-table-primary{
+    font-size: 14px;
+    th{
+        height: 32px;
+    }
+    td,th{
+        padding: 0 5px;
+    }
+    td{
+        height: 37px;
+    }
+    th:hover,.bg-hover{
+        background-color: #fff1e4;
+    }
+    .status-main,.status1{
+        color: @main-color;
+    }
+    .status2{
+        color:green;
+    }
+    .status-gray,.gametype,.server-time{
+        color: @text-gray;
+    }
+    .start-btn{
+        width: 65px;
+        margin-left: 5px;
+        .vertical-align(22px)
+    }
+    .download-td{
+        padding: 0;
+    }
+    .download-wrap{
+        position: relative;
+
+    }
+    .download{
+        position: absolute;
+        left: 100%;
+        top: -12px;
+        width: 38px;
+        .vertical-align(36px);
+        text-align: center;
+        visibility: hidden;
+        color: @white;
+    }
+    .item-hover{
+        background: #f1f1f1;
+        .download{
+            visibility: visible;
+        }
+    }
+}
+
+/*******************************
+             States
+*******************************/
+
+
+/*******************************
+             Variations
+*******************************/
+
+

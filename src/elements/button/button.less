@@ -1,156 +1,171 @@
 /**
- * @file 按钮样式
- * @author shenli （meshenli@gmail.com）
- * thanks to https://github.com/yui/pure/blob/master/src/btns/css/buttons.css
+ * @file 按钮
+ * @author shenli <shenli03@baidu.com>
  */
+/*******************************
+             Basic
+*******************************/
+/*doc
+---
+title: button
+name: button
+category: elements
+---
 
-@import "../../base/main";
-.ui-btn {
+```html_example
+   <div class="mp-btn mp-btn-default">default</div>
+```
+Button                                                            | Modifier Class
+----------------------------------------------------------------- | -----------------
+ <div class="mp-btn mp-btn-primary">button</div>              | `mp-btn-primary`
+ <div class="mp-btn mp-btn-primary2">button</div>              | `mp-btn-primary2`
+ <div class="mp-btn mp-btn-focus">button</div>              | `mp-btn-focus`
+ <div class="mp-btn mp-btn-blue">button</div>              | `mp-btn-blue`
+ <div class="mp-btn mp-btn-disable">disable</div>              | `mp-btn-disable`
+ <div class="mp-btn mp-btn-default">default</div>              | `mp-btn-default`
+ <div class="mp-btn mp-btn-success">success</div>              | `mp-btn-success`
+ <div class="mp-btn mp-btn-warning">warning</div>              | `mp-btn-warning`
+*/
+.mp-btn {
     position: relative;
     .inline-block();
-    .border-radius(2px);
-    padding: 0.5em 1em;
-    vertical-align: middle;
     text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    .vertical-align(26px);
+    padding: 0 10px;
     word-wrap: normal;
     white-space: nowrap;
-    text-decoration: none;
-    font-family: inherit;
-    border: 1px solid #999;  /*IE 6/7/8*/
-    border: none rgba(0, 0, 0, 0);  /*IE9 + everything else*/
-    background: @mainColor;
-    font-size: 100%;
-    *font-size: 90%; /*IE 6/7 - To reduce IE's oversized button text*/
-    *overflow: visible; /*IE 6/7 - Because of IE's overly large left/right padding on buttons */
-    color: @white; /* rgba not supported (IE 8) */
-    cursor: pointer;
-}
-
-//.ui-btn-hover,
-//.ui-btn:hover,
-//.ui-btn:focus{
-//    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000',GradientType=0);
-//    .linear-gradient(to bottom,transparent , rgba(0,0,0, 0.10));
-//
-//}
-
-//去掉浏览器的默认虚线
-.ui-btn:focus{
-    outline: none;
-}
-
-//不添加颜色等变化，由修饰类定义
-.ui-btn-active,
-.ui-btn:active{
-    box-shadow: 0 0 0 1px rgba(0,0,0, 0.15) inset, 0 0 6px rgba(0,0,0, 0.20) inset;
-}
-
-.ui-btn-disable{
-    &,&:hover,&:focus,&:active{
-        border: none;
-        background-image: none;
-        filter: progid:DXImageTransform.Microsoft.gradient(enabled = false); /* 去除IE滤镜*/
-        .opacity(40);
-        border-shadow:none;
-    }
-}
-
-.ui-btn-hidden{
-    display: none;
-}
-
-/*---尺寸大小----*/
-.ui-btn-xsmall {
-    font-size: 70%;
-}
-
-.ui-btn-small {
-    font-size: 85%;
-}
-
-.ui-btn-large {
-    font-size: 110%;
-}
-
-.ui-btn-xlarge {
-    font-size: 125%;
-}
-
-/*---颜色----*/
-.ui-btn-primary {
-    background: #ff9600;
-    .vertical-gradient(#ff9600,#ff8400);
-    border: 1px solid #e27913;
-    .box-shadow( 0 1px 1px 0 rgba(0, 0, 0, 0.25));
-    color: @white;
-    &:hover{
-        background: #fe7300;
-        .vertical-gradient(#fe7b00,#fe7300);
-        border: 1px solid #c15604;
-        color: #fff;
-    }
-}
-
-//默认样式
-.ui-btn-default {
-    border: 1px solid #d1d1d1;
-    color: #666666;
-    background: #fbfbfb;
-    .vertical-gradient(#ffffff,#fbfbfb);
-}
-
-//高亮的样式,扁平一点
-.ui-btn.ui-btn-focus {
-    border: 1px solid @mainColor;
     color: #fff;
-    background: @mainColor;
-    &:hover{
-        background: #fc531f;
-        color: #fff;
+    font-size: 13px;
+    .border-radius(2px);
+    *zoom: 1;
+    *overflow: visible;
+    border: none; //去除<button/>的边框
+    font-family: "Microsoft Yahei", "微软雅黑";
+    &:hover {
         text-decoration: none;
     }
 }
 
-.ui-btn.ui-btn-success {
-    background: @green; /* this is a green */
-    color: @white;
-    border:1px solid @greenHover ;
-    &:hover{
-        background-color: @greenHover;
-    }
-}
-
-.ui-btn.ui-btn-error {
-    background: rgb(202, 60, 60); /* this is a maroon */
-}
-
-.ui-btn.ui-btn-warning {
-    background: rgb(223, 117, 20); /* this is an orange */
-}
-
-.ui-btn.ui-btn-secondary {
-    background: rgb(66, 184, 221); /* this is a light blue */
-}
-
-.ui-btn.ui-btn-blue{
-    background-color: @blue;
-    color: @white;
-    &:hover{
-        background-color: @blueHover;
-    }
-
-}
-//表单按钮的时候，可能要嵌套一个文本标签
-.ui-btn-txt {
+/*******************************
+             Types
+*******************************/
+.mp-btn-txt {
     .inline-block();
-    overflow: visible;
+    cursor: pointer;
     border: 0;
     text-decoration: none;
+    overflow: visible;
     font-size: 14px;
     font-weight: 700;
-    cursor: pointer;
 }
 
-.ui-btn a.ui-btn-txt:hover {
+.mp-btn a.mp-btn-txt:hover {
     text-decoration: none;
+}
+
+/*******************************
+             States
+*******************************/
+//中间页用的最多
+.mp-btn-primary,
+.mp-btn-focus2 {
+    color: #fff;
+    background: @main-color;
+    border: 1px solid #ff7010;
+    &:hover {
+        background: #fc531f;
+        color: #fff;
+    }
+}
+
+.mp-btn-primary2 {
+    background: #ff9600;
+    .vertical-gradient(#ff9600, #ff8400);
+    .border(#e27913);
+    .box-shadow(0 1px 1px 0 rgba(0, 0, 0, 0.25));
+    &:hover {
+        background: #fe7300;
+        .vertical-gradient(#fe7b00, #fe7300);
+        border-color: #c15604;
+        color: #fff;
+    }
+}
+
+.mp-btn-default {
+    .border(@border-gray);
+    color: @font-default;
+    background: #fbfbfb;
+    .linear-gradient(bottom, #ffffff, #fbfbfb);
+    &:hover {
+        background: #fafafa;
+    }
+}
+
+.mp-btn-normal,
+.mp-btn-disable {
+    background: #ececec;
+    .border(#e2e2e2);
+    color: #ccc;
+}
+
+.mp-btn-disable {
+    cursor: default;
+}
+
+.mp-btn-focus {
+    .border(@main-color);
+    background: @main-color;
+    &:hover {
+        background: #fc531f;
+    }
+}
+
+.mp-btn-success {
+    .border(@success-color);
+    background: @success-color;
+    &:hover {
+        background: @success-color-deep;
+    }
+}
+
+.mp-btn-warning {
+    .border(@warning-color);
+    background: @warning-color;
+    &:hover {
+        background: @warning-color-deep;
+    }
+}
+
+.mp-btn-img {
+    background: @main-color;
+    border: 1px solid #ff7010;
+    &:hover {
+        background: url(@button-url) 0 0 no-repeat;
+    }
+}
+
+//蓝色按钮
+.mp-btn-blue {
+    background: #3498DB;
+    &:hover {
+        background: #2980b9;
+    }
+}
+
+/*******************************
+             Variations
+*******************************/
+
+.mp-btn-large {
+    padding: 0 40px;
+    .vertical-align(28px);
+}
+
+.mp-btn-middle {
+    padding: 0 10px;
+    .vertical-align(22px);
 }

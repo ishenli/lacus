@@ -1,18 +1,31 @@
 /**
- * @file 下拉按钮，需要与js配合
- * @author shenli （meshenli@gmail.com）
+ * @file 
+ * @author shenli <shenli03@baidu.com>
  */
 
+
+/*******************************
+             Basic
+*******************************/
 //下拉菜单
-.btn-dropdown-wrap {
+.mp-btn-dropdown-wrap {
     position: relative;
-    .inline-block();
+    .open {
+        z-index: 100;
+    }
 }
 
-.btn-dropdown {
+.mp-btn-dropdown {
+    position: relative;
+}
+
+.mp-btn-dropdown-middle {
     display: none;
-    .ablt(0,22px);
-    width: 97%;
+    position: absolute;
+    left: 0;
+    width: 98%;
+    top: 28px;
+    _width: 79px;
     background: #fff;
     list-style: none;
     border: 1px solid #cbcbcb;
@@ -21,36 +34,40 @@
     zoom: 1;
     z-index: 1000;
     a {
-        .lh(20px);
-    }
-}
-
-.btn-dropdown-middle {
-    top: 28px;
-    font-size: 14px;
-    a {
         .lh(26px);
     }
 }
 
-//open 由js添加
-.open {
-    z-index: 100;
-}
-
-.open .btn-dropdown {
+.open .mp-btn-dropdown-middle {
     display: block;
 }
 
-.btn-dropdown-item {
+.mp-btn-dropdown-item {
     border-bottom: 1px solid #cbcbcb;
     a {
         display: block;
-        color: @textBlack;
-        cursor: pointer;
         text-align: center;
-        &:hover {
+        color: #333333;
+        cursor: pointer;
+        &:hover{
             background: #ececec;
+
         }
     }
 }
+
+
+/*******************************
+             Types
+*******************************/
+
+
+/*******************************
+             States
+*******************************/
+
+
+/*******************************
+             Variations
+*******************************/
+

@@ -1,0 +1,60 @@
+/**
+ * @file 下拉框的样式
+ * @author shenli <shenli03@baidu.com>
+ * 前缀 mp-select ,目前用于新版页游中间页
+ */
+.mp-select-target{
+    position: relative;
+    .inline-block();
+    .border(@border-gray);
+    .lh(24px);
+    width: 100px;
+    padding-left: 8px;
+    font-size: 14px;
+    span{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 20px;
+        height: 100%;
+        border-left: 1px solid @border-gray;
+        text-align: center;
+    }
+    i{
+        font-size: 10px;
+        color: @border-gray;
+    }
+}
+.mp-select-cnt{
+    position: absolute;
+    .border(@border-gray);
+    width: 118px;
+    z-index: 1000;
+    line-height: 30px;
+    left: -1000em;
+    background: @white;
+    top: 0;
+    a {
+        height: 30px;
+        padding: 0 10px;
+        display: block;
+        overflow: hidden;
+        color: @text-black;
+        cursor: pointer;
+        &:hover{
+            background: @border-gray;
+        }
+    }
+    .mp-select-cur{
+        color: @main-color;
+    }
+}
+.mp-select-cols3{
+    width: 250px;
+    a{
+        float: left;
+        _display:inline;
+        width: 60px;
+
+    }
+}

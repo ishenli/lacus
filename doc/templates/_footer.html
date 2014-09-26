@@ -1,0 +1,40 @@
+      </div>
+    </div>
+  </section>
+  <footer>
+    The source code for this style guide is licensed under the MIT license.
+  </footer>
+</div>
+<script>
+$(document).ready(function() {
+
+  // build simple sidebar navigation
+  var $headers = $('.main > h1');
+  var $componentList = $('#sideMenu');
+
+  // set the active tab
+  var currentHref = document.location.pathname.substr(1);
+  if (currentHref)
+  {
+    $('.docNav').find('a[href^="' + currentHref + '"]').addClass('activeNavElem typeEmphasize');
+  }
+  else
+  {
+    $('.docNav').find('a').eq(0).addClass('activeNavElem typeEmphasize');
+  }
+
+    var header = $('#sideMenu');
+    var origOffsetY = header.offset().top;
+
+    function onScroll(e) {
+        window.scrollY >= origOffsetY
+                ? header.addClass('sticky')
+                : header.removeClass('sticky');
+    }
+
+    document.addEventListener('scroll', onScroll);
+
+});
+</script>
+</body>
+</html>

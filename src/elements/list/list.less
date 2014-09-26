@@ -2,37 +2,133 @@
  * @file list
  * @author shenli 
  */
+/*doc
+---
+title: list
+name: list
+category: elements
+---
 
-@import "../base/main";
+```html_example
+   <div class="mp-box mp-box-primary">
+        <div class="mp-box-head">
+            <h3 class="mp-box-head-title">游戏名称</h3>
+        </div>
+        <div>
+        	<ul class="mp-list mp-list-primary">
+        		<li class="mp-list-item">1.爱玩游戏</li>
+        		<li class="mp-list-item">1.爱玩游戏</li>
+        		<li class="mp-list-item">1.爱玩游戏</li>
+        		<li class="mp-list-item">1.爱玩游戏</li>
+        	</ul>
+        </div>
+    </div>
+```
+*/
+/*doc
+---
+title: list(btn or text)
+name: list(btn or text)
+category: elements
+---
 
-.ui-list{
-    .ui-list-item{
+```html_example
+   <div class="mp-box mp-box-primary">
+        <div class="mp-box-head">
+            <h3 class="mp-box-head-title">游戏名称</h3>
+        </div>
+        <div>
+        	<ul class="mp-list mp-list-primary mp-list-btn">
+        		<li class="mp-list-item">1.爱玩游戏<span class="mp-btn mp-btn-focus2 mp-list-more">按钮</span></li>
+        		<li class="mp-list-item">1.爱玩游戏<a href="#" class="mp-list-more">链接</a></li>
+        	</ul>
+        </div>
+    </div>
+```
+*/
+/*******************************
+             Basic
+*******************************/
+.mp-list{
+    margin: 0;
+    padding: 0;
+}
+
+.mp-list-title{
+    float: left;
+    width: 80px;
+    text-indent: 10px;
+    .vertical-align(24px);
+    color: @white;
+    background: url(@sprite-url) -30px -220px no-repeat;
+}
+
+
+/*******************************
+             Type
+*******************************/
+.mp-list-primary{
+    .mp-list-item{
+        margin: 0;
         position: relative;
         padding: 10px 9px;
-        border-bottom: 1px solid @borderGray;
+        border-bottom: 1px solid @border-gray;
         color: #999999;
         vertical-align: middle;
         &:hover{
             background: #f3f3f3;
         }
     }
-    .list-btn{
-        &:hover{
-            background: @white;
-        }
-        .ui-list-more{
-            .abrt(.5em,.5em);
-        }
-        .ui-btn{
-            padding: 0.3em .5em;
-        }
-    }
-    .ui-list-more{
+    .mp-list-more{
         float: right;
         font-size: 13px;
-        color: @mainColor;
-        .btn{
+        .mp-btn{
             margin-top: -3px;
         }
     }
 }
+
+/*doc
+---
+title: list(hot)
+name: list(hot)
+category: elements
+---
+
+```html_example
+<div style="width:250px;">
+<h4 class="mp-list-title">网页游戏</h4>
+<ul class="mp-list mp-list-secondary">
+    <li class="mp-list-item"><a href="#" class="mp-list-txt">游戏名称</a></li>
+    <li class="mp-list-item"><a href="#" class="mp-list-txt">游戏名称</a></li>
+</ul>
+</div>
+```
+*/
+.mp-list-secondary{
+    height: 24px;
+    overflow: hidden;
+    *zoom:1;
+    .mp-list-item{
+        float: left;
+        margin-left: -1px;
+        vertical-align:  middle;
+    }
+
+    .mp-list-txt{
+        display: block;
+        padding: 0 10px;
+        font-size: 13px;
+        line-height: 10px;
+        margin-bottom: 7px;
+        margin-top: 7px;
+        border-left: 1px solid @border-gray;
+    }
+}
+/*******************************
+             States
+*******************************/
+
+/*******************************
+             Variations
+*******************************/

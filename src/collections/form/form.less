@@ -1,0 +1,199 @@
+/**
+ * @file 表单项
+ * @author shenli （shenli03@baidu.com）
+ */
+.inputFoucs() {
+    border: 1px solid #07f;
+    .box-shadow(0 0 3px #8cddff);
+    color: #595959;
+}
+
+/*******************************
+             Basic
+*******************************/
+/*doc
+---
+title: form
+name: form
+category: collections
+---
+表单
+
+```html_example
+     <form class="mp-form mp-form-horizontal" id="form">
+        <fieldset>
+            <div class="mp-form-item mp-form-error">
+                <label for="name" class="mp-form-label">用户名:</label>
+                <input id="name" name="username" class="mp-input" data-explain="用户名为邮箱"/>
+                <p class="mp-form-explain">用户名为邮箱</p>
+            </div>
+            <div class="mp-form-item mp-form-focus">
+                <label for="password" class="mp-form-label">密码:</label>
+                <input id="password" class="mp-input" type="password" data-explain="请输入密码"/>
+                <p class="mp-form-explain">请输入密码</p>
+            </div>
+            <div class="mp-form-item mp-form-success">
+                <label for="repassword" class="mp-form-label">重复输入密码:</label>
+                <input id="repassword" class="mp-input" type="password" data-explain="重复输入密码"/>
+                <p class="mp-form-explain">重复输入密码</p>
+            </div>
+            <div class="mp-form-item">
+                <label for="email" class="mp-form-label">邮箱:</label>
+                <input id="email" class="mp-input" type="email"/>
+                <p class="mp-form-explain">请输入邮箱</p>
+            </div>
+            <div class="mp-form-item">
+                <input type="submit" class="mp-btn mp-btn-blue" value="提交"/>
+            </div>
+        </fieldset>
+    </form>
+```
+*/
+/*doc
+---
+title: form（vertical）
+name: form(vertical）
+category: collections
+---
+垂直排版的表单，通过给form添加`mp-form-vertical`实现
+
+```html_example
+     <form class="mp-form mp-form-vertical" id="form">
+        <fieldset>
+            <div class="mp-form-item mp-form-error">
+                <label for="name" class="mp-form-label">用户名:</label>
+                <input id="name" name="username" class="mp-input" data-explain="用户名为邮箱"/>
+                <p class="mp-form-explain">用户名为邮箱</p>
+            </div>
+            <div class="mp-form-item">
+                <label for="email" class="mp-form-label">邮箱:</label>
+                <input id="email" class="mp-input" type="email"/>
+                <p class="mp-form-explain">请输入邮箱</p>
+            </div>
+            <div class="mp-form-item">
+                <input type="submit" class="mp-btn mp-btn-blue" value="提交"/>
+            </div>
+        </fieldset>
+    </form>
+```
+*/
+.mp-form {
+    line-height: 1.5;
+    fieldset {
+        // why not none
+        //http://stackoverflow.com/questions/2922909/should-i-use-border-none-or-border-0
+        border: 0;
+    }
+    legend {
+        display: none;
+    }
+    .mp-form-item {
+        zoom: 1;
+    }
+    .mp-form-label {
+
+        width: 170px;
+
+        padding-top: 5px;
+        font-size: 14px;
+    }
+    .mp-form-text {
+        display: inline-block;
+        margin-top: 6px;
+    }
+    .mp-form-other {
+        margin-left: 8px;
+    }
+    .mp-form-explain {
+        padding: 8px 0 0;
+        color: @text-gray;
+    }
+
+    .mp-input {
+        color: #595959;
+        vertical-align: middle;
+    }
+}
+
+.mp-input {
+    padding: 7px 9px;
+    line-height: 18px;
+    border: 1px solid #c1c1c1;
+    color: #595959;
+    font-size: 12px;
+}
+
+/*******************************
+             Types
+*******************************/
+.mp-form-error {
+    .mp-input {
+        border: 1px solid red;
+        color: red;
+    }
+    .mp-form-explain {
+        color: @warning-color;
+    }
+}
+
+.mp-form-success {
+    .mp-form-explain {
+        color: @success-color;
+    }
+}
+
+.mp-form-focus {
+    .mp-input,
+    .mp-textarea {
+        .inputFoucs()
+    }
+}
+
+.mp-form-horizontal {
+    .mp-form-label {
+        float: left;
+        margin-left: -180px;
+        text-align: right;
+    }
+    .mp-form-item {
+        padding: 0 5px 20px 170px;
+    }
+}
+
+.mp-form-vertical {
+    .mp-form-label {
+        display: block;
+        margin-bottom: 8px;
+    }
+    .mp-form-item {
+        padding: 0 5px 20px 0;
+    }
+}
+
+/*******************************
+             States
+*******************************/
+.mp-input:focus,
+.mp-textarea:focus,
+.mp-input-focus {
+    .inputFoucs()
+}
+
+.mp-input:hover,
+.mp-textarea:hover,
+.mp-input-hover {
+    border: 1px solid #727272;
+    border-top-color: gray;
+}
+
+.mp-input:disabled,
+.mp-textarea:disabled,
+.mp-input[disabled],
+.mp-textarea[disabled] {
+    border: 1px solid #ccc;
+    background: #f2f2f2;
+}
+
+/*******************************
+             Variations
+*******************************/

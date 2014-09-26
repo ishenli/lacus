@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Iwan Style Guide iwan-widget</title>
+    <link rel="shortcut icon" href="static/brick.png" />
+
+    <!-- Styleguide CSS -->
+    <link rel="stylesheet" href="static/css/doc.css">
+    <link rel="stylesheet" href="static/css/github.css">
+
+    <link rel="stylesheet" href="../../asset/all/all.css">
+    <!-- CSS to be documented -->
+    <link rel="stylesheet" href="build/css/screen.css">
+
+
+
+    <!-- Main libraries -->
+    <script src="http://s1.bdstatic.com/r/www/cache/static/jquery/jquery-1.10.2.min_f2fb5194.js"></script>
+    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>-->
+    <!-- component js and init scripts -->
+    <script src="build/script/components.js"></script>
+
+
+</head>
+
+  <body>
+    <header class="header pbn" role="banner">
+      <div class="backgroundHighlight typeReversed1">
+        <div class="container">
+          <h1 class="h2 mvs">Iwan Style Guide</h1>
+        </div>
+      </div>
+      <div class="backgroundLowlight typeReversed1">
+        <div class="container">
+            <ul class="docNav listInline">
+              <!-- Add you pages here -->
+              <li><a href="index.html">index</a></li>
+              <li><a href="elements.html">elements</a></li>
+              <li><a href="modules.html">modules</a></li>
+              <li><a href="collections.html">collections</a></li>
+              <li><a href="iwan-widget.html">iwan widget</a></li>
+              <li><a href="components.html">Components</a></li>
+              <li><a href="javascript.html">Javascript</a></li>
+            </ul>
+        </div>
+      </div>
+      <!-- //header/container -->
+    </header>
+
+    <div class="content">
+      <section>
+        <div class="line">
+
+          <div class="col cols4">
+            <div class="componentMenu box boxBasic backgroundBasic" id="sideMenu">
+                <ul class="componentList listBorderedHover">
+                    
+                    <li><a href="#box(primary)">box-primary</a></li>
+                    
+                    <li><a href="#box(secondary)">box-secondary</a></li>
+                    
+                    <li><a href="#box-five">box(five)</a></li>
+                    
+                    <li><a href="#box-line">box(line)</a></li>
+                    
+                    <li><a href="#box-six">box(six)</a></li>
+                    
+                    <li><a href="#box-tab">box(tab)</a></li>
+                    
+                    <li><a href="#box-tertiary">box(tertiary)</a></li>
+                    
+                    <li><a href="#button">button</a></li>
+                    
+                    <li><a href="#checkbox(primary)">checkbox-primary</a></li>
+                    
+                    <li><a href="#image">image</a></li>
+                    
+                    <li><a href="#list">list</a></li>
+                    
+                    <li><a href="#list(btn or text)">list(btn or text)</a></li>
+                    
+                    <li><a href="#list(hot)">list(hot)</a></li>
+                    
+                    <li><a href="#loading">loading</a></li>
+                    
+                    <li><a href="#progress">progress</a></li>
+                    
+                    <li><a href="#tip">tip</a></li>
+                    
+                    <li><a href="#tip(star)">tip(star)</a></li>
+                    
+                    <li><a href="#tiptext">tiptext</a></li>
+                    
+                    <li><a href="#tiptext(arrow)">tiptext(arrow)</a></li>
+                    
+                </ul>
+            </div>
+          </div>
+          <div class="main col cols20 lastCol">
+<h1 id="box(primary)">box-primary</h1>
+
+<p>带边框和标题的标准区块,默认样式没有父类，带有前缀，不会和业务样式产生冲突</p>
+<div class="codeExample"><div class="exampleOutput">    <div class="mp-box mp-box-primary">
+        <div class="mp-box-head">
+            <h3 class="mp-box-head-title"><strong class="mp-highlight">最新</strong>游戏</h3>
+        </div>
+        <div class="mp-box-container">
+            <div class="mp-box-content">box内容</div>
+        </div>
+    </div>
+</div><div class="codeBlock"><div class="highlight"><pre>    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-box mp-box-primary"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-box-head"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"mp-box-head-title"</span><span class="nt">&gt;&lt;strong</span> <span class="na">class=</span><span class="s">"mp-highlight"</span><span class="nt">&gt;</span>最新<span class="nt">&lt;/strong&gt;</span>游戏<span class="nt">&lt;/h3&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-box-container"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-box-content"</span><span class="nt">&gt;</span>box内容<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div>
+<h1 id="box(secondary)">box-secondary</h1>
+
+<p>爱玩首页带图标的导航无背景色的导航</p>
+<div class="codeExample"><div class="exampleOutput">   <div class="mp-box mp-box-secondary">
+        <div class="mp-box-head">
+            <h3 class="mp-box-head-title"><i class="iconfont">&#x344c;</i>游戏名称</h3>
+            <a class="mp-box-head-btn">更多<i class="mp-arrow arrow-r"></i></a>
+        </div>
+        <div class="mp-box-content">box内容</div>
+    </div>
+</div><div class="codeBlock"><div class="highlight"><pre>   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-box mp-box-secondary"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-box-head"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"mp-box-head-title"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"iconfont"</span><span class="nt">&gt;</span><span class="ni">&amp;#x344c;</span><span class="nt">&lt;/i&gt;</span>游戏名称<span class="nt">&lt;/h3&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"mp-box-head-btn"</span><span class="nt">&gt;</span>更多<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"mp-arrow arrow-r"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-box-content"</span><span class="nt">&gt;</span>box内容<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div>
+<h1 id="box-five">box(five)</h1>
+
+<p>头部直线的box</p>
+<div class="codeExample"><div class="exampleOutput">
+<div class="mp-box mp-box-five">
+    <h3 class="mp-box-head-title mp-png">游戏名称</h3>
+    <p class="mp-box-head-more">展开查看全部</p>
+</div>
+</div><div class="codeBlock"><div class="highlight"><pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-box mp-box-five"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"mp-box-head-title mp-png"</span><span class="nt">&gt;</span>游戏名称<span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mp-box-head-more"</span><span class="nt">&gt;</span>展开查看全部<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div>
+<h1 id="box-line">box(line)</h1>
+<div class="codeExample"><div class="exampleOutput">    <div class="mp-box">
+        <div class="mp-box-head-line">
+            <h3 class="mp-box-head-title">游戏名称</h3>
+        </div>
+        <div class="mp-box-content">box内容</div>
+    </div>
+</div><div class="codeBlock"><div class="highlight"><pre>    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-box"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-box-head-line"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"mp-box-head-title"</span><span class="nt">&gt;</span>游戏名称<span class="nt">&lt;/h3&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-box-content"</span><span class="nt">&gt;</span>box内容<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div>
+<h1 id="box-six">box(six)</h1>
+
+<p>头部直线的box</p>
+<div class="codeExample"><div class="exampleOutput">
+<div class="mp-box mp-box-six">
+    <div class="mp-box-head">
+        <h3 class="mp-box-head-title">游戏名称</h3>
+        <a class="mp-box-head-more">更多&gt;&gt;</a>
+    </div>
+</div>
+</div><div class="codeBlock"><div class="highlight"><pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-box mp-box-six"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-box-head"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"mp-box-head-title"</span><span class="nt">&gt;</span>游戏名称<span class="nt">&lt;/h3&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"mp-box-head-more"</span><span class="nt">&gt;</span>更多<span class="ni">&amp;gt;&amp;gt;</span><span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div>
+<h1 id="box-tab">box(tab)</h1>
+
+<p>带有tab切换的box,该组件需要与js相结合</p>
+<div class="codeExample"><div class="exampleOutput">    <div class="mp-box mp-box-tab">
+        <div class="mp-box-head">
+            <h3 class="mp-box-head-title active">游戏名称</h3>
+            <h3 class="mp-box-head-title">游戏名称2</h3>
+            <div class="mp-line"></div>
+        </div>
+        <div class="mp-box-content">box内容</div>
+    </div>
+</div><div class="codeBlock"><div class="highlight"><pre>    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-box mp-box-tab"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-box-head"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"mp-box-head-title active"</span><span class="nt">&gt;</span>游戏名称<span class="nt">&lt;/h3&gt;</span>
+            <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"mp-box-head-title"</span><span class="nt">&gt;</span>游戏名称2<span class="nt">&lt;/h3&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-line"</span><span class="nt">&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-box-content"</span><span class="nt">&gt;</span>box内容<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div>
+<h1 id="box-tertiary">box(tertiary)</h1>
+
+<p>爱玩首页带图标的导航无背景色的导航</p>
+<div class="codeExample"><div class="exampleOutput">    <div class="mp-box mp-box-tertiary">
+        <div class="mp-box-head">
+            <h3 class="mp-box-head-title">游戏名称</h3>
+            <div class="keystone"></div>
+        </div>
+        <div class="mp-box-content">box内容</div>
+    </div>
+</div><div class="codeBlock"><div class="highlight"><pre>    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-box mp-box-tertiary"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-box-head"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"mp-box-head-title"</span><span class="nt">&gt;</span>游戏名称<span class="nt">&lt;/h3&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"keystone"</span><span class="nt">&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-box-content"</span><span class="nt">&gt;</span>box内容<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div>
+<h1 id="button">button</h1>
+<div class="codeExample"><div class="exampleOutput">   <div class="mp-btn mp-btn-default">default</div>
+</div><div class="codeBlock"><div class="highlight"><pre>   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-btn mp-btn-default"</span><span class="nt">&gt;</span>default<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div>
+<table><thead>
+<tr>
+<th>Button</th>
+<th>Modifier Class</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><div class="mp-btn mp-btn-primary">button</div></td>
+<td><code>mp-btn-primary</code></td>
+</tr>
+<tr>
+<td><div class="mp-btn mp-btn-primary2">button</div></td>
+<td><code>mp-btn-primary2</code></td>
+</tr>
+<tr>
+<td><div class="mp-btn mp-btn-focus">button</div></td>
+<td><code>mp-btn-focus</code></td>
+</tr>
+<tr>
+<td><div class="mp-btn mp-btn-blue">button</div></td>
+<td><code>mp-btn-blue</code></td>
+</tr>
+<tr>
+<td><div class="mp-btn mp-btn-disable">disable</div></td>
+<td><code>mp-btn-disable</code></td>
+</tr>
+<tr>
+<td><div class="mp-btn mp-btn-default">default</div></td>
+<td><code>mp-btn-default</code></td>
+</tr>
+<tr>
+<td><div class="mp-btn mp-btn-success">success</div></td>
+<td><code>mp-btn-success</code></td>
+</tr>
+<tr>
+<td><div class="mp-btn mp-btn-warning">warning</div></td>
+<td><code>mp-btn-warning</code></td>
+</tr>
+</tbody></table>
+
+<h1 id="checkbox(primary)">checkbox-primary</h1>
+
+<p>默认的checkbox样式，横向排放</p>
+<div class="codeExample"><div class="exampleOutput"><div class="mp-checkbox mp-checkbox-primary">
+    <span class="mp-checkbox-icon">
+        <i></i>
+    </span>
+    <label class="mp-checkbox-label">你是谁</label>
+</div>
+<div class="mp-checkbox mp-checkbox-primary mp-checkbox-active">
+    <span class="mp-checkbox-icon">
+        <i></i>
+    </span>
+    <label class="mp-checkbox-label">你是谁</label>
+</div>
+</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-checkbox mp-checkbox-primary"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mp-checkbox-icon"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"mp-checkbox-label"</span><span class="nt">&gt;</span>你是谁<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-checkbox mp-checkbox-primary mp-checkbox-active"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mp-checkbox-icon"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"mp-checkbox-label"</span><span class="nt">&gt;</span>你是谁<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div>
+<h1 id="image">image</h1>
+<div class="codeExample"><div class="exampleOutput">    <div class="mp-image">
+        <img src="http://bcscdn.baidu.com/resource/fFhOuUkRuUZSZIsenFvkrUswuWswZmsenGv3XURbZIkRZWjwBIjY.jpg"/>
+    </div>
+    <img class="mp-image-disable" src="http://bcscdn.baidu.com/resource/fFhOuUkRuUZSZIsenFvkrUswuWswZmsenGv3XURbZIkRZWjwBIjY.jpg"/>
+    <img class="mp-image-circular" src="http://bcscdn.baidu.com/resource/fFhOuUkRuUZSZIsenFvkrUswuWswZmsenGv3XURbZIkRZWjwBIjY.jpg"/>
+</div><div class="codeBlock"><div class="highlight"><pre>    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-image"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"http://bcscdn.baidu.com/resource/fFhOuUkRuUZSZIsenFvkrUswuWswZmsenGv3XURbZIkRZWjwBIjY.jpg"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"mp-image-disable"</span> <span class="na">src=</span><span class="s">"http://bcscdn.baidu.com/resource/fFhOuUkRuUZSZIsenFvkrUswuWswZmsenGv3XURbZIkRZWjwBIjY.jpg"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"mp-image-circular"</span> <span class="na">src=</span><span class="s">"http://bcscdn.baidu.com/resource/fFhOuUkRuUZSZIsenFvkrUswuWswZmsenGv3XURbZIkRZWjwBIjY.jpg"</span><span class="nt">/&gt;</span>
+</pre></div></div></div>
+<h1 id="list">list</h1>
+<div class="codeExample"><div class="exampleOutput">   <div class="mp-box mp-box-primary">
+        <div class="mp-box-head">
+            <h3 class="mp-box-head-title">游戏名称</h3>
+        </div>
+        <div>
+            <ul class="mp-list mp-list-primary">
+                <li class="mp-list-item">1.爱玩游戏</li>
+                <li class="mp-list-item">1.爱玩游戏</li>
+                <li class="mp-list-item">1.爱玩游戏</li>
+                <li class="mp-list-item">1.爱玩游戏</li>
+            </ul>
+        </div>
+    </div>
+</div><div class="codeBlock"><div class="highlight"><pre>   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-box mp-box-primary"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-box-head"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"mp-box-head-title"</span><span class="nt">&gt;</span>游戏名称<span class="nt">&lt;/h3&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div&gt;</span>
+            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"mp-list mp-list-primary"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"mp-list-item"</span><span class="nt">&gt;</span>1.爱玩游戏<span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"mp-list-item"</span><span class="nt">&gt;</span>1.爱玩游戏<span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"mp-list-item"</span><span class="nt">&gt;</span>1.爱玩游戏<span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"mp-list-item"</span><span class="nt">&gt;</span>1.爱玩游戏<span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div>
+<h1 id="list(btn or text)">list(btn or text)</h1>
+<div class="codeExample"><div class="exampleOutput">   <div class="mp-box mp-box-primary">
+        <div class="mp-box-head">
+            <h3 class="mp-box-head-title">游戏名称</h3>
+        </div>
+        <div>
+            <ul class="mp-list mp-list-primary mp-list-btn">
+                <li class="mp-list-item">1.爱玩游戏<span class="mp-btn mp-btn-focus2 mp-list-more">按钮</span></li>
+                <li class="mp-list-item">1.爱玩游戏<a href="#" class="mp-list-more">链接</a></li>
+            </ul>
+        </div>
+    </div>
+</div><div class="codeBlock"><div class="highlight"><pre>   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-box mp-box-primary"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-box-head"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"mp-box-head-title"</span><span class="nt">&gt;</span>游戏名称<span class="nt">&lt;/h3&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div&gt;</span>
+            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"mp-list mp-list-primary mp-list-btn"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"mp-list-item"</span><span class="nt">&gt;</span>1.爱玩游戏<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mp-btn mp-btn-focus2 mp-list-more"</span><span class="nt">&gt;</span>按钮<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"mp-list-item"</span><span class="nt">&gt;</span>1.爱玩游戏<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"mp-list-more"</span><span class="nt">&gt;</span>链接<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div>
+<h1 id="list(hot)">list(hot)</h1>
+<div class="codeExample"><div class="exampleOutput"><div style="width:250px;">
+<h4 class="mp-list-title">网页游戏</h4>
+<ul class="mp-list mp-list-secondary">
+    <li class="mp-list-item"><a href="#" class="mp-list-txt">游戏名称</a></li>
+    <li class="mp-list-item"><a href="#" class="mp-list-txt">游戏名称</a></li>
+</ul>
+</div>
+</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"width:250px;"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"mp-list-title"</span><span class="nt">&gt;</span>网页游戏<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"mp-list mp-list-secondary"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"mp-list-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"mp-list-txt"</span><span class="nt">&gt;</span>游戏名称<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"mp-list-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"mp-list-txt"</span><span class="nt">&gt;</span>游戏名称<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div>
+<h1 id="loading">loading</h1>
+<div class="codeExample"><div class="exampleOutput">   <div class="mp-loading">
+        <div class="mp-loading-inner"><p>数据正在载入中。。。</p></div>
+   </div>
+</div><div class="codeBlock"><div class="highlight"><pre>   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-loading"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-loading-inner"</span><span class="nt">&gt;&lt;p&gt;</span>数据正在载入中。。。<span class="nt">&lt;/p&gt;&lt;/div&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div>
+<p>数据载入效果。。。</p>
+
+<h1 id="progress">progress</h1>
+<div class="codeExample"><div class="exampleOutput">   <div class="mp-progress">
+        <div class="mp-progress-inner" style="width:80%"></div>
+    </div>
+    <div class="mp-progress success">
+        <div class="mp-progress-inner" style="width:80%"></div>
+    </div>
+    <div class="mp-progress success active">
+        <div class="mp-progress-inner"></div>
+    </div>
+    <div class="mp-progress success animate">
+        <div class="mp-progress-inner" ></div>
+    </div>
+    <div class="mp-progress success mp-striped">
+        <div class="mp-progress-inner" ></div>
+    </div>
+</div><div class="codeBlock"><div class="highlight"><pre>   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-progress"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-progress-inner"</span> <span class="na">style=</span><span class="s">"width:80%"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-progress success"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-progress-inner"</span> <span class="na">style=</span><span class="s">"width:80%"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-progress success active"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-progress-inner"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-progress success animate"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-progress-inner"</span> <span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-progress success mp-striped"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-progress-inner"</span> <span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div>
+<h1 id="tip">tip</h1>
+
+<p>tip是收藏功能时的提示框</p>
+<div class="codeExample"><div class="exampleOutput">   <div class="mp-tip">yeyou</div>
+</div><div class="codeBlock"><div class="highlight"><pre>   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-tip"</span><span class="nt">&gt;</span>yeyou<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div>
+<h1 id="tip(star)">tip(star)</h1>
+
+<p>透明星评级,通过绝对定位和背景遮掩实现,需在子元素通过<code>style=&quot;width:80%</code>设定高亮的星星比例</p>
+
+<p><em>ps:</em>星体的宽度为60px</p>
+<div class="codeExample"><div class="exampleOutput">    <div class="mp-tip-star">
+        <div class="mp-tip-star-ct" style="width:80%"></div>
+    </div>
+    <div class="mp-tip-star">
+        <div class="mp-tip-star-ct" style="width:60%"></div>
+    </div>
+    <div class="mp-tip-star">
+        <div class="mp-tip-star-ct" style="width:100%"></div>
+    </div>
+    <div class="mp-score-gray">
+        <div class="mp-score-gray-inner" style="width:80%"></div>
+    </div>
+</div><div class="codeBlock"><div class="highlight"><pre>    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-tip-star"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-tip-star-ct"</span> <span class="na">style=</span><span class="s">"width:80%"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-tip-star"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-tip-star-ct"</span> <span class="na">style=</span><span class="s">"width:60%"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-tip-star"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-tip-star-ct"</span> <span class="na">style=</span><span class="s">"width:100%"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-score-gray"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-score-gray-inner"</span> <span class="na">style=</span><span class="s">"width:80%"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div>
+<table><thead>
+<tr>
+<th>星星评级</th>
+<th>外观</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>mp-tip-star</td>
+<td>黄色的星星</td>
+</tr>
+<tr>
+<td>mp-score-gray</td>
+<td>灰色的星星</td>
+</tr>
+</tbody></table>
+
+<h1 id="tiptext">tiptext</h1>
+<div class="codeExample"><div class="exampleOutput">   <div class="mp-tiptext mp-tiptext-yeyou">yeyou</div>
+</div><div class="codeBlock"><div class="highlight"><pre>   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-tiptext mp-tiptext-yeyou"</span><span class="nt">&gt;</span>yeyou<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div>
+<table><thead>
+<tr>
+<th>tiptext</th>
+<th>Modifier Class</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><div class="mp-tiptext mp-tiptext-yeyou">网页游戏</div></td>
+<td><code>mp-tiptext-yeyou</code></td>
+</tr>
+<tr>
+<td><div class="mp-tiptext mp-tiptext-wangyou">网洛游戏</div></td>
+<td><code>mp-tiptext-wangyou</code></td>
+</tr>
+<tr>
+<td><div class="mp-tiptext mp-tiptext-xiaoyouxi">小游戏</div></td>
+<td><code>mp-tiptext-xiaoyouxi</code></td>
+</tr>
+<tr>
+<td><div class="mp-tiptext mp-tiptext-shouyou">手机游戏</div></td>
+<td><code>mp-tiptext-shouyu</code></td>
+</tr>
+<tr>
+<td><div class="mp-tiptext mp-tiptext-singlegame">单机游戏</div></td>
+<td><code>mp-tiptext-singlegame</code></td>
+</tr>
+</tbody></table>
+
+<h1 id="tiptext(arrow)">tiptext(arrow)</h1>
+<div class="codeExample"><div class="exampleOutput">   <div style="width:80px;" class="mp-tiptext-arrow mp-tiptext-primary mp-tiptext-orange">网页游戏</div>
+</div><div class="codeBlock"><div class="highlight"><pre>   <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"width:80px;"</span> <span class="na">class=</span><span class="s">"mp-tiptext-arrow mp-tiptext-primary mp-tiptext-orange"</span><span class="nt">&gt;</span>网页游戏<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div>
+<table><thead>
+<tr>
+<th>tiptext</th>
+<th>Modifier Class</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><div class="mp-tiptext-arrow mp-tiptext-primary mp-tiptext-orange">网页游戏</div></td>
+<td><code>mp-tiptext-orange</code></td>
+</tr>
+<tr>
+<td><div class="mp-tiptext-arrow mp-tiptext-primary mp-tiptext-purple">单机游戏</div></td>
+<td><code>mp-tiptext-puple</code></td>
+</tr>
+<tr>
+<td><div class="mp-tiptext-arrow mp-tiptext-primary mp-tiptext-blue">单机游戏</div></td>
+<td><code>mp-tiptext-blue</code></td>
+</tr>
+</tbody></table>
+      </div>
+    </div>
+  </section>
+  <footer>
+    The source code for this style guide is licensed under the MIT license.
+  </footer>
+</div>
+<script>
+$(document).ready(function() {
+
+  // build simple sidebar navigation
+  var $headers = $('.main > h1');
+  var $componentList = $('#sideMenu');
+
+  // set the active tab
+  var currentHref = document.location.pathname.substr(1);
+  if (currentHref)
+  {
+    $('.docNav').find('a[href^="' + currentHref + '"]').addClass('activeNavElem typeEmphasize');
+  }
+  else
+  {
+    $('.docNav').find('a').eq(0).addClass('activeNavElem typeEmphasize');
+  }
+
+    var header = $('#sideMenu');
+    var origOffsetY = header.offset().top;
+
+    function onScroll(e) {
+        window.scrollY >= origOffsetY
+                ? header.addClass('sticky')
+                : header.removeClass('sticky');
+    }
+
+    document.addEventListener('scroll', onScroll);
+
+});
+</script>
+</body>
+</html>

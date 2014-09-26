@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Iwan Style Guide collections</title>
+    <link rel="shortcut icon" href="static/brick.png" />
+
+    <!-- Styleguide CSS -->
+    <link rel="stylesheet" href="static/css/doc.css">
+    <link rel="stylesheet" href="static/css/github.css">
+
+    <link rel="stylesheet" href="../../asset/all/all.css">
+    <!-- CSS to be documented -->
+    <link rel="stylesheet" href="build/css/screen.css">
+
+
+
+    <!-- Main libraries -->
+    <script src="http://s1.bdstatic.com/r/www/cache/static/jquery/jquery-1.10.2.min_f2fb5194.js"></script>
+    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>-->
+    <!-- component js and init scripts -->
+    <script src="build/script/components.js"></script>
+
+
+</head>
+
+  <body>
+    <header class="header pbn" role="banner">
+      <div class="backgroundHighlight typeReversed1">
+        <div class="container">
+          <h1 class="h2 mvs">Iwan Style Guide</h1>
+        </div>
+      </div>
+      <div class="backgroundLowlight typeReversed1">
+        <div class="container">
+            <ul class="docNav listInline">
+              <!-- Add you pages here -->
+              <li><a href="index.html">index</a></li>
+              <li><a href="elements.html">elements</a></li>
+              <li><a href="modules.html">modules</a></li>
+              <li><a href="collections.html">collections</a></li>
+              <li><a href="iwan-widget.html">iwan widget</a></li>
+              <li><a href="components.html">Components</a></li>
+              <li><a href="javascript.html">Javascript</a></li>
+            </ul>
+        </div>
+      </div>
+      <!-- //header/container -->
+    </header>
+
+    <div class="content">
+      <section>
+        <div class="line">
+
+          <div class="col cols4">
+            <div class="componentMenu box boxBasic backgroundBasic" id="sideMenu">
+                <ul class="componentList listBorderedHover">
+                    
+                    <li><a href="#form">form</a></li>
+                    
+                    <li><a href="#form(vertical）">form（vertical）</a></li>
+                    
+                    <li><a href="#pagination">pagination</a></li>
+                    
+                    <li><a href="#tab">tab</a></li>
+                    
+                    <li><a href="#table">table</a></li>
+                    
+                </ul>
+            </div>
+          </div>
+          <div class="main col cols20 lastCol">
+<h1 id="form">form</h1>
+
+<p>表单</p>
+<div class="codeExample"><div class="exampleOutput">     <form class="mp-form mp-form-horizontal" id="form">
+        <fieldset>
+            <div class="mp-form-item mp-form-error">
+                <label for="name" class="mp-form-label">用户名:</label>
+                <input id="name" name="username" class="mp-input" data-explain="用户名为邮箱"/>
+                <p class="mp-form-explain">用户名为邮箱</p>
+            </div>
+            <div class="mp-form-item mp-form-focus">
+                <label for="password" class="mp-form-label">密码:</label>
+                <input id="password" class="mp-input" type="password" data-explain="请输入密码"/>
+                <p class="mp-form-explain">请输入密码</p>
+            </div>
+            <div class="mp-form-item mp-form-success">
+                <label for="repassword" class="mp-form-label">重复输入密码:</label>
+                <input id="repassword" class="mp-input" type="password" data-explain="重复输入密码"/>
+                <p class="mp-form-explain">重复输入密码</p>
+            </div>
+            <div class="mp-form-item">
+                <label for="email" class="mp-form-label">邮箱:</label>
+                <input id="email" class="mp-input" type="email"/>
+                <p class="mp-form-explain">请输入邮箱</p>
+            </div>
+            <div class="mp-form-item">
+                <input type="submit" class="mp-btn mp-btn-blue" value="提交"/>
+            </div>
+        </fieldset>
+    </form>
+</div><div class="codeBlock"><div class="highlight"><pre>     <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"mp-form mp-form-horizontal"</span> <span class="na">id=</span><span class="s">"form"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;fieldset&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-form-item mp-form-error"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"name"</span> <span class="na">class=</span><span class="s">"mp-form-label"</span><span class="nt">&gt;</span>用户名:<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"name"</span> <span class="na">name=</span><span class="s">"username"</span> <span class="na">class=</span><span class="s">"mp-input"</span> <span class="na">data-explain=</span><span class="s">"用户名为邮箱"</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mp-form-explain"</span><span class="nt">&gt;</span>用户名为邮箱<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-form-item mp-form-focus"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"password"</span> <span class="na">class=</span><span class="s">"mp-form-label"</span><span class="nt">&gt;</span>密码:<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"password"</span> <span class="na">class=</span><span class="s">"mp-input"</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">data-explain=</span><span class="s">"请输入密码"</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mp-form-explain"</span><span class="nt">&gt;</span>请输入密码<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-form-item mp-form-success"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"repassword"</span> <span class="na">class=</span><span class="s">"mp-form-label"</span><span class="nt">&gt;</span>重复输入密码:<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"repassword"</span> <span class="na">class=</span><span class="s">"mp-input"</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">data-explain=</span><span class="s">"重复输入密码"</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mp-form-explain"</span><span class="nt">&gt;</span>重复输入密码<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-form-item"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"mp-form-label"</span><span class="nt">&gt;</span>邮箱:<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"mp-input"</span> <span class="na">type=</span><span class="s">"email"</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mp-form-explain"</span><span class="nt">&gt;</span>请输入邮箱<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-form-item"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"mp-btn mp-btn-blue"</span> <span class="na">value=</span><span class="s">"提交"</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/fieldset&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>
+</pre></div></div></div>
+<h1 id="form(vertical）">form（vertical）</h1>
+
+<p>垂直排版的表单，通过给form添加<code>mp-form-vertical</code>实现</p>
+<div class="codeExample"><div class="exampleOutput">     <form class="mp-form mp-form-vertical" id="form">
+        <fieldset>
+            <div class="mp-form-item mp-form-error">
+                <label for="name" class="mp-form-label">用户名:</label>
+                <input id="name" name="username" class="mp-input" data-explain="用户名为邮箱"/>
+                <p class="mp-form-explain">用户名为邮箱</p>
+            </div>
+            <div class="mp-form-item">
+                <label for="email" class="mp-form-label">邮箱:</label>
+                <input id="email" class="mp-input" type="email"/>
+                <p class="mp-form-explain">请输入邮箱</p>
+            </div>
+            <div class="mp-form-item">
+                <input type="submit" class="mp-btn mp-btn-blue" value="提交"/>
+            </div>
+        </fieldset>
+    </form>
+</div><div class="codeBlock"><div class="highlight"><pre>     <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"mp-form mp-form-vertical"</span> <span class="na">id=</span><span class="s">"form"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;fieldset&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-form-item mp-form-error"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"name"</span> <span class="na">class=</span><span class="s">"mp-form-label"</span><span class="nt">&gt;</span>用户名:<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"name"</span> <span class="na">name=</span><span class="s">"username"</span> <span class="na">class=</span><span class="s">"mp-input"</span> <span class="na">data-explain=</span><span class="s">"用户名为邮箱"</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mp-form-explain"</span><span class="nt">&gt;</span>用户名为邮箱<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-form-item"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"mp-form-label"</span><span class="nt">&gt;</span>邮箱:<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"mp-input"</span> <span class="na">type=</span><span class="s">"email"</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mp-form-explain"</span><span class="nt">&gt;</span>请输入邮箱<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-form-item"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"mp-btn mp-btn-blue"</span> <span class="na">value=</span><span class="s">"提交"</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/fieldset&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>
+</pre></div></div></div>
+<h1 id="pagination">pagination</h1>
+
+<p>基本分页</p>
+<div class="codeExample"><div class="exampleOutput">  <div class="mp-pagination">
+        <a href="#" data-page="0" class="mp-pagination-current">1</a>
+        <a href="#" data-page="1">2</a>
+        <a href="#" data-page="2">3</a>
+        <a href="#" data-page="1" class="mp-pagination-ellipsis">...</a>
+        <a href="#" data-page="101">102</a>
+        <a href="#" data-page="1" class="mp-pagination-next">下一页<em></em></a>
+    </div>
+</div><div class="codeBlock"><div class="highlight"><pre>  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-pagination"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-page=</span><span class="s">"0"</span> <span class="na">class=</span><span class="s">"mp-pagination-current"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-page=</span><span class="s">"1"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-page=</span><span class="s">"2"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-page=</span><span class="s">"1"</span> <span class="na">class=</span><span class="s">"mp-pagination-ellipsis"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-page=</span><span class="s">"101"</span><span class="nt">&gt;</span>102<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-page=</span><span class="s">"1"</span> <span class="na">class=</span><span class="s">"mp-pagination-next"</span><span class="nt">&gt;</span>下一页<span class="nt">&lt;em&gt;&lt;/em&gt;&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div>
+<h1 id="tab">tab</h1>
+
+<p>tab</p>
+<div class="codeExample"><div class="exampleOutput">
+<ul class="mp-tab mp-tab-secondary">
+  <li class="mp-tab-item active">
+    <p class="mp-tab-line mp-tab-line-no">
+      <span class="mp-tab-txt">游戏名字</span>
+    </p>
+  </li>
+  <li class="mp-tab-item">
+    <p class="mp-tab-line">
+      <span class="mp-tab-txt">游戏名字</span>
+    </p>
+  </li>
+</ul>
+
+</div><div class="codeBlock"><div class="highlight"><pre>
+<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"mp-tab mp-tab-secondary"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"mp-tab-item active"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mp-tab-line mp-tab-line-no"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mp-tab-txt"</span><span class="nt">&gt;</span>游戏名字<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"mp-tab-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mp-tab-line"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mp-tab-txt"</span><span class="nt">&gt;</span>游戏名字<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+
+</pre></div></div></div>
+<h1 id="table">table</h1>
+
+<p>表哥</p>
+<div class="codeExample"><div class="exampleOutput">
+</div><div class="codeBlock"><div class="highlight"><pre>
+</pre></div></div></div>      </div>
+    </div>
+  </section>
+  <footer>
+    The source code for this style guide is licensed under the MIT license.
+  </footer>
+</div>
+<script>
+$(document).ready(function() {
+
+  // build simple sidebar navigation
+  var $headers = $('.main > h1');
+  var $componentList = $('#sideMenu');
+
+  // set the active tab
+  var currentHref = document.location.pathname.substr(1);
+  if (currentHref)
+  {
+    $('.docNav').find('a[href^="' + currentHref + '"]').addClass('activeNavElem typeEmphasize');
+  }
+  else
+  {
+    $('.docNav').find('a').eq(0).addClass('activeNavElem typeEmphasize');
+  }
+
+    var header = $('#sideMenu');
+    var origOffsetY = header.offset().top;
+
+    function onScroll(e) {
+        window.scrollY >= origOffsetY
+                ? header.addClass('sticky')
+                : header.removeClass('sticky');
+    }
+
+    document.addEventListener('scroll', onScroll);
+
+});
+</script>
+</body>
+</html>

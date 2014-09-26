@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Iwan Style Guide iwan-widget</title>
+    <link rel="shortcut icon" href="static/brick.png" />
+
+    <!-- Styleguide CSS -->
+    <link rel="stylesheet" href="static/css/doc.css">
+    <link rel="stylesheet" href="static/css/github.css">
+
+    <link rel="stylesheet" href="../../asset/all/all.css">
+    <!-- CSS to be documented -->
+    <link rel="stylesheet" href="build/css/screen.css">
+
+
+
+    <!-- Main libraries -->
+    <script src="http://s1.bdstatic.com/r/www/cache/static/jquery/jquery-1.10.2.min_f2fb5194.js"></script>
+    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>-->
+    <!-- component js and init scripts -->
+    <script src="build/script/components.js"></script>
+
+
+</head>
+
+  <body>
+    <header class="header pbn" role="banner">
+      <div class="backgroundHighlight typeReversed1">
+        <div class="container">
+          <h1 class="h2 mvs">Iwan Style Guide</h1>
+        </div>
+      </div>
+      <div class="backgroundLowlight typeReversed1">
+        <div class="container">
+            <ul class="docNav listInline">
+              <!-- Add you pages here -->
+              <li><a href="index.html">index</a></li>
+              <li><a href="elements.html">elements</a></li>
+              <li><a href="modules.html">modules</a></li>
+              <li><a href="collections.html">collections</a></li>
+              <li><a href="iwan-widget.html">iwan widget</a></li>
+              <li><a href="components.html">Components</a></li>
+              <li><a href="javascript.html">Javascript</a></li>
+            </ul>
+        </div>
+      </div>
+      <!-- //header/container -->
+    </header>
+
+    <div class="content">
+      <section>
+        <div class="line">
+
+          <div class="col cols4">
+            <div class="componentMenu box boxBasic backgroundBasic" id="sideMenu">
+                <ul class="componentList listBorderedHover">
+                    
+                    <li><a href="#gamerank">gamerank</a></li>
+                    
+                    <li><a href="#gamerank(第二版排行榜）">gamerank(secondary）</a></li>
+                    
+                    <li><a href="#hotgamerank">hotgamerank</a></li>
+                    
+                    <li><a href="#qipai-list">qipai-list</a></li>
+                    
+                </ul>
+            </div>
+          </div>
+          <div class="main col cols20 lastCol">
+<h1 id="gamerank">gamerank</h1>
+<div class="codeExample"><div class="exampleOutput"><div style="width:280px">
+<div class="mp-box mp-box-primary">
+   <div class="mp-box-head">
+    <h3 class="mp-box-head-title"><strong class="mp-highlight">网页</strong>游戏</h3>
+   </div>
+   <ul class="mp-gamerank-list mp-media">
+    <li class="list-item item-hover">
+     <div class="brief">
+      <span class="number">1</span>
+      <a class="name">龙武</a>
+      <i class="mp-icon mp-icon-arrow-d2 arrow">down</i>
+     </div>
+     <div class="detail mp-clearfix">
+      <a class="img"> <img src="http://bcscdn.baidu.com/resource/fFhOZUjSBWsYZIjIlpP_XWRYZUCLZUhqlp0_NFVOZUhLBmVbZUkbZg.jpg" alt="龙武" class="pic" /> </a>
+          <div class="bd">
+              <h4 class="name">角色扮演</h4>
+              <p class="platform">星辰互动</p>
+              <a class="mp-btn mp-btn-primary start-btn">进入官网</a>
+        </div>
+     </div>
+     </li>
+   </ul>
+  </div>
+</div>
+
+</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"width:280px"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-box mp-box-primary"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-box-head"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"mp-box-head-title"</span><span class="nt">&gt;&lt;strong</span> <span class="na">class=</span><span class="s">"mp-highlight"</span><span class="nt">&gt;</span>网页<span class="nt">&lt;/strong&gt;</span>游戏<span class="nt">&lt;/h3&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
+   <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"mp-gamerank-list mp-media"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-item item-hover"</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"brief"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"number"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"name"</span><span class="nt">&gt;</span>龙武<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"mp-icon mp-icon-arrow-d2 arrow"</span><span class="nt">&gt;</span>down<span class="nt">&lt;/i&gt;</span>
+     <span class="nt">&lt;/div&gt;</span>
+     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"detail mp-clearfix"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"img"</span><span class="nt">&gt;</span> <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"http://bcscdn.baidu.com/resource/fFhOZUjSBWsYZIjIlpP_XWRYZUCLZUhqlp0_NFVOZUhLBmVbZUkbZg.jpg"</span> <span class="na">alt=</span><span class="s">"龙武"</span> <span class="na">class=</span><span class="s">"pic"</span> <span class="nt">/&gt;</span> <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bd"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"name"</span><span class="nt">&gt;</span>角色扮演<span class="nt">&lt;/h4&gt;</span>
+              <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"platform"</span><span class="nt">&gt;</span>星辰互动<span class="nt">&lt;/p&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"mp-btn mp-btn-primary start-btn"</span><span class="nt">&gt;</span>进入官网<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+     <span class="nt">&lt;/div&gt;</span>
+     <span class="nt">&lt;/li&gt;</span>
+   <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+</pre></div></div></div>
+<h1 id="gamerank(第二版排行榜）">gamerank(secondary）</h1>
+<div class="codeExample"><div class="exampleOutput"><div style="width: 300px;">
+    <div class="mp-box mp-box-six">
+        <div class="mp-box-head">
+            <h3 class="mp-box-head-title">游戏名称</h3>
+            <a class="mp-box-head-more">更多&gt;&gt;</a>
+        </div>
+        <div class="mp-gamerank-secondary">
+            <table>
+                <colgroup>
+                    <col style="width: 20%;">
+                    <col style="width: 40%;">
+                    <col style="width: 28%;">
+                    <col style="width: 12%;">
+                </colgroup>
+                <tr>
+                    <td>排名</td>
+                    <td>游戏</td>
+                    <td>平台</td>
+                    <td>操作</td>
+                </tr>
+            </table>
+            <ul class="mp-media">
+                <li class="list-item list-item-hover">
+                    <div class="brief">
+                        <span class="number">1</span>
+                        <a class="name">龙武</a>
+                        <span class="platform">平台</span>
+                        <a class="mp-btn download-btn">进入</a>
+                    </div>
+                </li>
+                <li class="list-item item-hover">
+                    <div class="brief">
+                        <span class="number">2</span>
+                        <a class="name">龙武</a>
+                        <span class="platform">平台</span>
+                        <a class="mp-btn download-btn">进入</a>
+                    </div>
+                    <div class="detail">
+                        <a class="img">
+                            <img src="http://bcscdn.baidu.com/resource/fFhOZUjSBWsYZIjIlpP_XWRYZUCLZUhqlp0_NFVOZUhLBmVbZUkbZg.jpg"
+                                 alt="龙武" class="pic"/>
+                        </a>
+
+                        <div class="bd">
+                            <p class="type">类型：<strong>角色扮演</strong></p>
+                            <p class="desc">浏览器怎么把一个元素“画”出来.知道定...</p>
+                            <p><strong class="score">9.9</strong>分</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="brief">
+                        <span class="number">3</span>
+                        <a class="name">龙武</a>
+                        <span class="platform">平台</span>
+                        <a class="mp-btn download-btn">进入</a>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="brief">
+                        <span class="number">10</span>
+                        <a class="name">龙武</a>
+                        <span class="platform">平台</span>
+                        <a class="mp-btn download-btn">进入</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"width: 300px;"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-box mp-box-six"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-box-head"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"mp-box-head-title"</span><span class="nt">&gt;</span>游戏名称<span class="nt">&lt;/h3&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"mp-box-head-more"</span><span class="nt">&gt;</span>更多<span class="ni">&amp;gt;&amp;gt;</span><span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-gamerank-secondary"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;table&gt;</span>
+                <span class="nt">&lt;colgroup&gt;</span>
+                    <span class="nt">&lt;col</span> <span class="na">style=</span><span class="s">"width: 20%;"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;col</span> <span class="na">style=</span><span class="s">"width: 40%;"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;col</span> <span class="na">style=</span><span class="s">"width: 28%;"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;col</span> <span class="na">style=</span><span class="s">"width: 12%;"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;/colgroup&gt;</span>
+                <span class="nt">&lt;tr&gt;</span>
+                    <span class="nt">&lt;td&gt;</span>排名<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td&gt;</span>游戏<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td&gt;</span>平台<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td&gt;</span>操作<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;/tr&gt;</span>
+            <span class="nt">&lt;/table&gt;</span>
+            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"mp-media"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-item list-item-hover"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"brief"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"number"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/span&gt;</span>
+                        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"name"</span><span class="nt">&gt;</span>龙武<span class="nt">&lt;/a&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"platform"</span><span class="nt">&gt;</span>平台<span class="nt">&lt;/span&gt;</span>
+                        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"mp-btn download-btn"</span><span class="nt">&gt;</span>进入<span class="nt">&lt;/a&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-item item-hover"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"brief"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"number"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/span&gt;</span>
+                        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"name"</span><span class="nt">&gt;</span>龙武<span class="nt">&lt;/a&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"platform"</span><span class="nt">&gt;</span>平台<span class="nt">&lt;/span&gt;</span>
+                        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"mp-btn download-btn"</span><span class="nt">&gt;</span>进入<span class="nt">&lt;/a&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"detail"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"img"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"http://bcscdn.baidu.com/resource/fFhOZUjSBWsYZIjIlpP_XWRYZUCLZUhqlp0_NFVOZUhLBmVbZUkbZg.jpg"</span>
+                                 <span class="na">alt=</span><span class="s">"龙武"</span> <span class="na">class=</span><span class="s">"pic"</span><span class="nt">/&gt;</span>
+                        <span class="nt">&lt;/a&gt;</span>
+
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bd"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"type"</span><span class="nt">&gt;</span>类型：<span class="nt">&lt;strong&gt;</span>角色扮演<span class="nt">&lt;/strong&gt;&lt;/p&gt;</span>
+                            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"desc"</span><span class="nt">&gt;</span>浏览器怎么把一个元素“画”出来.知道定...<span class="nt">&lt;/p&gt;</span>
+                            <span class="nt">&lt;p&gt;&lt;strong</span> <span class="na">class=</span><span class="s">"score"</span><span class="nt">&gt;</span>9.9<span class="nt">&lt;/strong&gt;</span>分<span class="nt">&lt;/p&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"brief"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"number"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/span&gt;</span>
+                        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"name"</span><span class="nt">&gt;</span>龙武<span class="nt">&lt;/a&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"platform"</span><span class="nt">&gt;</span>平台<span class="nt">&lt;/span&gt;</span>
+                        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"mp-btn download-btn"</span><span class="nt">&gt;</span>进入<span class="nt">&lt;/a&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-item"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"brief"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"number"</span><span class="nt">&gt;</span>10<span class="nt">&lt;/span&gt;</span>
+                        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"name"</span><span class="nt">&gt;</span>龙武<span class="nt">&lt;/a&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"platform"</span><span class="nt">&gt;</span>平台<span class="nt">&lt;/span&gt;</span>
+                        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"mp-btn download-btn"</span><span class="nt">&gt;</span>进入<span class="nt">&lt;/a&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div>
+<h1 id="hotgamerank">hotgamerank</h1>
+
+<p>首页热门排行榜</p>
+<div class="codeExample"><div class="exampleOutput">
+<div class="mp-hot-gamerank">
+    <ul>
+        <li class="list-item list-item-0 item-hover">
+            <div class="brief">
+                <span class="number">1</span>
+                <a href="">
+                    <img src="http://bcscdn.baidu.com/resource/fFhOZUjRuWCRBUhqlpP_XWRLlp0_NFVOZUhLBWZqBUZqZL.jpg" alt="" class="thumb">
+                </a>
+                <h4 class="name"><a href="">捕鱼达人</a></h4>
+            </div>
+            <div class="detail">
+                <span class="number">1</span>
+                <div class="bd">
+                    <a href="">
+                        <img src="http://bcscdn.baidu.com/resource/fFhOZUjRuWCRBUhqlpP_XWRLlp0_NFVOZUhLBWZqBUZqZL.jpg" alt="" class="pic">
+                    </a>
+                    <div class="text-wrap">
+                        <h4 class="title"><a href="">捕鱼达人</a></h4>
+                        <p class="desc">1亿次使用</p>
+                        <div class="mp-score-gray star-wrap">
+                            <div class="mp-score-gray-inner" style="width:80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="list-item list-item-1 last-item">
+            <div class="brief">
+                <span class="number">2</span>
+                <a href="">
+                    <img src="http://bcscdn.baidu.com/resource/fFhOZUjRuWCRBUhqlpP_XWRLlp0_NFVOZUhLBWZqBUZqZL.jpg" alt="" class="thumb">
+                </a>
+                <h4 class="name"><a href="">捕鱼达人</a></h4>
+            </div>
+            <div class="detail">
+                <span class="number">1</span>
+                <div class="bd">
+                    <a href="">
+                        <img src="http://bcscdn.baidu.com/resource/fFhOZUjRuWCRBUhqlpP_XWRLlp0_NFVOZUhLBWZqBUZqZL.jpg" alt="" class="pic">
+                    </a>
+                    <div class="text-wrap">
+                        <h4 class="title"><a href="">捕鱼达人</a></h4>
+                        <p class="desc">1亿次使用</p>
+                        <div class="mp-score-gray star-wrap">
+                            <div class="mp-score-gray-inner" style="width:80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+</div><div class="codeBlock"><div class="highlight"><pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-hot-gamerank"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-item list-item-0 item-hover"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"brief"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"number"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"http://bcscdn.baidu.com/resource/fFhOZUjRuWCRBUhqlpP_XWRLlp0_NFVOZUhLBWZqBUZqZL.jpg"</span> <span class="na">alt=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"thumb"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"name"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>捕鱼达人<span class="nt">&lt;/a&gt;&lt;/h4&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"detail"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"number"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bd"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"http://bcscdn.baidu.com/resource/fFhOZUjRuWCRBUhqlpP_XWRLlp0_NFVOZUhLBWZqBUZqZL.jpg"</span> <span class="na">alt=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"pic"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;/a&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"text-wrap"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"title"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>捕鱼达人<span class="nt">&lt;/a&gt;&lt;/h4&gt;</span>
+                        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"desc"</span><span class="nt">&gt;</span>1亿次使用<span class="nt">&lt;/p&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-score-gray star-wrap"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-score-gray-inner"</span> <span class="na">style=</span><span class="s">"width:80%"</span><span class="nt">&gt;&lt;/div&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-item list-item-1 last-item"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"brief"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"number"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"http://bcscdn.baidu.com/resource/fFhOZUjRuWCRBUhqlpP_XWRLlp0_NFVOZUhLBWZqBUZqZL.jpg"</span> <span class="na">alt=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"thumb"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"name"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>捕鱼达人<span class="nt">&lt;/a&gt;&lt;/h4&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"detail"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"number"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bd"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"http://bcscdn.baidu.com/resource/fFhOZUjRuWCRBUhqlpP_XWRLlp0_NFVOZUhLBWZqBUZqZL.jpg"</span> <span class="na">alt=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"pic"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;/a&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"text-wrap"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"title"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>捕鱼达人<span class="nt">&lt;/a&gt;&lt;/h4&gt;</span>
+                        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"desc"</span><span class="nt">&gt;</span>1亿次使用<span class="nt">&lt;/p&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-score-gray star-wrap"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-score-gray-inner"</span> <span class="na">style=</span><span class="s">"width:80%"</span><span class="nt">&gt;&lt;/div&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+</pre></div></div></div>
+<h1 id="qipai-list">qipai-list</h1>
+
+<p>首页棋牌列表</p>
+<div class="codeExample"><div class="exampleOutput"><ul class="mp-qipai-list">
+    <li class="mp-qipai-item" data-click="{p1:0}">
+        <a href="http://oreg.jj.cn/market/baiduqipai_ddz.html" class="img" data-click="{act:'a_porker_click'}" target="_blank" data-rsv="{clickarea_id:'porker_game_img'}" title="">
+            <i class="corner"></i>
+            <img src="http://bcscdn.baidu.com/resource/fFhOZUjRBIkMZUCSlpP_XWRLlp0_NFVOZUhLBWZqBUZwuh.jpg" width="94" height="94">
+        </a>
+        <div class="bd">
+            <a href="http://oreg.jj.cn/market/baiduqipai_ddz.html" class="title" data-click="{act:'a_porker_click'}" target="_blank" data-rsv="{clickarea_id:'porker_game_title'}" title="jj斗地主">jj斗地主</a>
+            <p class="desc">JJ斗地主,专业的棋牌类游戏在线竞技平台,通过比赛的方式,让玩家其乐无穷!</p>
+            <div class="mp-score-gray star-wrap">
+                <div class="mp-score-gray-inner" style="width:80%"></div>
+            </div>
+            <a href="http://oreg.jj.cn/market/baiduqipai_ddz.html" class="download-btn" data-click="{act:'a_porker_click'}" target="_blank" data-rsv="{clickarea_id:'qipai_game_download'}">开始游戏</a>
+        </div>
+    </li>
+</ul>
+</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"mp-qipai-list"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"mp-qipai-item"</span> <span class="na">data-click=</span><span class="s">"{p1:0}"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://oreg.jj.cn/market/baiduqipai_ddz.html"</span> <span class="na">class=</span><span class="s">"img"</span> <span class="na">data-click=</span><span class="s">"{act:'a_porker_click'}"</span> <span class="na">target=</span><span class="s">"_blank"</span> <span class="na">data-rsv=</span><span class="s">"{clickarea_id:'porker_game_img'}"</span> <span class="na">title=</span><span class="s">""</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"corner"</span><span class="nt">&gt;&lt;/i&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"http://bcscdn.baidu.com/resource/fFhOZUjRBIkMZUCSlpP_XWRLlp0_NFVOZUhLBWZqBUZwuh.jpg"</span> <span class="na">width=</span><span class="s">"94"</span> <span class="na">height=</span><span class="s">"94"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bd"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://oreg.jj.cn/market/baiduqipai_ddz.html"</span> <span class="na">class=</span><span class="s">"title"</span> <span class="na">data-click=</span><span class="s">"{act:'a_porker_click'}"</span> <span class="na">target=</span><span class="s">"_blank"</span> <span class="na">data-rsv=</span><span class="s">"{clickarea_id:'porker_game_title'}"</span> <span class="na">title=</span><span class="s">"jj斗地主"</span><span class="nt">&gt;</span>jj斗地主<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"desc"</span><span class="nt">&gt;</span>JJ斗地主,专业的棋牌类游戏在线竞技平台,通过比赛的方式,让玩家其乐无穷!<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-score-gray star-wrap"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-score-gray-inner"</span> <span class="na">style=</span><span class="s">"width:80%"</span><span class="nt">&gt;&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://oreg.jj.cn/market/baiduqipai_ddz.html"</span> <span class="na">class=</span><span class="s">"download-btn"</span> <span class="na">data-click=</span><span class="s">"{act:'a_porker_click'}"</span> <span class="na">target=</span><span class="s">"_blank"</span> <span class="na">data-rsv=</span><span class="s">"{clickarea_id:'qipai_game_download'}"</span><span class="nt">&gt;</span>开始游戏<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</pre></div></div></div>      </div>
+    </div>
+  </section>
+  <footer>
+    The source code for this style guide is licensed under the MIT license.
+  </footer>
+</div>
+<script>
+$(document).ready(function() {
+
+  // build simple sidebar navigation
+  var $headers = $('.main > h1');
+  var $componentList = $('#sideMenu');
+
+  // set the active tab
+  var currentHref = document.location.pathname.substr(1);
+  if (currentHref)
+  {
+    $('.docNav').find('a[href^="' + currentHref + '"]').addClass('activeNavElem typeEmphasize');
+  }
+  else
+  {
+    $('.docNav').find('a').eq(0).addClass('activeNavElem typeEmphasize');
+  }
+
+    var header = $('#sideMenu');
+    var origOffsetY = header.offset().top;
+
+    function onScroll(e) {
+        window.scrollY >= origOffsetY
+                ? header.addClass('sticky')
+                : header.removeClass('sticky');
+    }
+
+    document.addEventListener('scroll', onScroll);
+
+});
+</script>
+</body>
+</html>

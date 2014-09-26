@@ -1,0 +1,14 @@
+/**
+ * @file   兼容性
+ * @author shenli <shenli03@baidu.com>
+ */
+
+//利用filter模拟blur
+//https://developer.mozilla.org/en-US/docs/Web/CSS/filter#blur()
+.blur(...) {
+    @process: ~`(function(e){e=e||"0";var t=/\d/gi,r=/(?:\s|^)(\.?\d+\.?\d*)(?![^(]*\)|\w|%|\.)/gi;return t.test(e)&&(e=e.replace(r,function(e){return 0==e&&e||e+"px"})),e})((function(){var e="@{arguments}";return e=e.replace(/^\[|\]$/g,"")})())`;
+    -webkit-filter: blur(@process);
+    -moz-filter: blur(@process);
+    -ms-filter: blur(@process);
+    filter: blur(@process);
+}

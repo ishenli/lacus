@@ -1,0 +1,137 @@
+/*doc
+---
+title: poplayer
+name: poplayer
+category: modules
+---
+
+```html_example
+
+<div class="mp-pop-wrap">
+    <ul>
+        <li class="mp-pop-item">
+            <a target="_blank" href="" class="pic">
+                <img src="http://bcscdn.baidu.com/resource/fFhOZUjwZmgSBWZYlpP_XWRLlp0_NFVOZUhLuWkwBWgaBg.jpg" />
+                <span class="title">招财猫</span>
+            </a>
+            <dl class="pop">
+                <dt>获得方法：</dt>
+                <dd>积分兑换/积分抽奖</dd>
+            
+                <dt>宠物增益：</dt>
+                <dd>冲刺时间加:1秒;表现分数加:12%;巨人时间加:2.5秒</dd>
+            
+                <dt>技能：</dt>
+                <dd>对所有男性角色得分加成3%</dd>
+            
+                <dt>特效：</dt>
+                <dd>每5小时产生一个极速冲锋道具</dd>
+            </dl>
+        </li>
+        <li class="mp-pop-item">
+            <a target="_blank" href="" class="pic">
+                <img src="http://bcscdn.baidu.com/resource/fFhOZUjwZmgSBWZYlpP_XWRLlp0_NFVOZUhLuWkwBWgaBg.jpg" />
+                <span class="title">招财猫</span>
+            </a>
+            <dl class="pop" style="visibility:visible;opacity:1;">
+                <dt>获得方法：</dt>
+                <dd>积分兑换/积分抽奖</dd>
+            
+                <dt>宠物增益：</dt>
+                <dd>冲刺时间加:1秒;表现分数加:12%;巨人时间加:2.5秒</dd>
+            
+                <dt>技能：</dt>
+                <dd>对所有男性角色得分加成3%</dd>
+            
+                <dt>特效：</dt>
+                <dd>每5小时产生一个极速冲锋道具</dd>
+            </dl>
+        </li>
+    </ul>
+</div>
+```
+*/
+
+.mp-pop-wrap {
+    height: 200px; // use for js
+    overflow: hidden;
+    .mp-pop-item {
+        position: relative;
+        float: left;
+        width: 100px;
+        margin: 25px 17px 0;
+        .pic {
+            display: block;
+            text-align: center;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .title {
+            font-size: 13px;
+            line-height: 20px;
+        }
+        .pop {
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            padding: 5px 5px 5px 10px;
+            
+            width: 260px;
+            min-height: 80px; 
+            _height: 80px;
+            left: 115px;
+            top: 0; 
+            background: #fff; 
+            border: 1px solid @mainColor; 
+            
+            font-size: 13px;
+            line-height: 25px;
+            z-index: 2;
+            &:after, &:before {
+                content:'';
+                position: absolute;
+                border-style: dashed solid dashed dashed;
+                border-color: transparent #fff transparent transparent;
+                border-width: 10px;
+                left: -19px;
+                top:20px;
+            }
+            &:before {
+                border-color: transparent @mainColor transparent transparent;
+                left: -20px;
+            }
+            dt {
+                float: left;
+                color: @mainColor;
+            }
+            dd {
+                overflow: hidden;
+                *zoom: 1;
+            }
+        }
+        .pop-show {
+            visibility: visible;
+            opacity: 1;
+        }
+        .pop-right {
+            left: auto;
+            right: 115px;
+            &:before,
+            &:after {
+                border-style: dashed dashed dashed solid;
+                border-color: transparent transparent transparent #fff;
+                left: auto;
+                right: -19px;
+            }
+            &:before {
+                border-color: transparent transparent transparent #ff7a01;
+                right: -20px;
+            }
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Iwan Style Guide modules</title>
+    <link rel="shortcut icon" href="static/brick.png" />
+
+    <!-- Styleguide CSS -->
+    <link rel="stylesheet" href="static/css/doc.css">
+    <link rel="stylesheet" href="static/css/github.css">
+
+    <link rel="stylesheet" href="../../asset/all/all.css">
+    <!-- CSS to be documented -->
+    <link rel="stylesheet" href="build/css/screen.css">
+
+
+
+    <!-- Main libraries -->
+    <script src="http://s1.bdstatic.com/r/www/cache/static/jquery/jquery-1.10.2.min_f2fb5194.js"></script>
+    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>-->
+    <!-- component js and init scripts -->
+    <script src="build/script/components.js"></script>
+
+
+</head>
+
+  <body>
+    <header class="header pbn" role="banner">
+      <div class="backgroundHighlight typeReversed1">
+        <div class="container">
+          <h1 class="h2 mvs">Iwan Style Guide</h1>
+        </div>
+      </div>
+      <div class="backgroundLowlight typeReversed1">
+        <div class="container">
+            <ul class="docNav listInline">
+              <!-- Add you pages here -->
+              <li><a href="index.html">index</a></li>
+              <li><a href="elements.html">elements</a></li>
+              <li><a href="modules.html">modules</a></li>
+              <li><a href="collections.html">collections</a></li>
+              <li><a href="iwan-widget.html">iwan widget</a></li>
+              <li><a href="components.html">Components</a></li>
+              <li><a href="javascript.html">Javascript</a></li>
+            </ul>
+        </div>
+      </div>
+      <!-- //header/container -->
+    </header>
+
+    <div class="content">
+      <section>
+        <div class="line">
+
+          <div class="col cols4">
+            <div class="componentMenu box boxBasic backgroundBasic" id="sideMenu">
+                <ul class="componentList listBorderedHover">
+                    
+                    <li><a href="#dialog">dialog</a></li>
+                    
+                    <li><a href="#dialog(confirm)">dialog(confirm)</a></li>
+                    
+                    <li><a href="#poplayer">poplayer</a></li>
+                    
+                </ul>
+            </div>
+          </div>
+          <div class="main col cols20 lastCol">
+<h1 id="dialog">dialog</h1>
+
+<p>dialog</p>
+<div class="codeExample"><div class="exampleOutput">    <div class="mp-dialog">
+        <div class="mp-dialog-close">×</div>
+        <div class="mp-dialog-header">dialog标题</div>
+        <div class="mp-dialog-body">
+            dialog 内容
+        </div>
+        <div class="mp-dialog-footer"></div>
+    </div>
+</div><div class="codeBlock"><div class="highlight"><pre>    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-dialog"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-dialog-close"</span><span class="nt">&gt;</span>×<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-dialog-header"</span><span class="nt">&gt;</span>dialog标题<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-dialog-body"</span><span class="nt">&gt;</span>
+            dialog 内容
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-dialog-footer"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div>
+<h1 id="dialog(confirm)">dialog(confirm)</h1>
+
+<p>dialog</p>
+<div class="codeExample"><div class="exampleOutput">    <div class="mp-dialog">
+        <div class="mp-dialog-close">×</div>
+        <div class="mp-dialog-header">dialog标题</div>
+        <div class="mp-dialog-body">
+            dialog 内容
+        </div>
+        <div class="mp-dialog-footer">
+            <div class="mp-btn mp-btn-primary">确定</div>
+            <div class="mp-btn mp-btn-default">取消</div>
+        </div>
+    </div>
+</div><div class="codeBlock"><div class="highlight"><pre>    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-dialog"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-dialog-close"</span><span class="nt">&gt;</span>×<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-dialog-header"</span><span class="nt">&gt;</span>dialog标题<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-dialog-body"</span><span class="nt">&gt;</span>
+            dialog 内容
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-dialog-footer"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-btn mp-btn-primary"</span><span class="nt">&gt;</span>确定<span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-btn mp-btn-default"</span><span class="nt">&gt;</span>取消<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div>
+<h1 id="poplayer">poplayer</h1>
+<div class="codeExample"><div class="exampleOutput">
+<div class="mp-pop-wrap">
+    <ul>
+        <li class="mp-pop-item">
+            <a target="_blank" href="" class="pic">
+                <img src="http://bcscdn.baidu.com/resource/fFhOZUjwZmgSBWZYlpP_XWRLlp0_NFVOZUhLuWkwBWgaBg.jpg" />
+                <span class="title">招财猫</span>
+            </a>
+            <dl class="pop">
+                <dt>获得方法：</dt>
+                <dd>积分兑换/积分抽奖</dd>
+
+                <dt>宠物增益：</dt>
+                <dd>冲刺时间加:1秒;表现分数加:12%;巨人时间加:2.5秒</dd>
+
+                <dt>技能：</dt>
+                <dd>对所有男性角色得分加成3%</dd>
+
+                <dt>特效：</dt>
+                <dd>每5小时产生一个极速冲锋道具</dd>
+            </dl>
+        </li>
+        <li class="mp-pop-item">
+            <a target="_blank" href="" class="pic">
+                <img src="http://bcscdn.baidu.com/resource/fFhOZUjwZmgSBWZYlpP_XWRLlp0_NFVOZUhLuWkwBWgaBg.jpg" />
+                <span class="title">招财猫</span>
+            </a>
+            <dl class="pop" style="visibility:visible;opacity:1;">
+                <dt>获得方法：</dt>
+                <dd>积分兑换/积分抽奖</dd>
+
+                <dt>宠物增益：</dt>
+                <dd>冲刺时间加:1秒;表现分数加:12%;巨人时间加:2.5秒</dd>
+
+                <dt>技能：</dt>
+                <dd>对所有男性角色得分加成3%</dd>
+
+                <dt>特效：</dt>
+                <dd>每5小时产生一个极速冲锋道具</dd>
+            </dl>
+        </li>
+    </ul>
+</div>
+</div><div class="codeBlock"><div class="highlight"><pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mp-pop-wrap"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"mp-pop-item"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">target=</span><span class="s">"_blank"</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"pic"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"http://bcscdn.baidu.com/resource/fFhOZUjwZmgSBWZYlpP_XWRLlp0_NFVOZUhLuWkwBWgaBg.jpg"</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"title"</span><span class="nt">&gt;</span>招财猫<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;dl</span> <span class="na">class=</span><span class="s">"pop"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;dt&gt;</span>获得方法：<span class="nt">&lt;/dt&gt;</span>
+                <span class="nt">&lt;dd&gt;</span>积分兑换/积分抽奖<span class="nt">&lt;/dd&gt;</span>
+
+                <span class="nt">&lt;dt&gt;</span>宠物增益：<span class="nt">&lt;/dt&gt;</span>
+                <span class="nt">&lt;dd&gt;</span>冲刺时间加:1秒;表现分数加:12%;巨人时间加:2.5秒<span class="nt">&lt;/dd&gt;</span>
+
+                <span class="nt">&lt;dt&gt;</span>技能：<span class="nt">&lt;/dt&gt;</span>
+                <span class="nt">&lt;dd&gt;</span>对所有男性角色得分加成3%<span class="nt">&lt;/dd&gt;</span>
+
+                <span class="nt">&lt;dt&gt;</span>特效：<span class="nt">&lt;/dt&gt;</span>
+                <span class="nt">&lt;dd&gt;</span>每5小时产生一个极速冲锋道具<span class="nt">&lt;/dd&gt;</span>
+            <span class="nt">&lt;/dl&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"mp-pop-item"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">target=</span><span class="s">"_blank"</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"pic"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"http://bcscdn.baidu.com/resource/fFhOZUjwZmgSBWZYlpP_XWRLlp0_NFVOZUhLuWkwBWgaBg.jpg"</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"title"</span><span class="nt">&gt;</span>招财猫<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;dl</span> <span class="na">class=</span><span class="s">"pop"</span> <span class="na">style=</span><span class="s">"visibility:visible;opacity:1;"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;dt&gt;</span>获得方法：<span class="nt">&lt;/dt&gt;</span>
+                <span class="nt">&lt;dd&gt;</span>积分兑换/积分抽奖<span class="nt">&lt;/dd&gt;</span>
+
+                <span class="nt">&lt;dt&gt;</span>宠物增益：<span class="nt">&lt;/dt&gt;</span>
+                <span class="nt">&lt;dd&gt;</span>冲刺时间加:1秒;表现分数加:12%;巨人时间加:2.5秒<span class="nt">&lt;/dd&gt;</span>
+
+                <span class="nt">&lt;dt&gt;</span>技能：<span class="nt">&lt;/dt&gt;</span>
+                <span class="nt">&lt;dd&gt;</span>对所有男性角色得分加成3%<span class="nt">&lt;/dd&gt;</span>
+
+                <span class="nt">&lt;dt&gt;</span>特效：<span class="nt">&lt;/dt&gt;</span>
+                <span class="nt">&lt;dd&gt;</span>每5小时产生一个极速冲锋道具<span class="nt">&lt;/dd&gt;</span>
+            <span class="nt">&lt;/dl&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div>      </div>
+    </div>
+  </section>
+  <footer>
+    The source code for this style guide is licensed under the MIT license.
+  </footer>
+</div>
+<script>
+$(document).ready(function() {
+
+  // build simple sidebar navigation
+  var $headers = $('.main > h1');
+  var $componentList = $('#sideMenu');
+
+  // set the active tab
+  var currentHref = document.location.pathname.substr(1);
+  if (currentHref)
+  {
+    $('.docNav').find('a[href^="' + currentHref + '"]').addClass('activeNavElem typeEmphasize');
+  }
+  else
+  {
+    $('.docNav').find('a').eq(0).addClass('activeNavElem typeEmphasize');
+  }
+
+    var header = $('#sideMenu');
+    var origOffsetY = header.offset().top;
+
+    function onScroll(e) {
+        window.scrollY >= origOffsetY
+                ? header.addClass('sticky')
+                : header.removeClass('sticky');
+    }
+
+    document.addEventListener('scroll', onScroll);
+
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+/**
+ * @file   各种标签文字的小图标
+ * @author shenli <shenli03@baidu.com>
+ */
+
+/*doc
+---
+title: tip
+name: tip
+category: elements
+---
+tip是收藏功能时的提示框
+
+```html_example
+   <div class="mp-tip">yeyou</div>
+```
+*/
+.mp-tip {
+    width: 70px;
+    height: 34px;
+    line-height: 24px;
+    background: url(../img/tip-bg.png) no-repeat;
+    _background-image: url(../img/tip-bg.gif);
+    text-align: center;
+    color: #fff;
+}
+
+/*doc
+---
+title: tip(star)
+name: tip(star)
+category: elements
+---
+透明星评级,通过绝对定位和背景遮掩实现,需在子元素通过`style="width:80%`设定高亮的星星比例
+
+*ps:*星体的宽度为60px
+
+```html_example
+    <div class="mp-tip-star">
+	    <div class="mp-tip-star-ct" style="width:80%"></div>
+    </div>
+    <div class="mp-tip-star">
+	    <div class="mp-tip-star-ct" style="width:60%"></div>
+    </div>
+    <div class="mp-tip-star">
+	    <div class="mp-tip-star-ct" style="width:100%"></div>
+    </div>
+    <div class="mp-score-gray">
+	    <div class="mp-score-gray-inner" style="width:80%"></div>
+    </div>
+```
+星星评级                     | 外观
+------------------------ | -----------------
+           mp-tip-star   | 黄色的星星
+           mp-score-gray  | 灰色的星星
+
+
+*/
+.mp-tip-star,
+.mp-tip-star-ct,
+.mp-score-gray,
+.mp-score-gray-inner{
+    .inline-block();
+
+}
+
+.mp-tip-star{
+    width: 85px;
+    .mp-tip-star-ct{
+        height: 12px;
+        background: url(../img/star-tip.png) no-repeat;
+        _background: url(../img/star-tip-png8.png) no-repeat;
+    }
+}
+
+.mp-score-gray,
+.mp-score-gray-inner{
+    background: url(../img/small-game-star.gif) no-repeat;
+}
+.mp-score-gray {
+    position: relative;
+    width: 60px;
+    height: 10px;
+    background-position: 0 -17px;
+    font-size: 0;
+    .mp-score-gray-inner {
+        height: 10px;
+    }
+}
+
+
+.mp-tip-feedback-wrap {
+    position: fixed;
+    left: 50%;
+    margin-left: 510px;
+    bottom: 120px;
+    z-index: 90;
+    _display: none;
+    .mp-tip-feedback, .mp-tip-gotop {
+        width: 33px;
+        padding: 6px 0 0 8px;
+        border: 1px solid #cccccc;
+        background: #ebebeb;
+        cursor: pointer;
+        .border-radius(1px);
+    }
+    .mp-tip-feedback {
+        height: 57px;
+        color: @text-gray;
+        .txt {
+            margin-top: 5px;
+        }
+    }
+
+    .mp-tip-gotop {
+        display: none;
+        height: 32px;
+        margin-bottom: 10px;
+    }
+
+    .gotop-hover {
+        background: #8e8e8e;
+        border-color: #8e8e8e;
+        .gotop {
+            background-position: -100px 0;
+        }
+    }
+
+    .feedback-hover {
+        background: @main-color;
+        border:1px solid @main-color;
+        color: @white;
+
+        .feedback {
+            background-position: -77px -400px;
+        }
+    }
+
+}

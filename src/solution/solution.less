@@ -1,0 +1,27 @@
+/**
+ *常用样式的解决方案，以sl(solution)作为前缀
+ * @author shenli （shenli03@baidu.com）
+ * 直接用est函数
+ * 参考地址：http://ecomfe.github.io/est/#reset
+ */
+
+/*垂直水平居中,sl-hvalign需添加宽度*/
+.sl-hvalign {
+    display: table;
+    overflow: hidden;
+    margin: 0 auto;
+    height: 100%;
+    *position: relative;
+}
+
+.sl-hvalign-cnt {
+    display: table-cell;
+    vertical-align: middle;
+    *position: absolute;
+    top: 50%;
+}
+
+.sl-hvalign-cnt-inner {
+    *position: relative;
+    *top: -50%;
+}

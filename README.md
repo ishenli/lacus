@@ -1,38 +1,49 @@
 ##Lacus
 ###简介
-Lacus是动漫高达seed的女主角，是一套用less编写的适用于PC端的前端样式库。
+Lacus是动漫高达seed的女主角，是一套用less编写的适用于PC端的前端样式库，同时也是[百度爱玩](http://iwan.baidu.com)使用的CSS库。
 
-![image](http://bcs.duapp.com/webcdn/image/lacus.jpg?sign=MBO:cYNBSUK2FS1telkxKKYb6lGG:2QMXhYubebHVTriI1lxeFvcAfu4%3D&response-cache-control=private)
+![](http://bcs.duapp.com/webcdn/image/lacus.jpg?sign=MBO:cYNBSUK2FS1telkxKKYb6lGG:2QMXhYubebHVTriI1lxeFvcAfu4%3D&response-cache-control=private)
 
 ###目标
 尝试打造一套编写完善，在IE渲染时不会被破坏（或只有一些小问题）的样式库，同时又保持CSS的高效性和可维护性。
 
-**注：不支持ie6及更低版本**
+**注：不完美支持ie6及更低版本**
 
 ###结构
 #####基础框架
 + reset
 + function
 + font
++ layout
++ variable
 
 #####通用样式
 + elements
-  + box
-  + button
-  + icon
-  + list
-  + tip
-+ module
-  + dropdown
+    + box
+    + button
+    + checkbox
+    + dropdown
+    + image
+    + icon
+    + list
+    + tip
+    + te'x't'tip
 
-#####Bug兼容
-+ IE6 3像素bug
-+ IE6 浮动双边距离
++ collections
+    + breadcrumb 
+    + form
+    + nav
+    + pagination
+    + tab
+    + table
+
+  
 
 #####动画
 + CSS3 动画
 
-#####技巧
+#####解决技巧
++ 高度不固定的内容垂直居中
 
 
 ###构思

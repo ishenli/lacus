@@ -1,0 +1,32 @@
+# Directory to parse
+source: ../src
+
+# Directory to build the styleguide
+destination: ./styleguide
+
+# Hologram theme
+#documentation_assets: ./dep/Cortana
+#custom_markdown: ./dep/Cortana/CortanaMarkdownRenderer.rb
+documentation_assets: ./templates
+
+# Any other asset folders that need to be copied to the destination
+# folder. Typically this will include the css that you are trying to
+# document. May also include additional folders as needed.
+dependencies:
+  - ./build
+
+# To have a custom index page build with your README.md
+index: elements
+
+# List all css to include for the styleguide render examples (path from styleguide directory)
+css_include:
+  - '../assets/css/vendors.css'
+  - '../assets/css/styles.css'
+
+# List all js to include for the styleguide render examples (path from styleguide directory)
+js_include:
+  - 'http://code.jquery.com/jquery-1.10.2.min.js'
+  - '../assets/js/main.js'
+
+# String who is used to split the category name and create category wrapper
+#name_scope: ' - '

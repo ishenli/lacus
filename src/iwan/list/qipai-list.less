@@ -1,0 +1,82 @@
+/*doc
+---
+title: qipai-list
+name: qipai-list
+category: iwan-widget
+---
+首页棋牌列表
+
+```html_example
+<ul class="mp-qipai-list">
+    <li class="mp-qipai-item" data-click="{p1:0}">
+        <a href="http://oreg.jj.cn/market/baiduqipai_ddz.html" class="img" data-click="{act:'a_porker_click'}" target="_blank" data-rsv="{clickarea_id:'porker_game_img'}" title="">
+            <i class="corner"></i>
+            <img src="http://bcscdn.baidu.com/resource/fFhOZUjRBIkMZUCSlpP_XWRLlp0_NFVOZUhLBWZqBUZwuh.jpg" width="94" height="94">
+        </a>
+        <div class="bd">
+            <a href="http://oreg.jj.cn/market/baiduqipai_ddz.html" class="title" data-click="{act:'a_porker_click'}" target="_blank" data-rsv="{clickarea_id:'porker_game_title'}" title="jj斗地主">jj斗地主</a>
+            <p class="desc">JJ斗地主,专业的棋牌类游戏在线竞技平台,通过比赛的方式,让玩家其乐无穷!</p>
+            <div class="mp-score-gray star-wrap">
+                <div class="mp-score-gray-inner" style="width:80%"></div>
+            </div>
+            <a href="http://oreg.jj.cn/market/baiduqipai_ddz.html" class="download-btn" data-click="{act:'a_porker_click'}" target="_blank" data-rsv="{clickarea_id:'qipai_game_download'}">开始游戏</a>
+        </div>
+    </li>
+</ul>
+```
+*/
+
+
+.mp-qipai-list {
+    overflow: hidden;
+    .mp-qipai-item {
+        float: left;
+        width: 298px;
+        _width: 295px;
+        margin-right: 30px;
+        margin-bottom: 20px;
+        .img {
+            position: relative;
+            float: left;
+            margin-right: 10px;
+        }
+        .corner {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 94px;
+            height: 94px;
+            background: url(../../asset/img/poker-corner.png) no-repeat;       
+        }
+        .bd {
+            position: relative;
+            overflow: hidden;
+            height: 94px;
+        }
+        .title {
+            line-height: 30px;
+            font-size: 16px;
+            color: #AC6316;
+        }
+        .desc {
+            line-height: 17px;
+            color: #666;
+        }
+        .download-btn {
+            position: absolute;
+            right: 5px;
+            bottom: 0;
+            width: 80px;
+            height: 25px;
+            line-height: 25px;
+            color: #fff;
+            text-align: center;
+            background: #ff7815 url(../../asset/img/porker-btn.png) no-repeat;
+        }
+        .star-wrap {
+            position: absolute;
+            top: 10px;
+            right: 5px;
+        }
+    }
+}

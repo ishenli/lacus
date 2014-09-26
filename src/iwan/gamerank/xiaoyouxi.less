@@ -1,0 +1,140 @@
+/**
+ * @file 小游戏排行榜
+ * @author shenli <shenli03@baidu.com>
+ */
+.mp-gamerank-list{
+    .mp-gamerank-list-item{
+        position: relative;
+        vertical-align: middle;
+        margin-bottom: 16px;
+        _zoom:1;
+        a{
+            cursor: pointer;
+        }
+        .number{
+            position: absolute;
+            left: 0;
+            display: block;
+            width: 15px;
+            height: 15px;
+            line-height: 15px;
+            font-size: 12px;
+            text-align: center;
+            z-index: 30;
+        }
+        .mp-gamerank-brief {
+            .lh(24px);
+            .number{
+                top: 4px;
+                background: #ccc;
+                color: #fff;
+            }
+            .icon{
+                margin-left: 27px;
+                width: 24px;
+                height: 24px;
+                vertical-align: top;
+                .border-radius(2px);
+            }
+            .txt{
+                margin-left: 10px;
+                font-size: 14px;
+                color: #333;
+            }
+        }
+        .mp-gamerank-detail{
+            display: none;
+            margin-bottom: 2px;
+            height: 64px;
+            .number{
+                top:0;
+                background: @mainColor;
+                color: #fff;
+            }
+            .icon{
+                width:90px;
+                margin-right: -90px;
+                img{
+                    display: block;
+                    height: 64px;
+                    width: 64px;
+                    margin-left: 23px;
+                    .border-radius(7px);
+                }
+            }
+            .txt{
+                height: 64px;
+                .inner{
+                    margin-left: 100px;
+                }
+                h4{
+                    font-size: 14px;
+                    color: #333;
+                    .lh(22px);
+                    width: 102px;
+                }
+                p{
+                    margin: 6px 0 4px 0;
+                    .lh(15px);
+                    font-size: 13px;
+                    color: #666;
+                }
+            }
+            .mp-link:hover h4{
+                color: #0000ff;
+            }
+        }
+        .mp-gamerank-detail2{
+            display: none;
+            padding-left: 25px;
+            margin-bottom: 21px;
+            .number{
+                top:0;
+                background: @mainColor;
+                color: #fff;
+            }
+            .name{
+                .lh(16px);
+                font-size: 14px;
+                _font-size: 12px;
+                color: #333;
+            }
+            .name:hover{
+                color: blue;
+            }
+            .card{
+                position: relative;
+                width: 166px;
+                padding-top: 10px;
+                height: 175px;
+                img{
+                    display: block;
+                    width: 166px;
+                    height: 140px;
+                    margin-bottom: 4px;
+                }
+                .start-btn{
+                    float: right;
+                }
+                .start-btn-middle{
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    margin-left: -40px;
+                }
+                .site-btn{
+                    float: left;
+                }
+            }
+        }
+    }
+    .item-hover{
+        .mp-gamerank-brief{
+            display: none;
+
+        }
+        .mp-gamerank-detail,.mp-gamerank-detail2{
+            display: block;
+        }
+    }
+}

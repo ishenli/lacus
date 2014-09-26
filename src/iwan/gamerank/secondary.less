@@ -1,0 +1,240 @@
+/**
+ * @file 新版 页游排行榜||网游排行榜||手游排行榜
+ * @author shenli <shenli03@baidu.com>
+ */
+
+/*doc
+---
+title: gamerank(secondary）
+name: gamerank(第二版排行榜）
+category: iwan-widget
+---
+
+```html_example
+<div style="width: 300px;">
+    <div class="mp-box mp-box-six">
+        <div class="mp-box-head">
+            <h3 class="mp-box-head-title">游戏名称</h3>
+            <a class="mp-box-head-more">更多&gt;&gt;</a>
+        </div>
+        <div class="mp-gamerank-secondary">
+            <table>
+                <colgroup>
+                    <col style="width: 20%;">
+                    <col style="width: 40%;">
+                    <col style="width: 28%;">
+                    <col style="width: 12%;">
+                </colgroup>
+                <tr>
+                    <td>排名</td>
+                    <td>游戏</td>
+                    <td>平台</td>
+                    <td>操作</td>
+                </tr>
+            </table>
+            <ul class="mp-media">
+                <li class="list-item list-item-hover">
+                    <div class="brief">
+                        <span class="number">1</span>
+                        <a class="name">龙武</a>
+                        <span class="platform">平台</span>
+                        <a class="mp-btn download-btn">进入</a>
+                    </div>
+                </li>
+                <li class="list-item item-hover">
+                    <div class="brief">
+                        <span class="number">2</span>
+                        <a class="name">龙武</a>
+                        <span class="platform">平台</span>
+                        <a class="mp-btn download-btn">进入</a>
+                    </div>
+                    <div class="detail">
+                        <a class="img">
+                            <img src="http://bcscdn.baidu.com/resource/fFhOZUjSBWsYZIjIlpP_XWRYZUCLZUhqlp0_NFVOZUhLBmVbZUkbZg.jpg"
+                                 alt="龙武" class="pic"/>
+                        </a>
+
+                        <div class="bd">
+                            <p class="type">类型：<strong>角色扮演</strong></p>
+                            <p class="desc">浏览器怎么把一个元素“画”出来.知道定...</p>
+                            <p><strong class="score">9.9</strong>分</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="brief">
+                        <span class="number">3</span>
+                        <a class="name">龙武</a>
+                        <span class="platform">平台</span>
+                        <a class="mp-btn download-btn">进入</a>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="brief">
+                        <span class="number">10</span>
+                        <a class="name">龙武</a>
+                        <span class="platform">平台</span>
+                        <a class="mp-btn download-btn">进入</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+```
+*/
+.mp-gamerank-secondary {
+    background: #fff;
+    table{
+        width: 100%;
+        tr{
+            height: 34px;
+        }
+        td{
+            font-size: 14px;
+        }
+    }
+    .list-item {
+        position: relative;
+        padding:9px 0;
+        border-bottom: 1px dashed @border-color;
+        vertical-align: middle;
+        font-size: 13px;
+        .number {
+            .ablt(5px,9px);
+            width: 16px;
+            .vertical-align(16px);
+            background:@disable-color;
+            text-align: center;
+            color: @white;
+        }
+        .brief {
+            padding-left: 40px;
+            .name,.platform {
+                .vertical-align(16px);
+            }
+            .arrow {
+                .abrt(3px,6px);
+            }
+            .download-btn {
+                .abrt(0,7px);
+                width: 34px;
+                padding: 0;
+                .vertical-align(18px);
+                text-align: center;
+                .border(@border-gray);
+                color: @text-black;
+
+            }
+            .platform{
+                .ablt(60%,9px);
+                width: 25%;
+                color:@font-default;
+            }
+        }
+        .detail {
+            position: relative;
+            display: none;
+            margin: 6px 0 0 0;
+            padding: 2px 0 0 2px;
+            height: 94px;
+            background: #f2f2f2;
+            font-size: 13px;
+            color: @text-gray;
+            .pic {
+                width: 109px;
+                height: 92px;
+            }
+            .pic-shouyou  {
+                margin-left: 34px;
+                width: 64px;
+                height: 64px;
+                .border-radius(7px);
+            }
+            .txt-wrap{
+                padding-right: 8px;
+                zoom: 1;
+                overflow: hidden;
+            }
+            .txt-wrap-shouyou{
+                padding-top: 5px;
+            }
+
+            .type {
+                .vertical-align(24px);
+                font-size: 13px;
+                strong{
+                    color: @text-black;
+                }
+            }
+            .start-btn {
+                display: block;
+                width: 66px;
+                padding: 0;
+                .vertical-align(19px);
+            }
+            .downloads {
+                color: @text-gray;
+                .vertical-align(17px);
+            }
+            .size {
+                margin: 2px 0;
+                color: @text-black;
+                font-size: 13px;
+            }
+            .head{
+                .vertical-align(24px);
+            }
+            .desc{
+                height: 36px;
+                line-height: 18px;
+            }
+
+            .score{
+                font-size: 30px;
+                line-height: 34px;
+                color: @main-color;
+            }
+
+        }
+
+        .detail-shouyou-primary{
+            height: 58px;
+            background: @white;
+            img{
+                .size(58px,58px);
+                .border-radius(7px);
+            }
+            .text{
+                .vertical-align(18px);
+            }
+            .btn-download{
+                display: block;
+                .size(93px,23px);
+                .hide-text();
+                background: url(@button-url) -120px -550px no-repeat;
+            }
+        }
+
+    }
+
+    .list-item-hover,
+    .item-hover{
+        .number{
+            .vertical-gradient(#ff9c00,#ff7d00);
+        }
+    }
+    .item-hover {
+        .brief{
+            .download-btn{
+                border-color: @main-color;
+                .vertical-gradient(#ff9c00,#ff7d00);
+                color:@white;
+            }
+        }
+
+        .detail {
+            display: block;
+        }
+    }
+}

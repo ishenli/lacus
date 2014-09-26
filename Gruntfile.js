@@ -22,7 +22,7 @@ module.exports = function(grunt) {
             src: 'src',
             dep: 'dep',
             asset: 'asset',
-            tasks: 'tasks'
+            tasks: 'task'
         },
         csslint: {
             options: {

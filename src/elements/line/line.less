@@ -1,0 +1,59 @@
+/**
+ * @file 
+ * @author shenli <shenli03@baidu.com>
+ */
+
+
+/*******************************
+             Basic
+*******************************/
+.mp-line-opacity {
+    width: 100%;
+    z-index: 9;
+    overflow: hidden;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000',endColorstr='#80000000');
+    text-align: center;
+    zoom: 1;
+}
+
+.mp-opacity-white {
+    background-color: rgba(255, 255, 255, 0.9);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9fffffff',endColorstr='#9fffffff');
+
+}
+
+/*
+ * IE9 由于rgba和filter都支持，会导致两个颜色叠加，使用hack去除
+ * \9 代表 IE9 以下浏览器支持
+ * :root 只有 IE9+ 以及其他现代浏览器支持
+ * IE10 以上不再支持 filter
+*/
+
+:root  {
+    .mp-line-opacity,.mp-opacity-white{
+        filter: none\9 !important;
+    }
+}
+
+/*******************************
+             Types
+*******************************/
+.mp-line-primary {
+    background: #f3f3f3;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+
+/*******************************
+             States
+*******************************/
+
+
+/*******************************
+             Variations
+*******************************/
+

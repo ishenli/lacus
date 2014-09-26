@@ -1,6 +1,6 @@
 /**
  * @file reset
- * @author shenli （meshenli@gmail.com）
+ * @author shenli （shenli03@baidu.com）
  * 直接用est函数
  * 参考地址：http://ecomfe.github.io/est/#reset
  */
@@ -9,14 +9,36 @@
 .global-normalize();
 .global-reset();
 
-//基本的样式
-a:link,a:visited{
-    color: @textBlack;
-    text-decoration: none;
+//chrome 新版最小字体大小为12px
+body {
+    background: #fff;
+    font: 12px "Microsoft Yahei", "微软雅黑", Arial, Helvetica, sans-serif;
 }
 
-//浏览器默大小为16px,将默认字体大小转为15px,方便计算
-//chrome 新版最小字体大小为12px，故不采用10px;
-body{
-    font-size: 15px;
+.ie6 body {
+    //ie6 字体 向上偏移，用tahoma
+    font: 12px tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
 }
+
+//基本的样式
+a, a:visited {
+    text-decoration: none;
+    cursor: pointer;
+    color: @text-black;
+}
+
+a:hover {
+    color: @main-color;
+}
+
+/* 让标题都自定义, 适应多个应用 */
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: 500;
+}
+
+//去掉img和图片的底部空白
+img {
+    vertical-align: middle;
+}
+

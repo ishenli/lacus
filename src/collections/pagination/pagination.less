@@ -1,22 +1,56 @@
 /**
  * @file 分页
- * @author shenli （meshenli@gmail.com）
+ * @author shenli （shenli03@baidu.com）
  */
-.ui-pagination{
+/*doc
+---
+title: pagination
+name: pagination
+category: collections
+---
+基本分页
+
+```html_example
+  <div class="mp-pagination">
+	   	<a href="#" data-page="0" class="mp-pagination-current">1</a>
+	   	<a href="#" data-page="1">2</a>
+	   	<a href="#" data-page="2">3</a>
+	   	<a href="#" data-page="1" class="mp-pagination-ellipsis">...</a>
+	   	<a href="#" data-page="101">102</a>
+	   	<a href="#" data-page="1" class="mp-pagination-next">下一页<em></em></a>
+   	</div>
+```
+
+*/
+
+
+.mp-pagination{
     vertical-align: middle;
-    .ui-pagination-item{
+    font-size: 0;
+    .mp-pagination-item,a{
         position: relative;
         .inline-block();
-        padding: .5em 0;
-        border:1px solid @borderGray;
-        min-width: 3em;
-        .lh(1em);
+        .vertical-align(30px);
+        margin-right: 4px;
+        padding: 0 10px;
+        border:1px solid @border-gray;
         text-align: center;
         text-decoration: none;
-        .transition(opacity .2s ease,background .2s ease,box-shadow .2s ease);
+        font-size: 12px;
     }
-    .ui-pagination-disabled{
+    .mp-pagination-disabled{
         cursor: default;
-        color: @gray;
+        color: @text-gray;
+    }
+    .mp-pagination-current{
+        background-color: #ff7a01;
+        border: 0;
+        cursor: default;
+        color: #fff;
+    }
+    .mp-pagination-ellipsis{
+        order: 0;
+        background-color: transparent;
+        cursor: text;
     }
 }

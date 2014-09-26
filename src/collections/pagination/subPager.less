@@ -1,0 +1,77 @@
+//顶部分页条
+
+@import "../less/base";
+@sub-pager-prefix: mp-game-sub-pager;
+
+.@{sub-pager-prefix} {
+
+    position: absolute;
+    top: -35px;
+    right: 5px;
+    width: 707px;
+    height: 35px;
+    padding-left: 20px;
+    line-height: 35px;
+    font-size: 16px;
+
+    em{
+        color: @mainColor;
+        font-style: normal;
+    }
+
+    div {
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding-right: 64px;
+        text-align: right;
+
+        a {
+            position: absolute;
+            top: 7px;
+            width: 23px;
+            height: 23px;
+            cursor: pointer;
+            background-image: url(../img/sub-pager.gif);
+            background-repeat: no-repeat;
+        }
+
+        .@{sub-pager-prefix}-prev {
+            right: 30px;
+            background-position: 0 -23px;
+        }
+
+        .@{sub-pager-prefix}-next {
+            right: 0;
+            background-position: 0 -69px;
+        }
+
+        .@{sub-pager-prefix}-prev-disable {
+            background-position: 0 0;
+            cursor: default;
+        }
+
+        .@{sub-pager-prefix}-next-disable {
+            background-position: 0 -46px;
+            cursor: default;
+        }
+        
+    }
+
+    &-fixed {
+
+        position: fixed;
+        top: 0;
+        left: 50%;
+        margin-left: -239px;
+        background: #f9f9f9;
+        border: 1px solid #d1d1d1;
+        z-index: 1000;
+
+        div {
+            right: 20px;
+        }
+    }
+
+}
