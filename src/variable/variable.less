@@ -4,6 +4,11 @@
  */
 
 /*******************************
+        基本字体大小配置
+*******************************/
+@global-font-size: 14px;
+
+/*******************************
         基本颜色配置，可自定义
 *******************************/
 @default-color: #e8e8e8;
@@ -18,13 +23,14 @@
 @blue: #3498DB;
 @blue-shallow: #4aa3df;
 @purple: #ce8eb7;
-@brown:#ac6316;
+@brown: #ac6316;
 
 //语义化的几个颜色
 @warning-color: #e74c3c;
 @warning-color-deep: #c0392b;
 @success-color: #2ecc71;
 @success-color-deep: #27ae60;
+@danger-color: #dd514c;
 
 /*******************************
        字体颜色
@@ -35,7 +41,6 @@
 @text-orange: #ee7116;
 @text-blue: #15348e;
 
-
 /*******************************
        边框颜色配置，可自定义
 *******************************/
@@ -43,33 +48,33 @@
 @border-gray: #d3d3d3;
 @border-color: #ccc;
 
-@header-default:#f1f1f1;
-
+@header-default: #f1f1f1;
 
 /*******************************
        iconfont颜色配置
 *******************************/
 @android-color: #77c14f;
 
-
 /*******************************
        图片地址
 *******************************/
-@icon-url: '../img/icon.png';
-@icon-url-gif: '../img/icon.gif?';
+@icon-url: 'http://vs-static.baidu.com/game/asset/img/icon.png';
+@icon-url-gif: 'http://vs-static.baidu.com/game/asset/img/icon.gif?';
 
-@sprite-url:'../img/sprite-index.png?v=140825';
-@sprite-url-gif:'../img/sprite-index.gif?v=140825';
+@sprite-url: 'http://vs-static.baidu.com/game/asset/img/sprite-index.png?v=140825';
+@sprite-url-gif: 'http://vs-static.baidu.com/game/asset/img/sprite-index.gif?v=140825';
 
-@button-url:'../img/buttons.png?v=140825';
+@button-url: 'http://vs-static.baidu.com/game/asset/img/buttons.png?v=140825';
 
-@banner-arrow-url:'../img/banner-arrow.png?v=140815';
-@banner-arrow-url-gif:'../img/banner-arrow.gif?v=140815';
+@banner-arrow-url: 'http://vs-static.baidu.com/game/asset/img/banner-arrow.png?v=140815';
+@banner-arrow-url-gif: 'http://vs-static.baidu.com/game/asset/img/banner-arrow.gif?v=140815';
+
+@import "./element.less";
 
 /*******************************
         兼容老的less
 *******************************/
-// COLORS
+// color
 @mainColor: #ff7a01;
 @diableColor: #bdbdbd;
 @borderColor: #dcdcdc;
@@ -101,10 +106,3 @@
 @greenHover:#40d47e;
 @blue:#3498DB;
 @blueHover:#4aa3df;
-
-// IMAGE URL
-@iconUrl: '../img/icon.png?v=140630';
-@iconUrlGif: '../img/icon.gif?v=140630';
-@bannerArrowUrl: '../img/banner-arrow.png?v=10320';
-@btnUrl: '../img/buttons.png?v=140610';
-

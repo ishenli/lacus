@@ -1,0 +1,48 @@
+/**
+ * @file element mixin
+ * @author ishenli（meshenli@gmail.com）
+ */
+
+/*******************************
+        按钮
+*******************************/
+.button-variant(@color; @background; @border) {
+    color: @color;
+    background-color: @background;
+    border-color: @border;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.ui-active,
+    .ui-active .ui-dropdown-toggle& {
+        color: @color;
+        background-color: darken(@background, 12%);
+        border-color: darken(@border, 12%);
+    }
+
+    &:active,
+    &.ui-btn-active,
+    .ui-active .ui-dropdown-toggle& {
+        background-image: none;
+    }
+
+    &.ui-disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        &,
+        &:hover,
+        &:focus,
+        &:active,
+        &.ui-btn-active {
+            background-color: @background;
+            border-color: @border;
+        }
+    }
+
+    // for `.ui-btn-group`
+    .ui-btn-group &,
+    .ui-btn-group-stacked & {
+        border-color: darken(@background, 5%);
+    }
+}

@@ -13,13 +13,11 @@ category: elements
 ---
 
 ```html_example
-   <div class="mp-btn mp-btn-default">default</div>
+   <div class="mp-btn mp-btn-warning">warning</div>
 ```
 Button                                                            | Modifier Class
 ----------------------------------------------------------------- | -----------------
  <div class="mp-btn mp-btn-primary">button</div>              | `mp-btn-primary`
- <div class="mp-btn mp-btn-primary2">button</div>              | `mp-btn-primary2`
- <div class="mp-btn mp-btn-focus">button</div>              | `mp-btn-focus`
  <div class="mp-btn mp-btn-blue">button</div>              | `mp-btn-blue`
  <div class="mp-btn mp-btn-disable">disable</div>              | `mp-btn-disable`
  <div class="mp-btn mp-btn-default">default</div>              | `mp-btn-default`
@@ -29,25 +27,49 @@ Button                                                            | Modifier Cla
 .mp-btn {
     position: relative;
     .inline-block();
+    margin-bottom: 0;
+    background-image: none;
+    *zoom: 1;
+    *overflow: visible;
+    padding: .625em 1em;
+    line-height: @btn-line-height;
+    word-wrap: normal;
+    white-space: nowrap;
+    .border-radius(2px);
     text-align: center;
     text-decoration: none;
     vertical-align: middle;
+    font-size: @btn-font-size;
     cursor: pointer;
-    background-image: none;
-    .vertical-align(26px);
-    padding: 0 10px;
-    word-wrap: normal;
-    white-space: nowrap;
-    color: #fff;
-    font-size: 13px;
-    .border-radius(2px);
-    *zoom: 1;
-    *overflow: visible;
-    border: none; //去除<button/>的边框
-    font-family: "Microsoft Yahei", "微软雅黑";
-    &:hover {
+    color: @btn-default-color;
+    border: none; // 去除<button/>的边框
+    outline: 0;
+    .user-select(none);
+    .transition(background-color 300ms ease-out, border-color 300ms ease-out);
+    &:hover,
+    &:focus {
+        outline: 0;
+        color: @btn-default-color;
         text-decoration: none;
     }
+
+    &:active,
+    &.ui-active {
+        background-image: none;
+        .box-shadow(inset 0 1px 8px rgba(0, 0, 0, .125));
+    }
+
+    &.ui-disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        // https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events
+        pointer-events: none; // Disable mouse events
+        border-color: transparent;
+        cursor: not-allowed; // may not styled because pointer-events: none;
+        .opacity(.45);
+        .box-shadow(none);
+    }
+
 }
 
 /*******************************
@@ -55,12 +77,11 @@ Button                                                            | Modifier Cla
 *******************************/
 .mp-btn-txt {
     .inline-block();
-    cursor: pointer;
     border: 0;
     text-decoration: none;
     overflow: visible;
-    font-size: 14px;
-    font-weight: 700;
+    font-weight: @btn-font-weight;
+    cursor: pointer;
 }
 
 .mp-btn a.mp-btn-txt:hover {
@@ -70,79 +91,35 @@ Button                                                            | Modifier Cla
 /*******************************
              States
 *******************************/
-//中间页用的最多
-.mp-btn-primary,
-.mp-btn-focus2 {
-    color: #fff;
-    background: @main-color;
-    border: 1px solid #ff7010;
-    &:hover {
-        background: #fc531f;
-        color: #fff;
-    }
-}
-
-.mp-btn-primary2 {
-    background: #ff9600;
-    .vertical-gradient(#ff9600, #ff8400);
-    .border(#e27913);
-    .box-shadow(0 1px 1px 0 rgba(0, 0, 0, 0.25));
-    &:hover {
-        background: #fe7300;
-        .vertical-gradient(#fe7b00, #fe7300);
-        border-color: #c15604;
-        color: #fff;
-    }
+.mp-btn-primary {
+    .button-variant(@btn-primary-color, @btn-primary-bg, @btn-primary-border);
 }
 
 .mp-btn-default {
-    .border(@border-gray);
-    color: @font-default;
-    background: #fbfbfb;
-    .linear-gradient(bottom, #ffffff, #fbfbfb);
-    &:hover {
-        background: #fafafa;
-    }
+    .button-variant(@btn-default-color, @btn-default-bg, @btn-default-border);
 }
 
 .mp-btn-normal,
-.mp-btn-disable {
-    background: #ececec;
-    .border(#e2e2e2);
-    color: #ccc;
+.mp-btn-disable,
+.mp-btn-disabled {
+    .button-variant(@default-color, @disable-color, @disable-color);
 }
 
 .mp-btn-disable {
     cursor: default;
 }
 
-.mp-btn-focus {
-    .border(@main-color);
-    background: @main-color;
-    &:hover {
-        background: #fc531f;
-    }
-}
-
 .mp-btn-success {
-    .border(@success-color);
-    background: @success-color;
-    &:hover {
-        background: @success-color-deep;
-    }
+    .button-variant(@btn-success-color, @btn-success-bg, @btn-success-border);
 }
 
 .mp-btn-warning {
-    .border(@warning-color);
-    background: @warning-color;
-    &:hover {
-        background: @warning-color-deep;
-    }
+    .button-variant(@btn-warning-color, @btn-warning-bg, @btn-warning-border);
 }
 
 .mp-btn-img {
-    background: @main-color;
-    border: 1px solid #ff7010;
+    background: @btn-primary-bg;
+    border-color: @btn-primary-bg;
     &:hover {
         background: url(@button-url) 0 0 no-repeat;
     }
@@ -150,10 +127,7 @@ Button                                                            | Modifier Cla
 
 //蓝色按钮
 .mp-btn-blue {
-    background: #3498DB;
-    &:hover {
-        background: #2980b9;
-    }
+    .button-variant(@btn-secondary-color, @btn-secondary-bg, @btn-secondary-border);
 }
 
 /*******************************
@@ -162,10 +136,8 @@ Button                                                            | Modifier Cla
 
 .mp-btn-large {
     padding: 0 40px;
-    .vertical-align(28px);
 }
 
 .mp-btn-middle {
     padding: 0 10px;
-    .vertical-align(22px);
 }

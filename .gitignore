@@ -4,6 +4,7 @@
 .settings/
 lib/
 logs/
+dep/
 target/
 bin/
 node_modules/
