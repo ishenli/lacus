@@ -2,7 +2,7 @@
   "name": "lacus",
   "version": "0.0.2",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "main":"asset/all/all.css",
   "ignore": [
     "**/.*",
