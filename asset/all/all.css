@@ -1,0 +1,3720 @@
+/**
+ * @file eva framework
+ * @author shenli （shenli03@baidu.com）
+ */
+/**
+ * @file 基础less,不引入任何产生的css的less
+ * @author shenli <shenli03@baidu.com>
+ */
+/**
+ * @file 基本变量定义
+ * @author shenli <shenli03@baidu.com>
+ */
+/*******************************
+        基本字体大小配置
+*******************************/
+/*******************************
+        基本颜色配置，可自定义
+*******************************/
+/*******************************
+       字体颜色
+*******************************/
+/*******************************
+       边框颜色配置，可自定义
+*******************************/
+/*******************************
+       iconfont颜色配置
+*******************************/
+/*******************************
+       图片地址
+*******************************/
+/**
+ * @file 各个元素的详细变量配置
+ * @author ishenli（meshenli@gmail.com）
+ */
+/*******************************
+            按钮
+*******************************/
+/*@btn-lg-font-size: @font-size-lg;
+@btn-sm-font-size: @font-size-sm;
+@btn-xs-font-size: @font-size-xs;*/
+/*******************************
+        兼容老的less
+*******************************/
+/**
+ * @file 常用less函数封装
+ * @author shenli <shenli03@baidu.com>
+ */
+/**
+ * @file   布局
+ * @author shenli <shenli03@baidu.com>
+ */
+/**
+ * @file 文本
+ * @author shenli <shenli03@baidu.com>
+ */
+/**
+ * @file   兼容性
+ * @author shenli <shenli03@baidu.com>
+ */
+/**
+ * @file element mixin
+ * @author ishenli（meshenli@gmail.com）
+ */
+/*******************************
+        按钮
+*******************************/
+/**
+ * @file reset
+ * @author shenli （shenli03@baidu.com）
+ * 直接用est函数
+ * 参考地址：http://ecomfe.github.io/est/#reset
+ */
+/*! normalize.css v1.1.2 | MIT License | git.io/normalize */
+/* ==========================================================================
+       Base
+       ========================================================================== */
+/**
+     * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+     *    `em` units.
+     * 2. Prevent iOS text size adjust after orientation change, without disabling
+     *    user zoom.
+     */
+html {
+  font-size: 100%;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+/**
+     * Address `font-family` inconsistency between `textarea` and other form
+     * elements.
+     */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  *font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+/**
+     * Address margins handled incorrectly in IE 6/7.
+     */
+body {
+  margin: 0;
+}
+/* ==========================================================================
+       Links
+       ========================================================================== */
+/**
+     * Address `outline` inconsistency between Chrome and other browsers.
+     */
+a:focus {
+  outline: thin dotted;
+}
+/**
+     * Improve readability when focused and also mouse hovered in all browsers.
+     */
+a:active,
+a:hover {
+  outline: 0;
+}
+/* ==========================================================================
+       Typography
+       ========================================================================== */
+/**
+     * Address font sizes and margins set differently in IE 6/7.
+     * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
+     * and Chrome.
+     */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+h6 {
+  font-size: 0.67em;
+  margin: 2.33em 0;
+}
+/**
+     * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
+     */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+/**
+     * Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+     */
+b,
+strong {
+  font-weight: bold;
+}
+blockquote {
+  margin: 1em 40px;
+}
+/**
+     * Address styling not present in Safari 5 and Chrome.
+     */
+dfn {
+  font-style: italic;
+}
+/**
+     * Address differences between Firefox and other browsers.
+     * Known issue: no IE 6/7 normalization.
+     */
+hr {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+/**
+     * Address margins set differently in IE 6/7.
+     */
+p,
+pre {
+  margin: 1em 0;
+}
+/**
+     * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
+     */
+code,
+kbd,
+pre,
+samp {
+  font-family: Monaco, Consolas, monospace;
+  *font-family: Monaco, Consolas, monospace;
+  font-size: 1em;
+}
+/**
+     * Improve readability of pre-formatted text in all browsers.
+     */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+/**
+     * Address CSS quotes not supported in IE 6/7.
+     */
+q {
+  quotes: none;
+}
+/**
+     * Address `quotes` property not supported in Safari 4.
+     */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+/**
+     * Address inconsistent and variable font size in all browsers.
+     */
+small {
+  font-size: 80%;
+}
+/**
+     * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+     */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+/* ==========================================================================
+       Lists
+       ========================================================================== */
+/**
+     * Address margins set differently in IE 6/7.
+     */
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+dd {
+  margin: 0 0 0 40px;
+}
+/**
+     * Address paddings set differently in IE 6/7.
+     */
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+/**
+     * Correct list images handled incorrectly in IE 7.
+     */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+/* ==========================================================================
+       Embedded content
+       ========================================================================== */
+/**
+     * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+     * 2. Improve image quality when scaled in IE 7.
+     */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+/**
+     * Correct overflow displayed oddly in IE 9.
+     */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* ==========================================================================
+       Forms
+       ========================================================================== */
+/**
+     * Correct margin displayed oddly in IE 6/7.
+     */
+form {
+  margin: 0;
+}
+/**
+     * Define consistent border, margin, and padding.
+     */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+/**
+     * 1. Correct color not being inherited in IE 6/7/8/9.
+     * 2. Correct text not wrapping in Firefox 3.
+     * 3. Correct alignment displayed oddly in IE 6/7.
+     */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */
+}
+/**
+     * 1. Correct font size not being inherited in all browsers.
+     * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+     *    and Chrome.
+     * 3. Improve appearance and consistency in all browsers.
+     */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
+/**
+     * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+     * the UA stylesheet.
+     */
+button,
+input {
+  line-height: normal;
+}
+/**
+     * Address inconsistent `text-transform` inheritance for `button` and `select`.
+     * All other form control elements do not inherit `text-transform` values.
+     * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+     * Correct `select` style inheritance in Firefox 4+ and Opera.
+     */
+button,
+select {
+  text-transform: none;
+}
+/**
+     * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+     *    and `video` controls.
+     * 2. Correct inability to style clickable `input` types in iOS.
+     * 3. Improve usability and consistency of cursor style between image-type
+     *    `input` and others.
+     * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+     *    Known issue: inner spacing remains in IE 6.
+     */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */
+}
+/**
+     * Re-set default cursor for disabled elements.
+     */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+/**
+     * 1. Address box sizing set to content-box in IE 8/9.
+     * 2. Remove excess padding in IE 8/9.
+     * 3. Remove excess padding in IE 7.
+     *    Known issue: excess padding remains in IE 6.
+     */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */
+}
+/**
+     * Remove inner padding and border in Firefox 3+.
+     */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/**
+     * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+     * 2. Improve readability and alignment in all browsers.
+     */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+/* ==========================================================================
+       Tables
+       ========================================================================== */
+/**
+     * Remove most spacing between table cells.
+     */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* ==========================================================================
+       HTML5 display definitions
+       ========================================================================== */
+/**
+     * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
+     */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+/**
+     * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+     */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+/**
+     * Prevent modern browsers from displaying `audio` without controls.
+     * Remove excess height in iOS 5 devices.
+     */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/**
+     * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+     * Known issue: no IE 6 support.
+     */
+[hidden] {
+  display: none;
+}
+/* ==========================================================================
+       Typography
+       ========================================================================== */
+/**
+     * Address styling not present in IE 6/7/8/9.
+     */
+mark {
+  background: #ff0;
+  color: #666666;
+}
+/* ==========================================================================
+       Figures
+       ========================================================================== */
+/**
+     * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+     */
+figure {
+  margin: 0;
+}
+/**
+     * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+     * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+     *    (include `-moz` to future-proof).
+     */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  /* 2 */
+}
+/**
+     * Remove inner padding and search cancel button in Safari 5 and Chrome
+     * on OS X.
+     */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+main {
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]),
+[hidden] {
+  display: none;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background: #fff;
+  font: 12px "Microsoft Yahei", "微软雅黑", Arial, Helvetica, sans-serif;
+}
+.ie6 body {
+  font: 12px tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+}
+a,
+a:visited {
+  text-decoration: none;
+  cursor: pointer;
+  color: #333333;
+}
+a:hover {
+  color: #ff7a01;
+}
+/* 让标题都自定义, 适应多个应用 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: 500;
+}
+img {
+  vertical-align: middle;
+}
+/**
+ * @file 动画
+ * @author shenli （shenli03@baidu.com）
+ */
+/**
+ * @file 自定义动画
+ * @author shenli （shenli03@baidu.com）
+ */
+/**
+ * @file 缩放动画
+ * @author shenli （shenli03@baidu.com）
+ */
+/**
+ * @file
+ * @author shenli （shenli03@baidu.com）
+ */
+@-webkit-keyframes finish {
+  0% {
+    width: 0%;
+  }
+  40% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-moz-keyframes finish {
+  0% {
+    width: 0%;
+  }
+  40% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes finish {
+  0% {
+    width: 0%;
+  }
+  40% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-webkit-keyframes progress-active {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0;
+    width: 95%;
+  }
+}
+@-moz-keyframes progress-active {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0;
+    width: 100%;
+  }
+}
+@keyframes progress-active {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0;
+    width: 100%;
+  }
+}
+/**
+ * @file    grid
+ * @author shenli <shenli03@baidu.com>
+ */
+/*******************************
+             Basic
+*******************************/
+/* grid 样式模块 */
+.mp-grid-1,
+.mp-grid-2,
+.mp-grid-3,
+.mp-grid-4,
+.mp-grid-5,
+.mp-grid-5-1,
+.mp-grid-6,
+.mp-grid-6-1,
+.mp-grid-6-3,
+.mp-grid-7,
+.mp-grid-7-1,
+.mp-grid-7-2,
+.mp-grid-7-3,
+.mp-grid-8,
+.mp-grid-9,
+.mp-grid-9-3,
+.mp-grid-10,
+.mp-grid-10-1,
+.mp-grid-11,
+.mp-grid-12,
+.mp-grid-12-1,
+.mp-grid-13,
+.mp-grid-14,
+.mp-grid-15,
+.mp-grid-16,
+.mp-grid-16-1,
+.mp-grid-16-2,
+.mp-grid-16-3,
+.mp-grid-17,
+.mp-grid-17-2,
+.mp-grid-17-3,
+.mp-grid-18,
+.mp-grid-18-2,
+.mp-grid-19,
+.mp-grid-19-2,
+.mp-grid-20,
+.mp-grid-21,
+.mp-grid-22,
+.mp-grid-23,
+.mp-grid-24,
+.mp-grid-25 {
+  float: left;
+  display: inline;
+  margin-right: 10px;
+}
+.mp-grid-1 {
+  width: 40px;
+}
+.mp-grid-2 {
+  width: 80px;
+}
+.mp-grid-3 {
+  width: 120px;
+}
+.mp-grid-4 {
+  width: 160px;
+}
+/* 右侧推广位的宽度 */
+.mp-grid-5 {
+  width: 200px;
+}
+.mp-grid-5-1 {
+  width: 210px;
+}
+/* 左侧边栏的宽度 */
+.mp-grid-6 {
+  width: 240px;
+}
+.mp-grid-6-1 {
+  width: 250px;
+}
+.mp-grid-6-2 {
+  width: 260px;
+}
+.mp-grid-6-3 {
+  width: 270px;
+}
+.mp-grid-7 {
+  width: 280px;
+}
+.mp-grid-7-1 {
+  width: 290px;
+}
+.mp-grid-7-2 {
+  width: 300px;
+}
+.mp-grid-7-3 {
+  width: 310px;
+}
+.mp-grid-8 {
+  width: 320px;
+}
+.mp-grid-9 {
+  width: 360px;
+}
+.mp-grid-9-3 {
+  width: 390px;
+}
+.mp-grid-10 {
+  width: 400px;
+}
+.mp-grid-10-1 {
+  width: 410px;
+}
+.mp-grid-11 {
+  width: 440px;
+}
+.mp-grid-12 {
+  width: 480px;
+}
+.mp-grid-12-1 {
+  width: 490px;
+}
+.mp-grid-13 {
+  width: 520px;
+}
+.mp-grid-14 {
+  width: 560px;
+}
+.mp-grid-15 {
+  width: 600px;
+}
+/* 中央区域宽度 */
+.mp-grid-16 {
+  width: 640px;
+}
+.mp-grid-16-1 {
+  width: 650px;
+}
+.mp-grid-16-2 {
+  width: 660px;
+}
+.mp-grid-16-3 {
+  width: 670px;
+}
+.mp-grid-17 {
+  width: 680px;
+}
+.mp-grid-17-2 {
+  width: 700px;
+}
+.mp-grid-17-3 {
+  width: 710px;
+}
+.mp-grid-18 {
+  width: 720px;
+}
+.mp-grid-18-2 {
+  width: 740px;
+}
+.mp-grid-19 {
+  width: 760px;
+}
+.mp-grid-19-2 {
+  width: 780px;
+}
+.mp-grid-20 {
+  width: 800px;
+}
+.mp-grid-21 {
+  width: 840px;
+}
+.mp-grid-22 {
+  width: 880px;
+}
+.mp-grid-23 {
+  width: 920px;
+}
+.mp-grid-24 {
+  width: 960px;
+}
+.mp-grid-25 {
+  width: 1000px;
+}
+.mp-grid-right {
+  margin-right: 0;
+}
+/* 主体grid */
+/* 最大页面宽度 */
+.mp-grid-container,
+.mp-grid-wrap {
+  width: 980px;
+  min-width: 980px;
+  margin: 0 auto;
+}
+.mp-grid-container {
+  position: relative;
+  margin-bottom: 18px;
+}
+.mp-grid-main {
+  float: right;
+  width: 727px;
+}
+/**
+ * @file   工具类
+ * @author shenli <shenli03@baidu.com>
+ */
+/*******************************
+             Basic
+*******************************/
+.mp-clearfix {
+  *zoom: 1;
+}
+.mp-clearfix:before,
+.mp-clearfix:after {
+  display: table;
+  content: "";
+}
+.mp-clearfix:after {
+  clear: both;
+}
+body .mp-left,
+body .fn-left {
+  float: left;
+}
+body .mp-right,
+body .fn-right {
+  float: right;
+}
+body .mp-hidden {
+  display: none;
+}
+body .mp-visible-no {
+  visibility: hidden;
+}
+.mp-scrollable-text {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  resize: both;
+}
+.mp-scrollable-box {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  resize: both;
+}
+.mp-bfc {
+  overflow: hidden;
+  *zoom: 1;
+}
+.mp-nbfc-alt {
+  display: table-cell;
+  width: 10000px;
+}
+.mp-media .img {
+  float: left;
+  margin-right: 10px;
+}
+.mp-media .img img {
+  display: block;
+}
+.mp-media .bd {
+  overflow: hidden;
+  _overflow: visible;
+  zoom: 1;
+}
+.mp-media .mp-media-title {
+  color: #333333;
+  height: 23px;
+  line-height: 23px;
+}
+.mp-media .mp-media-des {
+  color: #999999;
+}
+.mp-no-visible {
+  visibility: hidden;
+}
+.mp-sticky {
+  position: fixed!important;
+  top: 0!important;
+}
+.mp-prev,
+.mp-next,
+.next,
+.prev {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/**
+ * @file iconfont字体
+ * @author shenli （shenli03@baidu.com）
+ */
+@font-face {
+  font-family: 'iconfont';
+  src: url('../common/font/iconfont.eot');
+  src: url('../common/font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../common/font/iconfont.woff') format('woff'), /* chrome、firefox */ url('../common/font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('../common/font/iconfont.svg#svgFontName') format('svg');
+  
+  /* IE9*/
+  /* iOS 4.1- */
+}
+.iconfont {
+  font-family: 'iconfont';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.iconfont-android {
+  color: #77c14f;
+}
+.iconfont-apple {
+  color: #c1c1c1;
+}
+/**
+ * @file 边框
+ * @author shenli <shenli03@baidu.com>
+ */
+/*******************************
+             Basic
+*******************************/
+/*doc
+---
+title: box-primary
+name: box(primary)
+category: elements
+---
+带边框和标题的标准区块,默认样式没有父类，带有前缀，不会和业务样式产生冲突
+
+
+```html_example
+    <div class="mp-box mp-box-primary">
+        <div class="mp-box-head">
+            <h3 class="mp-box-head-title"><strong class="mp-highlight">最新</strong>游戏</h3>
+        </div>
+        <div class="mp-box-container">
+            <div class="mp-box-content">box内容</div>
+        </div>
+    </div>
+```
+*/
+.mp-box {
+  margin: 0;
+  padding: 0;
+  zoom: 1;
+}
+.mp-box-head-icon {
+  float: left;
+}
+.mp-box-head {
+  position: relative;
+  zoom: 1;
+}
+.mp-box-head .iconfont {
+  padding-right: 10px;
+}
+.mp-box-head-title {
+  float: left;
+  display: inline;
+  font-size: 16px;
+  color: #333333;
+}
+.mp-box-head-more {
+  float: right;
+  font-size: 12px;
+  color: #666666;
+}
+.mp-box-foot,
+.mp-box-container {
+  border-bottom: 1px solid #ccc;
+}
+.mp-box-content {
+  padding: 10px;
+}
+.mp-box-head-btn {
+  position: relative;
+  float: right;
+  width: 47px;
+  margin-top: 5px;
+  height: 18px;
+  line-height: 18px;
+  border: 1px solid #cccccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #666666;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#efefef));
+  background-image: -webkit-linear-gradient(top, #ffffff, #efefef);
+  background-image: -moz-linear-gradient(top, #ffffff, #efefef);
+  background-image: -o-linear-gradient(top, #ffffff, #efefef);
+  background-image: linear-gradient(to bottom, #ffffff, #efefef);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#ffffffff', endColorstr='#ffefefef', GradientType=0);
+}
+.mp-box-head-btn .arrow-r {
+  position: absolute;
+  top: 6px;
+  right: 0;
+  border-width: 3px;
+  border-color: transparent;
+  _border-color: #efefef;
+  border-left-color: #ff7a01;
+}
+.mp-box-head-btn:hover {
+  text-decoration: underline;
+  color: #ff7a01;
+}
+/*******************************
+             Types
+*******************************/
+.mp-box-primary {
+  border: 1px solid #cccccc;
+  border-bottom: 0;
+}
+.mp-box-primary .mp-box-head {
+  padding: 7px 8px;
+  height: 24px;
+  line-height: 24px;
+  background: #f1f1f1;
+  border-bottom: 1px solid #ccc;
+}
+.mp-box-secondary .iconfont {
+  font-size: 17px;
+}
+.mp-box-secondary .mp-box-head {
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 3px solid #ff7a01;
+  background: url('http://vs-static.baidu.com/game/asset/img/sprite-index.png?v=140825') no-repeat;
+  _background: url('http://vs-static.baidu.com/game/asset/img/sprite-index.gif?v=140825') no-repeat;
+}
+.mp-box-secondary .head-large {
+  background-position: 0 -84px;
+}
+.mp-box-secondary .mp-box-head-title {
+  padding-left: 10px;
+  font-size: 16px;
+  color: #ffffff;
+}
+.mp-box-secondary .mp-box-head-more {
+  margin-top: 5px;
+}
+/*doc
+---
+title: box-secondary
+name: box(secondary)
+category: elements
+---
+爱玩首页带图标的导航无背景色的导航
+
+```html_example
+   <div class="mp-box mp-box-secondary">
+        <div class="mp-box-head">
+            <h3 class="mp-box-head-title"><i class="iconfont">&#x344c;</i>游戏名称</h3>
+            <a class="mp-box-head-btn">更多<i class="mp-arrow arrow-r"></i></a>
+        </div>
+        <div class="mp-box-content">box内容</div>
+    </div>
+```
+*/
+/*doc
+---
+title: box(tertiary)
+name: box-tertiary
+category: elements
+---
+爱玩首页带图标的导航无背景色的导航
+
+```html_example
+    <div class="mp-box mp-box-tertiary">
+        <div class="mp-box-head">
+            <h3 class="mp-box-head-title">游戏名称</h3>
+            <div class="keystone"></div>
+        </div>
+        <div class="mp-box-content">box内容</div>
+    </div>
+```
+*/
+.mp-box-tertiary .mp-box-head {
+  height: 44px;
+  line-height: 44px;
+  border-bottom: 1px solid #ff7a01;
+}
+.mp-box-tertiary .mp-box-head .keystone {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 195px;
+  height: 0;
+  border: 3px solid transparent;
+  border-bottom-color: #ff7a01;
+  border-right: 0;
+  _display: none;
+}
+.mp-box-tertiary .mp-box-head-more {
+  margin-top: 12px;
+}
+.mp-box-tertiary .mp-box-head-icon {
+  position: absolute;
+  top: 9px;
+  left: 0;
+}
+.mp-box-tertiary .mp-box-head-title {
+  font-size: 18px;
+  color: #333333;
+}
+/*doc
+---
+title: box(five)
+name: box-five
+category: elements
+
+---
+头部直线的box
+
+```html_example
+
+<div class="mp-box mp-box-five">
+    <h3 class="mp-box-head-title mp-png">游戏名称</h3>
+    <p class="mp-box-head-more">展开查看全部</p>
+</div>
+```
+*/
+.mp-box-five {
+  position: relative;
+  height: 24px;
+}
+.mp-box-five .mp-box-head {
+  position: static;
+}
+.mp-box-five .mp-box-head-title,
+.mp-box-five .mp-box-head-more {
+  position: absolute;
+  top: 0;
+  height: 24px;
+  line-height: 24px;
+  z-index: 2;
+}
+.mp-box-five .mp-box-head-title {
+  left: 0;
+  color: #ffffff;
+  width: 110px;
+  font-size: 15px;
+  text-indent: 15px;
+  background: url('http://vs-static.baidu.com/game/asset/img/sprite-index.png?v=140825') 0 -220px no-repeat;
+}
+.mp-box-five .mp-box-head-more {
+  right: 0;
+  padding-left: 10px;
+  text-align: right;
+  color: #ac6316;
+  background: #ffffff;
+}
+.mp-box-five:after {
+  content: '';
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  top: 12px;
+  left: 0;
+  background: #d3d3d3;
+}
+/*doc
+---
+title: box(six)
+name: box-six
+category: elements
+
+---
+头部直线的box
+
+```html_example
+
+<div class="mp-box mp-box-six">
+    <div class="mp-box-head">
+        <h3 class="mp-box-head-title">游戏名称</h3>
+        <a class="mp-box-head-more">更多&gt;&gt;</a>
+    </div>
+</div>
+```
+*/
+.mp-box-six .mp-box-head {
+  height: 24px;
+  border-bottom: 1px solid #d3d3d3;
+}
+.mp-box-six .mp-box-head-title {
+  float: left;
+  height: 24px;
+  line-height: 24px;
+  font-size: 16px;
+  color: #ff7a01;
+  border-bottom: 1px solid #ff7a01;
+}
+.mp-box-six .mp-box-head-more {
+  float: right;
+  color: #666666;
+  margin-top: 5px;
+}
+.mp-box-six .mp-box-head-more:hover {
+  color: #ff7a01;
+}
+/*doc
+---
+title: box(line)
+name: box-line
+category: elements
+---
+```html_example
+    <div class="mp-box">
+        <div class="mp-box-head-line">
+            <h3 class="mp-box-head-title">游戏名称</h3>
+        </div>
+        <div class="mp-box-content">box内容</div>
+    </div>
+```
+*/
+.mp-box-head-line {
+  border-left: 4px solid #ff7a01;
+  padding-left: 15px;
+  vertical-align: bottom;
+}
+.mp-box-head-line .mp-box-head-title {
+  font-size: 16px;
+  float: none;
+}
+/*doc
+---
+title: box(tab)
+name: box-tab
+category: elements
+---
+带有tab切换的box,该组件需要与js相结合
+
+```html_example
+    <div class="mp-box mp-box-tab">
+        <div class="mp-box-head">
+            <h3 class="mp-box-head-title active">游戏名称</h3>
+            <h3 class="mp-box-head-title">游戏名称2</h3>
+            <div class="mp-line"></div>
+        </div>
+        <div class="mp-box-content">box内容</div>
+    </div>
+```
+*/
+.mp-box-tab {
+  border: 1px solid #cccccc;
+}
+.mp-box-tab .mp-box-head {
+  height: 37px;
+  background: #f1f1f1;
+  border-bottom: 1px solid #ccc;
+}
+.mp-box-tab .mp-box-head .mp-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 100%;
+  background: #cccccc;
+}
+.mp-box-tab .mp-box-head .active {
+  margin-top: -1px;
+  border-top: 2px solid #ff7a01;
+  background: #ffffff;
+}
+.mp-box-tab .mp-box-head .active strong {
+  color: #ff7a01;
+}
+.mp-box-tab .mp-box-head-title {
+  _position: relative;
+  float: left;
+  height: 37px;
+  line-height: 37px;
+  width: 50%;
+  color: #999999;
+  text-align: center;
+  margin-bottom: -1px;
+}
+.mp-box-tab .mp-box-head-title strong {
+  font-weight: normal;
+}
+/*手游中间页的新游样式*/
+.mp-box-tab2 {
+  padding: 0 14px;
+  border: 1px solid #d3d3d3;
+  border-top: 3px solid #ff7a01;
+}
+.mp-box-tab2 .mp-box-head {
+  height: 31px;
+  padding: 8px 0 0;
+  background: #ffffff;
+  border-bottom: 1px solid #d3d3d3;
+}
+.mp-box-tab2 .mp-box-head-tab {
+  width: 90px;
+  margin-right: 5px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #cccccc;
+}
+.mp-box-tab2 .single {
+  border: none;
+  text-align: left;
+}
+.mp-box-tab2 .active {
+  color: #ff7a01;
+}
+/*******************************
+             States
+*******************************/
+.mp-box-highlight {
+  border-top: 3px solid #ff7a01;
+}
+/*******************************
+             Variations
+*******************************/
+.mp-box-secondary.large .mp-box-head {
+  background-position: 0 -85px;
+}
+/**
+ * @file 按钮
+ * @author shenli <shenli03@baidu.com>
+ */
+/*******************************
+             Basic
+*******************************/
+/*doc
+---
+title: button
+name: button
+category: elements
+---
+
+```html_example
+   <div class="mp-btn mp-btn-warning">warning</div>
+```
+Button                                                            | Modifier Class
+----------------------------------------------------------------- | -----------------
+ <div class="mp-btn mp-btn-primary">button</div>              | `mp-btn-primary`
+ <div class="mp-btn mp-btn-blue">button</div>              | `mp-btn-blue`
+ <div class="mp-btn mp-btn-disable">disable</div>              | `mp-btn-disable`
+ <div class="mp-btn mp-btn-default">default</div>              | `mp-btn-default`
+ <div class="mp-btn mp-btn-success">success</div>              | `mp-btn-success`
+ <div class="mp-btn mp-btn-warning">warning</div>              | `mp-btn-warning`
+*/
+.mp-btn {
+  position: relative;
+  display: inline-block;
+  *display: inline;
+  margin-bottom: 0;
+  background-image: none;
+  *zoom: 1;
+  *overflow: visible;
+  padding: .625em 1em;
+  line-height: 1.2;
+  word-wrap: normal;
+  white-space: nowrap;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  font-size: 14px;
+  cursor: pointer;
+  color: #666666;
+  border: none;
+  outline: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: background-color 300ms ease-out, border-color 300ms ease-out;
+  -moz-transition: background-color 300ms ease-out, border-color 300ms ease-out;
+  -ms-transition: background-color 300ms ease-out, border-color 300ms ease-out;
+  -o-transition: background-color 300ms ease-out, border-color 300ms ease-out;
+  transition: background-color 300ms ease-out, border-color 300ms ease-out;
+}
+.mp-btn:hover,
+.mp-btn:focus {
+  outline: 0;
+  color: #666666;
+  text-decoration: none;
+}
+.mp-btn:active,
+.mp-btn.ui-active {
+  background-image: none;
+  -webkit-box-shadow: inset 0 1px 8px rgba(0, 0, 0, 0.125);
+  -moz-box-shadow: inset 0 1px 8px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 1px 8px rgba(0, 0, 0, 0.125);
+}
+.mp-btn.ui-disabled,
+.mp-btn[disabled],
+fieldset[disabled] .mp-btn {
+  pointer-events: none;
+  border-color: transparent;
+  cursor: not-allowed;
+  opacity: 0.0045;
+  filter: alpha(opacity=0.45);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+/*******************************
+             Types
+*******************************/
+.mp-btn-txt {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  border: 0;
+  text-decoration: none;
+  overflow: visible;
+  font-weight: normal;
+  cursor: pointer;
+}
+.mp-btn a.mp-btn-txt:hover {
+  text-decoration: none;
+}
+/*******************************
+             States
+*******************************/
+.mp-btn-primary {
+  color: #ffffff;
+  background-color: #ff7a01;
+  border-color: #ff7a01;
+}
+.mp-btn-primary:hover,
+.mp-btn-primary:focus,
+.mp-btn-primary:active,
+.mp-btn-primary.ui-active,
+.ui-active .ui-dropdown-toggle.mp-btn-primary {
+  color: #ffffff;
+  background-color: #c35d00;
+  border-color: #c35d00;
+}
+.mp-btn-primary:active,
+.mp-btn-primary.ui-btn-active,
+.ui-active .ui-dropdown-toggle.mp-btn-primary {
+  background-image: none;
+}
+.mp-btn-primary.ui-disabled,
+.mp-btn-primary[disabled],
+fieldset[disabled] .mp-btn-primary,
+.mp-btn-primary.ui-disabled:hover,
+.mp-btn-primary[disabled]:hover,
+fieldset[disabled] .mp-btn-primary:hover,
+.mp-btn-primary.ui-disabled:focus,
+.mp-btn-primary[disabled]:focus,
+fieldset[disabled] .mp-btn-primary:focus,
+.mp-btn-primary.ui-disabled:active,
+.mp-btn-primary[disabled]:active,
+fieldset[disabled] .mp-btn-primary:active,
+.mp-btn-primary.ui-disabled.ui-btn-active,
+.mp-btn-primary[disabled].ui-btn-active,
+fieldset[disabled] .mp-btn-primary.ui-btn-active {
+  background-color: #ff7a01;
+  border-color: #ff7a01;
+}
+.ui-btn-group .mp-btn-primary,
+.ui-btn-group-stacked .mp-btn-primary {
+  border-color: #e76e00;
+}
+.mp-btn-default {
+  color: #666666;
+  background-color: #e8e8e8;
+  border-color: #e8e8e8;
+}
+.mp-btn-default:hover,
+.mp-btn-default:focus,
+.mp-btn-default:active,
+.mp-btn-default.ui-active,
+.ui-active .ui-dropdown-toggle.mp-btn-default {
+  color: #666666;
+  background-color: #c9c9c9;
+  border-color: #c9c9c9;
+}
+.mp-btn-default:active,
+.mp-btn-default.ui-btn-active,
+.ui-active .ui-dropdown-toggle.mp-btn-default {
+  background-image: none;
+}
+.mp-btn-default.ui-disabled,
+.mp-btn-default[disabled],
+fieldset[disabled] .mp-btn-default,
+.mp-btn-default.ui-disabled:hover,
+.mp-btn-default[disabled]:hover,
+fieldset[disabled] .mp-btn-default:hover,
+.mp-btn-default.ui-disabled:focus,
+.mp-btn-default[disabled]:focus,
+fieldset[disabled] .mp-btn-default:focus,
+.mp-btn-default.ui-disabled:active,
+.mp-btn-default[disabled]:active,
+fieldset[disabled] .mp-btn-default:active,
+.mp-btn-default.ui-disabled.ui-btn-active,
+.mp-btn-default[disabled].ui-btn-active,
+fieldset[disabled] .mp-btn-default.ui-btn-active {
+  background-color: #e8e8e8;
+  border-color: #e8e8e8;
+}
+.ui-btn-group .mp-btn-default,
+.ui-btn-group-stacked .mp-btn-default {
+  border-color: #dbdbdb;
+}
+.mp-btn-normal,
+.mp-btn-disable,
+.mp-btn-disabled {
+  color: #e8e8e8;
+  background-color: #bdbdbd;
+  border-color: #bdbdbd;
+}
+.mp-btn-normal:hover,
+.mp-btn-disable:hover,
+.mp-btn-disabled:hover,
+.mp-btn-normal:focus,
+.mp-btn-disable:focus,
+.mp-btn-disabled:focus,
+.mp-btn-normal:active,
+.mp-btn-disable:active,
+.mp-btn-disabled:active,
+.mp-btn-normal.ui-active,
+.mp-btn-disable.ui-active,
+.mp-btn-disabled.ui-active,
+.ui-active .ui-dropdown-toggle.mp-btn-normal,
+.ui-active .ui-dropdown-toggle.mp-btn-disable,
+.ui-active .ui-dropdown-toggle.mp-btn-disabled {
+  color: #e8e8e8;
+  background-color: #9e9e9e;
+  border-color: #9e9e9e;
+}
+.mp-btn-normal:active,
+.mp-btn-disable:active,
+.mp-btn-disabled:active,
+.mp-btn-normal.ui-btn-active,
+.mp-btn-disable.ui-btn-active,
+.mp-btn-disabled.ui-btn-active,
+.ui-active .ui-dropdown-toggle.mp-btn-normal,
+.ui-active .ui-dropdown-toggle.mp-btn-disable,
+.ui-active .ui-dropdown-toggle.mp-btn-disabled {
+  background-image: none;
+}
+.mp-btn-normal.ui-disabled,
+.mp-btn-disable.ui-disabled,
+.mp-btn-disabled.ui-disabled,
+.mp-btn-normal[disabled],
+.mp-btn-disable[disabled],
+.mp-btn-disabled[disabled],
+fieldset[disabled] .mp-btn-normal,
+fieldset[disabled] .mp-btn-disable,
+fieldset[disabled] .mp-btn-disabled,
+.mp-btn-normal.ui-disabled:hover,
+.mp-btn-disable.ui-disabled:hover,
+.mp-btn-disabled.ui-disabled:hover,
+.mp-btn-normal[disabled]:hover,
+.mp-btn-disable[disabled]:hover,
+.mp-btn-disabled[disabled]:hover,
+fieldset[disabled] .mp-btn-normal:hover,
+fieldset[disabled] .mp-btn-disable:hover,
+fieldset[disabled] .mp-btn-disabled:hover,
+.mp-btn-normal.ui-disabled:focus,
+.mp-btn-disable.ui-disabled:focus,
+.mp-btn-disabled.ui-disabled:focus,
+.mp-btn-normal[disabled]:focus,
+.mp-btn-disable[disabled]:focus,
+.mp-btn-disabled[disabled]:focus,
+fieldset[disabled] .mp-btn-normal:focus,
+fieldset[disabled] .mp-btn-disable:focus,
+fieldset[disabled] .mp-btn-disabled:focus,
+.mp-btn-normal.ui-disabled:active,
+.mp-btn-disable.ui-disabled:active,
+.mp-btn-disabled.ui-disabled:active,
+.mp-btn-normal[disabled]:active,
+.mp-btn-disable[disabled]:active,
+.mp-btn-disabled[disabled]:active,
+fieldset[disabled] .mp-btn-normal:active,
+fieldset[disabled] .mp-btn-disable:active,
+fieldset[disabled] .mp-btn-disabled:active,
+.mp-btn-normal.ui-disabled.ui-btn-active,
+.mp-btn-disable.ui-disabled.ui-btn-active,
+.mp-btn-disabled.ui-disabled.ui-btn-active,
+.mp-btn-normal[disabled].ui-btn-active,
+.mp-btn-disable[disabled].ui-btn-active,
+.mp-btn-disabled[disabled].ui-btn-active,
+fieldset[disabled] .mp-btn-normal.ui-btn-active,
+fieldset[disabled] .mp-btn-disable.ui-btn-active,
+fieldset[disabled] .mp-btn-disabled.ui-btn-active {
+  background-color: #bdbdbd;
+  border-color: #bdbdbd;
+}
+.ui-btn-group .mp-btn-normal,
+.ui-btn-group .mp-btn-disable,
+.ui-btn-group .mp-btn-disabled,
+.ui-btn-group-stacked .mp-btn-normal,
+.ui-btn-group-stacked .mp-btn-disable,
+.ui-btn-group-stacked .mp-btn-disabled {
+  border-color: #b0b0b0;
+}
+.mp-btn-disable {
+  cursor: default;
+}
+.mp-btn-success {
+  color: #ffffff;
+  background-color: #2ecc71;
+  border-color: #2ecc71;
+}
+.mp-btn-success:hover,
+.mp-btn-success:focus,
+.mp-btn-success:active,
+.mp-btn-success.ui-active,
+.ui-active .ui-dropdown-toggle.mp-btn-success {
+  color: #ffffff;
+  background-color: #239a55;
+  border-color: #239a55;
+}
+.mp-btn-success:active,
+.mp-btn-success.ui-btn-active,
+.ui-active .ui-dropdown-toggle.mp-btn-success {
+  background-image: none;
+}
+.mp-btn-success.ui-disabled,
+.mp-btn-success[disabled],
+fieldset[disabled] .mp-btn-success,
+.mp-btn-success.ui-disabled:hover,
+.mp-btn-success[disabled]:hover,
+fieldset[disabled] .mp-btn-success:hover,
+.mp-btn-success.ui-disabled:focus,
+.mp-btn-success[disabled]:focus,
+fieldset[disabled] .mp-btn-success:focus,
+.mp-btn-success.ui-disabled:active,
+.mp-btn-success[disabled]:active,
+fieldset[disabled] .mp-btn-success:active,
+.mp-btn-success.ui-disabled.ui-btn-active,
+.mp-btn-success[disabled].ui-btn-active,
+fieldset[disabled] .mp-btn-success.ui-btn-active {
+  background-color: #2ecc71;
+  border-color: #2ecc71;
+}
+.ui-btn-group .mp-btn-success,
+.ui-btn-group-stacked .mp-btn-success {
+  border-color: #29b765;
+}
+.mp-btn-warning {
+  color: #ffffff;
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+}
+.mp-btn-warning:hover,
+.mp-btn-warning:focus,
+.mp-btn-warning:active,
+.mp-btn-warning.ui-active,
+.ui-active .ui-dropdown-toggle.mp-btn-warning {
+  color: #ffffff;
+  background-color: #cd2a19;
+  border-color: #cd2a19;
+}
+.mp-btn-warning:active,
+.mp-btn-warning.ui-btn-active,
+.ui-active .ui-dropdown-toggle.mp-btn-warning {
+  background-image: none;
+}
+.mp-btn-warning.ui-disabled,
+.mp-btn-warning[disabled],
+fieldset[disabled] .mp-btn-warning,
+.mp-btn-warning.ui-disabled:hover,
+.mp-btn-warning[disabled]:hover,
+fieldset[disabled] .mp-btn-warning:hover,
+.mp-btn-warning.ui-disabled:focus,
+.mp-btn-warning[disabled]:focus,
+fieldset[disabled] .mp-btn-warning:focus,
+.mp-btn-warning.ui-disabled:active,
+.mp-btn-warning[disabled]:active,
+fieldset[disabled] .mp-btn-warning:active,
+.mp-btn-warning.ui-disabled.ui-btn-active,
+.mp-btn-warning[disabled].ui-btn-active,
+fieldset[disabled] .mp-btn-warning.ui-btn-active {
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+}
+.ui-btn-group .mp-btn-warning,
+.ui-btn-group-stacked .mp-btn-warning {
+  border-color: #e43725;
+}
+.mp-btn-img {
+  background: #ff7a01;
+  border-color: #ff7a01;
+}
+.mp-btn-img:hover {
+  background: url('http://vs-static.baidu.com/game/asset/img/buttons.png?v=140825') 0 0 no-repeat;
+}
+.mp-btn-blue {
+  color: #ffffff;
+  background-color: #3498db;
+  border-color: #3498db;
+}
+.mp-btn-blue:hover,
+.mp-btn-blue:focus,
+.mp-btn-blue:active,
+.mp-btn-blue.ui-active,
+.ui-active .ui-dropdown-toggle.mp-btn-blue {
+  color: #ffffff;
+  background-color: #2077b2;
+  border-color: #2077b2;
+}
+.mp-btn-blue:active,
+.mp-btn-blue.ui-btn-active,
+.ui-active .ui-dropdown-toggle.mp-btn-blue {
+  background-image: none;
+}
+.mp-btn-blue.ui-disabled,
+.mp-btn-blue[disabled],
+fieldset[disabled] .mp-btn-blue,
+.mp-btn-blue.ui-disabled:hover,
+.mp-btn-blue[disabled]:hover,
+fieldset[disabled] .mp-btn-blue:hover,
+.mp-btn-blue.ui-disabled:focus,
+.mp-btn-blue[disabled]:focus,
+fieldset[disabled] .mp-btn-blue:focus,
+.mp-btn-blue.ui-disabled:active,
+.mp-btn-blue[disabled]:active,
+fieldset[disabled] .mp-btn-blue:active,
+.mp-btn-blue.ui-disabled.ui-btn-active,
+.mp-btn-blue[disabled].ui-btn-active,
+fieldset[disabled] .mp-btn-blue.ui-btn-active {
+  background-color: #3498db;
+  border-color: #3498db;
+}
+.ui-btn-group .mp-btn-blue,
+.ui-btn-group-stacked .mp-btn-blue {
+  border-color: #258cd1;
+}
+/*******************************
+             Variations
+*******************************/
+.mp-btn-large {
+  padding: 0 40px;
+}
+.mp-btn-middle {
+  padding: 0 10px;
+}
+/*doc
+---
+title: loading
+name: loading
+category: elements
+---
+```html_example
+   <div class="mp-loading">
+        <div class="mp-loading-inner"><p>数据正在载入中。。。</p></div>
+   </div>
+```
+
+数据载入效果。。。
+
+*/
+.mp-loading {
+  position: relative;
+  min-height: 200px;
+  border: 1px solid #d5d5d5;
+  background: #fcfcfc;
+}
+.mp-loading .mp-loading-inner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 400px;
+  height: 34px;
+  margin: -17px 0 0 -200px;
+}
+.mp-loading .mp-loading-inner p {
+  font-size: 20px;
+  line-height: 34px;
+  height: 34px;
+  text-align: center;
+  color: #999999;
+}
+/**
+ * @file icon
+ * @author shenli （shenli03@baidu.com）
+ */
+/*******************************
+             Basic
+*******************************/
+.mp-icon,
+.mp-icon2 {
+  display: block;
+  width: 26px;
+  background: url('http://vs-static.baidu.com/game/asset/img/icon.png') no-repeat;
+  _background: url('http://vs-static.baidu.com/game/asset/img/icon.gif?') no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-align: left;
+  zoom: 1;
+}
+.mp-icon {
+  height: 25px;
+  line-height: 25px;
+}
+.mp-icon2 {
+  height: 26px;
+}
+/*******************************
+             Types
+*******************************/
+.mp-icon-handle {
+  background-position: 0 0;
+}
+.mp-icon-speaker {
+  background-position: 0 -25px;
+}
+.mp-icon-arrow-u {
+  background-position: -74px -25px;
+}
+.mp-icon-arrow-u2 {
+  background-position: -100px 0;
+}
+.mp-icon-arrow-u3 {
+  background-position: -100px -25px;
+}
+.mp-icon-arrow-u4 {
+  background-position: -175px -25px;
+}
+.mp-icon-arrow-r {
+  background-position: 0 -124px;
+}
+.mp-icon-arrow-r2 {
+  background-position: -100px -75px;
+}
+.mp-icon-arrow-d {
+  background-position: 0 -225px;
+}
+.mp-icon-arrow-d2 {
+  background-position: -75px -50px;
+}
+.mp-icon-arrow-d3 {
+  background-position: -100px -50px;
+}
+.mp-icon-arrow-d4 {
+  background-position: -175px -50px;
+}
+.mp-icon-star {
+  background-position: 0 -75px;
+}
+.mp-icon-star-white {
+  background-position: -74px 0;
+}
+.mp-icon-star-focused {
+  background-position: 0 -50px;
+}
+.mp-icon-refresh {
+  background-position: 0 -100px;
+}
+.mp-icon-close {
+  background-position: 0 -150px;
+}
+.mp-icon-close-nobg {
+  background-position: 0 -275px;
+}
+.mp-icon-tip {
+  background-position: 0 -250px;
+}
+.mp-icon-search {
+  background-position: 0 -300px;
+}
+.mp-icon-search-nobg {
+  background-position: 0 -200px;
+}
+.mp-icon-gift {
+  background-position: 0 -350px;
+}
+.mp-icon-gift-none {
+  background-position: 0 -375px;
+}
+.mp-icon-funnel {
+  background-position: -50px 0;
+}
+.mp-icon-flower {
+  background-position: -50px -25px;
+}
+.mp-icon-gift2 {
+  background-position: -50px -50px;
+}
+.mp-icon-handle2 {
+  background-position: -50px -75px;
+}
+.mp-icon-medal {
+  background-position: -49px -100px;
+}
+.mp-icon-crown {
+  background-position: -50px -125px;
+}
+.mp-icon-crown2 {
+  background-position: -150px -100px;
+}
+.mp-icon-mouse {
+  background-position: -50px -150px;
+}
+.mp-icon-dog {
+  background-position: -50px -175px;
+}
+.mp-icon-bird {
+  background-position: -50px -200px;
+}
+.mp-icon-phone {
+  background-position: -50px -225px;
+}
+.mp-icon-single {
+  background-position: -150px 0;
+}
+.mp-icon-arrow-e {
+  background-position: -75px -75px;
+}
+.mp-icon-hot {
+  width: 30px;
+  height: 30px;
+  background-position: -75px -100px;
+}
+.mp-icon-hot2 {
+  background-position: -100px -125px;
+}
+.mp-icon-new {
+  background-position: -125px -125px;
+}
+.mp-icon-new2 {
+  width: 35px;
+  background-position: -125px -75px;
+}
+.mp-icon-type {
+  width: 35px;
+  background-position: -125px -48px;
+}
+.mp-icon-like {
+  background-position: -125px -150px;
+}
+.mp-icon-liked-focus {
+  background-position: -125px -200px;
+}
+.mp-icon-star2 {
+  background-position: -124px -374px;
+}
+.mp-icon-computer {
+  background-position: -124px -299px;
+}
+.mp-icon-star3 {
+  background-position: -124px -374px;
+}
+.mp-icon-feedback {
+  width: 32px;
+  background-position: -77px -350px;
+}
+.mp-icon-feedback2 {
+  width: 32px;
+  background-position: -77px -400px;
+}
+.mp-icon-face-smile {
+  background-position: -175px -350px;
+}
+.mp-icon-face-normal {
+  background-position: -175px -400px;
+}
+.mp-icon-face-bad {
+  background-position: -174px -300px;
+}
+.mp-icon-video {
+  width: 35px;
+  height: 35px;
+  background-position: -150px -225px;
+}
+.mp-icon-video2 {
+  background-position: -150px -325px;
+}
+.mp-icon-ring {
+  background-position: -150px -125px;
+}
+.mp-icon-category {
+  background-position: -150px -175px;
+}
+.active .mp-icon-mouse,
+.mp-icon-mouse-active {
+  background-position: -50px -250px;
+}
+.active .mp-icon-dog,
+.mp-icon-dog-active {
+  background-position: -50px -275px;
+}
+.active .mp-icon-bird,
+.mp-icon-bird-active {
+  background-position: -50px -300px;
+}
+.active .mp-icon-phone,
+.mp-icon-phone-active {
+  background-position: -50px -325px;
+}
+.active .mp-icon-single,
+.mp-icon-single-active {
+  background-position: -150px -25px;
+}
+.mp-icon2-dog {
+  background-position: -100px -175px;
+}
+.mp-icon2-mouse {
+  background-position: -100px -250px;
+}
+.mp-icon2-cloud {
+  background-position: -76px -150px;
+}
+.mp-icon2-bird {
+  background-position: -76px -300px;
+}
+.mp-icon2-phone {
+  background-position: -76px -225px;
+}
+/*******************************
+             States
+*******************************/
+/*******************************
+             Variations
+*******************************/
+.mp-shouyou-icon {
+  width: 64px;
+  height: 64px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+}
+/**
+ * @file label
+ * @author shenli （shenli03@baidu.com）
+ */
+.ui-label {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  background-color: #e8e8e8;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-transition: background 0.1s linear;
+  -moz-transition: background 0.1s linear;
+  -ms-transition: background 0.1s linear;
+  -o-transition: background 0.1s linear;
+  transition: background 0.1s linear;
+}
+.ui-label a {
+  cursor: pointer;
+  color: inherit;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+a.ui-label {
+  cursor: pointer;
+  color: #333333;
+}
+/*******************************
+             Types
+*******************************/
+.ui-label-image {
+  width: auto !important;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  line-height: 1.5em;
+}
+.ui-label-image img {
+  vertical-align: top;
+  -webkit-border-radius: 2px 0 0 2px;
+  -moz-border-radius: 2px 0 0 2px;
+  border-radius: 2px 0 0 2px;
+}
+/*******************************
+             Status
+*******************************/
+/*disabled*/
+.ui-label-disabled {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+/*hover*/
+a.ui-labels.hover .ui-label:hover,
+.ui-label.hover:hover {
+  background: #ff7a01;
+  color: #ffffff;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.ui-label-corner {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/*******************************
+             Variations
+*******************************/
+.ui-label-tags .ui-lable-tag,
+.ui-label-tag {
+  position: relative;
+}
+.ui-label-ribbon {
+  position: relative;
+  left: -1em;
+  -webkit-border-radius: 0 2px 2px 0;
+  -moz-border-radius: 0 2px 2px 0;
+  border-radius: 0 2px 2px 0;
+  background: #ff7a01;
+  color: #ffffff;
+}
+.ui-label-ribbon i {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  overflow: hidden;
+  height: 0;
+  line-height: 0;
+  border-top: 0 solid transparent;
+  border-right-width: 1em;
+  border-right-color: #ff7a01;
+  border-right-style: solid;
+  border-bottom: 1em solid transparent;
+  border-left: 0 solid transparent;
+}
+/**
+ * @file 图片处理
+ * @author shenli （shenli03@baidu.com）
+ */
+/*doc
+---
+title: image
+name: image
+category: elements
+---
+
+```html_example
+    <div class="mp-image">
+	    <img src="http://bcscdn.baidu.com/resource/fFhOuUkRuUZSZIsenFvkrUswuWswZmsenGv3XURbZIkRZWjwBIjY.jpg"/>
+    </div>
+    <img class="mp-image-disable" src="http://bcscdn.baidu.com/resource/fFhOuUkRuUZSZIsenFvkrUswuWswZmsenGv3XURbZIkRZWjwBIjY.jpg"/>
+    <img class="mp-image-circular" src="http://bcscdn.baidu.com/resource/fFhOuUkRuUZSZIsenFvkrUswuWswZmsenGv3XURbZIkRZWjwBIjY.jpg"/>
+```
+*/
+/*******************************
+             Basic
+*******************************/
+.mp-image {
+  position: relative;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  max-width: 100%;
+}
+img.mp-image {
+  display: block;
+}
+/*******************************
+             States
+*******************************/
+.mp-image-disable {
+  cursor: default;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+/*******************************
+             Variations
+*******************************/
+.mp-image-avatar {
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.mp-image-circular,
+.mp-image-circular .mp-image,
+.mp-image-circular img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.mp-images {
+  font-size: 0;
+}
+.mp-images .mp-image {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin-right: 2em;
+}
+.small.mp-images .mp-image,
+.small.mp-image,
+.small.mp-images img {
+  width: 80px;
+  height: 80px;
+  font-size: 14px;
+}
+/**
+ * @file list
+ * @author shenli 
+ */
+/*doc
+---
+title: list
+name: list
+category: elements
+---
+
+```html_example
+   <div class="mp-box mp-box-primary">
+        <div class="mp-box-head">
+            <h3 class="mp-box-head-title">游戏名称</h3>
+        </div>
+        <div>
+        	<ul class="mp-list mp-list-primary">
+        		<li class="mp-list-item">1.爱玩游戏</li>
+        		<li class="mp-list-item">1.爱玩游戏</li>
+        		<li class="mp-list-item">1.爱玩游戏</li>
+        		<li class="mp-list-item">1.爱玩游戏</li>
+        	</ul>
+        </div>
+    </div>
+```
+*/
+/*doc
+---
+title: list(btn or text)
+name: list(btn or text)
+category: elements
+---
+
+```html_example
+   <div class="mp-box mp-box-primary">
+        <div class="mp-box-head">
+            <h3 class="mp-box-head-title">游戏名称</h3>
+        </div>
+        <div>
+        	<ul class="mp-list mp-list-primary mp-list-btn">
+        		<li class="mp-list-item">1.爱玩游戏<span class="mp-btn mp-btn-focus2 mp-list-more">按钮</span></li>
+        		<li class="mp-list-item">1.爱玩游戏<a href="#" class="mp-list-more">链接</a></li>
+        	</ul>
+        </div>
+    </div>
+```
+*/
+/*******************************
+             Basic
+*******************************/
+.mp-list {
+  margin: 0;
+  padding: 0;
+}
+.mp-list-title {
+  float: left;
+  width: 80px;
+  text-indent: 10px;
+  height: 24px;
+  line-height: 24px;
+  color: #ffffff;
+  background: url('http://vs-static.baidu.com/game/asset/img/sprite-index.png?v=140825') -30px -220px no-repeat;
+}
+/*******************************
+             Type
+*******************************/
+.mp-list-primary .mp-list-item {
+  margin: 0;
+  position: relative;
+  padding: 10px 9px;
+  border-bottom: 1px solid #d3d3d3;
+  color: #999999;
+  vertical-align: middle;
+}
+.mp-list-primary .mp-list-item:hover {
+  background: #f3f3f3;
+}
+.mp-list-primary .mp-list-more {
+  float: right;
+  font-size: 13px;
+}
+.mp-list-primary .mp-list-more .mp-btn {
+  margin-top: -3px;
+}
+/*doc
+---
+title: list(hot)
+name: list(hot)
+category: elements
+---
+
+```html_example
+<div style="width:250px;">
+<h4 class="mp-list-title">网页游戏</h4>
+<ul class="mp-list mp-list-secondary">
+    <li class="mp-list-item"><a href="#" class="mp-list-txt">游戏名称</a></li>
+    <li class="mp-list-item"><a href="#" class="mp-list-txt">游戏名称</a></li>
+</ul>
+</div>
+```
+*/
+.mp-list-secondary {
+  height: 24px;
+  overflow: hidden;
+  *zoom: 1;
+}
+.mp-list-secondary .mp-list-item {
+  float: left;
+  margin-left: -1px;
+  vertical-align: middle;
+}
+.mp-list-secondary .mp-list-txt {
+  display: block;
+  padding: 0 10px;
+  font-size: 13px;
+  line-height: 10px;
+  margin-bottom: 7px;
+  margin-top: 7px;
+  border-left: 1px solid #d3d3d3;
+}
+/*******************************
+             States
+*******************************/
+/*******************************
+             Variations
+*******************************/
+/**
+ * @file 文本
+ * @author shenli （shenli03@baidu.com）
+ */
+/*******************************
+             Basic
+*******************************/
+.mp-text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/*******************************
+             Types
+*******************************/
+.mp-text-icon {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+/*******************************
+             States
+*******************************/
+.mp-highlight {
+  color: #ff7a01;
+}
+/*******************************
+             Variations
+*******************************/
+/**
+ * @file   各种标签文字的小图标
+ * @author shenli <shenli03@baidu.com>
+ */
+/*doc
+---
+title: tip
+name: tip
+category: elements
+---
+tip是收藏功能时的提示框
+
+```html_example
+   <div class="mp-tip">yeyou</div>
+```
+*/
+.mp-tip {
+  width: 70px;
+  height: 34px;
+  line-height: 24px;
+  background: url(../img/tip-bg.png) no-repeat;
+  _background-image: url(../img/tip-bg.gif);
+  text-align: center;
+  color: #fff;
+}
+/*doc
+---
+title: tip(star)
+name: tip(star)
+category: elements
+---
+透明星评级,通过绝对定位和背景遮掩实现,需在子元素通过`style="width:80%`设定高亮的星星比例
+
+*ps:*星体的宽度为60px
+
+```html_example
+    <div class="mp-tip-star">
+	    <div class="mp-tip-star-ct" style="width:80%"></div>
+    </div>
+    <div class="mp-tip-star">
+	    <div class="mp-tip-star-ct" style="width:60%"></div>
+    </div>
+    <div class="mp-tip-star">
+	    <div class="mp-tip-star-ct" style="width:100%"></div>
+    </div>
+    <div class="mp-score-gray">
+	    <div class="mp-score-gray-inner" style="width:80%"></div>
+    </div>
+```
+星星评级                     | 外观
+------------------------ | -----------------
+           mp-tip-star   | 黄色的星星
+           mp-score-gray  | 灰色的星星
+
+
+*/
+.mp-tip-star,
+.mp-tip-star-ct,
+.mp-score-gray,
+.mp-score-gray-inner {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.mp-tip-star {
+  width: 85px;
+}
+.mp-tip-star .mp-tip-star-ct {
+  height: 12px;
+  background: url(../img/star-tip.png) no-repeat;
+  _background: url(../img/star-tip-png8.png) no-repeat;
+}
+.mp-score-gray,
+.mp-score-gray-inner {
+  background: url(../img/small-game-star.gif) no-repeat;
+}
+.mp-score-gray {
+  position: relative;
+  width: 60px;
+  height: 10px;
+  background-position: 0 -17px;
+  font-size: 0;
+}
+.mp-score-gray .mp-score-gray-inner {
+  height: 10px;
+}
+.mp-tip-feedback-wrap {
+  position: fixed;
+  left: 50%;
+  margin-left: 510px;
+  bottom: 120px;
+  z-index: 90;
+  _display: none;
+}
+.mp-tip-feedback-wrap .mp-tip-feedback,
+.mp-tip-feedback-wrap .mp-tip-gotop {
+  width: 33px;
+  padding: 6px 0 0 8px;
+  border: 1px solid #cccccc;
+  background: #ebebeb;
+  cursor: pointer;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+}
+.mp-tip-feedback-wrap .mp-tip-feedback {
+  height: 57px;
+  color: #999999;
+}
+.mp-tip-feedback-wrap .mp-tip-feedback .txt {
+  margin-top: 5px;
+}
+.mp-tip-feedback-wrap .mp-tip-gotop {
+  display: none;
+  height: 32px;
+  margin-bottom: 10px;
+}
+.mp-tip-feedback-wrap .gotop-hover {
+  background: #8e8e8e;
+  border-color: #8e8e8e;
+}
+.mp-tip-feedback-wrap .gotop-hover .gotop {
+  background-position: -100px 0;
+}
+.mp-tip-feedback-wrap .feedback-hover {
+  background: #ff7a01;
+  border: 1px solid #ff7a01;
+  color: #ffffff;
+}
+.mp-tip-feedback-wrap .feedback-hover .feedback {
+  background-position: -77px -400px;
+}
+/**
+ * @file 提示文字
+ * @author shenli <shenli03@baidu.com>
+ * @modify yumao <zhangyu38@baidu.com>
+ */
+/*******************************
+             Basic
+*******************************/
+/*doc
+---
+title: tiptext
+name: tiptext
+category: elements
+---
+```html_example
+   <div class="mp-tiptext mp-tiptext-yeyou">yeyou</div>
+```
+tiptext                                                | Modifier Class
+----------------------------------------------------- | -----------------
+ <div class="mp-tiptext mp-tiptext-yeyou">网页游戏</div> | `mp-tiptext-yeyou`
+ <div class="mp-tiptext mp-tiptext-wangyou">网洛游戏</div> | `mp-tiptext-wangyou`
+ <div class="mp-tiptext mp-tiptext-xiaoyouxi">小游戏</div> | `mp-tiptext-xiaoyouxi`
+ <div class="mp-tiptext mp-tiptext-shouyou">手机游戏</div> | `mp-tiptext-shouyu`
+ <div class="mp-tiptext mp-tiptext-singlegame">单机游戏</div> | `mp-tiptext-singlegame`
+*/
+.mp-tiptext {
+  display: inline-block;
+  height: 19px;
+  line-height: 19px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  word-wrap: normal;
+  white-space: nowrap;
+  font-size: 14px;
+  padding: 0 4px;
+}
+div.mp-tiptext,
+p.mp-tiptext,
+span.mp-tiptext {
+  *display: inline;
+}
+.mp-tiptext-yeyou {
+  background: #d9e5ff;
+  color: #517ebc;
+  border: 1px solid #517ebc;
+}
+.mp-tiptext-wangyou {
+  background: #fdebec;
+  color: #df8390;
+  border: 1px solid #df8390;
+}
+.mp-tiptext-xiaoyouxi {
+  background: #dff3ce;
+  color: #b5d9a2;
+  border: 1px solid #b5d9a2;
+}
+.mp-tiptext-shouyou {
+  background: #f7e4d3;
+  color: #e38632;
+  border: 1px solid #e38632;
+}
+.mp-tiptext-singlegame {
+  background: #efefef;
+  color: #666666;
+  border: 1px solid #c4c4c4;
+}
+/*doc
+---
+title: tiptext(arrow)
+name: tiptext(arrow)
+category: elements
+---
+```html_example
+   <div style="width:80px;" class="mp-tiptext-arrow mp-tiptext-primary mp-tiptext-orange">网页游戏</div>
+```
+tiptext                                                | Modifier Class
+----------------------------------------------------- | -----------------
+ <div class="mp-tiptext-arrow mp-tiptext-primary mp-tiptext-orange">网页游戏</div> | `mp-tiptext-orange`
+ <div class="mp-tiptext-arrow mp-tiptext-primary mp-tiptext-purple">单机游戏</div> | `mp-tiptext-puple`
+ <div class="mp-tiptext-arrow mp-tiptext-primary mp-tiptext-blue">单机游戏</div> | `mp-tiptext-blue`
+*/
+.mp-tiptext-arrow {
+  position: relative;
+  height: 21px;
+  line-height: 21px;
+  text-align: center;
+}
+/*******************************
+             Types
+*******************************/
+.mp-tiptext-primary {
+  color: #ffffff;
+}
+.mp-tiptext-primary:after {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  content: '';
+  margin-top: -5px;
+  width: 0;
+  height: 0;
+  border: 4px dashed transparent;
+  border-left-style: solid;
+}
+.mp-tiptext-secondary {
+  border: 1px solid #f0c49f;
+  color: #ff7a01;
+  background: #ffefdd;
+}
+.mp-tiptext-secondary .arrow,
+.mp-tiptext-secondary .arrow-inner {
+  position: absolute;
+  left: 100%;
+  z-index: 10;
+  border-style: dashed dashed dashed solid;
+}
+.mp-tiptext-secondary .arrow-inner {
+  top: 4px;
+  border-width: 6px;
+  border-color: transparent transparent transparent #ffefdd;
+}
+.mp-tiptext-secondary .arrow {
+  top: 3px;
+  border-width: 7px;
+  border-color: transparent transparent transparent #f0c49f;
+}
+/*******************************
+             States
+*******************************/
+.mp-tiptext-orange {
+  background-color: #ff7a01;
+}
+.mp-tiptext-orange:after {
+  border-left-color: #ff7a01;
+}
+.mp-tiptext-blue {
+  background-color: #3498db;
+}
+.mp-tiptext-blue:after {
+  border-left-color: #3498db;
+}
+.mp-tiptext-purple {
+  background-color: #ce8eb7;
+}
+.mp-tiptext-purple:after {
+  border-left-color: #ce8eb7;
+}
+.mp-tiptext-error {
+  background-color: #e74c3c;
+}
+.mp-tiptext-error:after {
+  border-left-color: #e74c3c;
+}
+.mp-tiptext-success {
+  background-color: #2ecc71;
+}
+.mp-tiptext-success:after {
+  border-left-color: #2ecc71;
+}
+/*******************************
+             Variations
+*******************************/
+/**
+ * @file 进度条
+ * @author shenli （shenli03@baidu.com）
+ */
+/*******************************
+             Basic
+*******************************/
+/*doc
+---
+title: progress
+name: progress
+category: elements
+---
+
+```html_example
+   <div class="mp-progress">
+	    <div class="mp-progress-inner" style="width:80%"></div>
+    </div>
+    <div class="mp-progress success">
+	    <div class="mp-progress-inner" style="width:80%"></div>
+    </div>
+    <div class="mp-progress success active">
+	    <div class="mp-progress-inner"></div>
+    </div>
+    <div class="mp-progress success animate">
+	    <div class="mp-progress-inner" ></div>
+    </div>
+    <div class="mp-progress success mp-striped">
+	    <div class="mp-progress-inner" ></div>
+    </div>
+```
+*/
+.mp-progress {
+  height: 23px;
+  background: #fafafa;
+  padding: 5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #d3d3d3;
+}
+.mp-progress .mp-progress-inner {
+  height: 100%;
+  background-color: #cccccc;
+}
+/*******************************
+             Types
+*******************************/
+.mp-progress.animate .mp-progress-inner {
+  -webkit-transition: width 1s ease-in-out, background-color 1s ease-out;
+  -moz-transition: width 1s ease-in-out, background-color 1s ease-out;
+  -ms-transition: width 1s ease-in-out, background-color 1s ease-out;
+  -o-transition: width 1s ease-in-out, background-color 1s ease-out;
+  transition: width 1s ease-in-out, background-color 1s ease-out;
+  -webkit-animation: finish 10s ease-in-out infinite;
+  animation: finish 10s ease-in-out infinite;
+}
+/*******************************
+             States
+*******************************/
+.mp-progress.active {
+  position: relative;
+}
+.mp-progress.active .mp-progress-inner:after {
+  content: '';
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ffffff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.mp-progress.warning .mp-progress-inner {
+  background-color: #e74c3c;
+}
+.mp-progress.success .mp-progress-inner {
+  background-color: #2ecc71;
+}
+.mp-progress.disabled .mp-progress-inner {
+  background-color: #bdbdbd;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
+  -webkit-animation: none;
+  -moz-animation: none;
+  -ms-animation: none;
+  -o-animation: none;
+  animation: none;
+}
+/*******************************
+             Variations
+*******************************/
+.mp-striped .mp-progress-inner {
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.mp-striped.success .mp-progress-inner {
+  background-image: linear-gradient(135deg, #27ae60 25%, transparent 25%, transparent 50%, #27ae60 50%, #27ae60 75%, transparent 75%, transparent);
+}
+.mp-striped.warning .mp-progress-inner {
+  background-image: linear-gradient(135deg, #c0392b 25%, transparent 25%, transparent 50%, #c0392b 50%, #c0392b 75%, transparent 75%, transparent);
+}
+/**
+ * @file 基本的checkbox，radio控件
+ * @author shenli <shenli03@baidu.com>
+ */
+/*******************************
+             Basic
+*******************************/
+.mp-checkbox {
+  position: relative;
+  outline: 0;
+  padding: 2px 0;
+  height: 17px;
+  line-height: 17px;
+  vertical-align: top;
+}
+.mp-checkbox-icon {
+  position: relative;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #d3d3d3;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  vertical-align: text-top;
+}
+.mp-checkbox-icon i {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 10px;
+  width: 10px;
+  background: #fff;
+  cursor: pointer;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.mp-checkbox-active i {
+  background: #ff7a01;
+}
+/*******************************
+             Types
+*******************************/
+/*doc
+---
+title: checkbox-primary
+name: checkbox(primary)
+category: elements
+---
+默认的checkbox样式，横向排放
+
+```html_example
+<div class="mp-checkbox mp-checkbox-primary">
+    <span class="mp-checkbox-icon">
+        <i></i>
+    </span>
+    <label class="mp-checkbox-label">你是谁</label>
+</div>
+<div class="mp-checkbox mp-checkbox-primary mp-checkbox-active">
+    <span class="mp-checkbox-icon">
+        <i></i>
+    </span>
+    <label class="mp-checkbox-label">你是谁</label>
+</div>
+```
+*/
+.mp-checkbox-primary {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+/*******************************
+             States
+*******************************/
+/*******************************
+             Variations
+*******************************/
+/**
+ * @file 
+ * @author shenli <shenli03@baidu.com>
+ */
+/*******************************
+             Basic
+*******************************/
+.mp-line-opacity {
+  width: 100%;
+  z-index: 9;
+  overflow: hidden;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#80000000');
+  text-align: center;
+  zoom: 1;
+}
+.mp-opacity-white {
+  background-color: rgba(255, 255, 255, 0.9);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9fffffff', endColorstr='#9fffffff');
+}
+/*
+ * IE9 由于rgba和filter都支持，会导致两个颜色叠加，使用hack去除
+ * \9 代表 IE9 以下浏览器支持
+ * :root 只有 IE9+ 以及其他现代浏览器支持
+ * IE10 以上不再支持 filter
+*/
+:root .mp-line-opacity,
+:root .mp-opacity-white {
+  filter: none\9 !important;
+}
+/*******************************
+             Types
+*******************************/
+.mp-line-primary {
+  background: #f3f3f3;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #d3d3d3;
+}
+/*******************************
+             States
+*******************************/
+/*******************************
+             Variations
+*******************************/
+/**
+ * @file  各种小箭头
+ * @author shenli <shenli03@baidu.com>
+ */
+/*******************************
+             Basic
+*******************************/
+.mp-arrow {
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  border-style: solid;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-align: left;
+}
+.mp-arrow2 {
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  border-style: dashed;
+  border-color: transparent;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-align: left;
+}
+.mp-arrow-top {
+  border-style: solid dashed dashed dashed;
+  border-color: #ff7a01 transparent transparent transparent;
+}
+/*******************************
+             Types
+*******************************/
+/*******************************
+             States
+*******************************/
+/*******************************
+             Variations
+*******************************/
+/**
+ * @file 面包屑
+ * @author shenli （shenli03@baidu.com）
+ */
+.mp-breadcrumb {
+  line-height: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+.mp-breadcrumb .mp-section {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.mp-breadcrumb .mp-arrow {
+  padding: 0 0.4em;
+}
+/**
+ * @file 分页
+ * @author shenli （shenli03@baidu.com）
+ */
+/*doc
+---
+title: pagination
+name: pagination
+category: collections
+---
+基本分页
+
+```html_example
+  <div class="mp-pagination">
+	   	<a href="#" data-page="0" class="mp-pagination-current">1</a>
+	   	<a href="#" data-page="1">2</a>
+	   	<a href="#" data-page="2">3</a>
+	   	<a href="#" data-page="1" class="mp-pagination-ellipsis">...</a>
+	   	<a href="#" data-page="101">102</a>
+	   	<a href="#" data-page="1" class="mp-pagination-next">下一页<em></em></a>
+   	</div>
+```
+
+*/
+.mp-pagination {
+  vertical-align: middle;
+  font-size: 0;
+}
+.mp-pagination .mp-pagination-item,
+.mp-pagination a {
+  position: relative;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 4px;
+  padding: 0 10px;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+}
+.mp-pagination .mp-pagination-disabled {
+  cursor: default;
+  color: #999999;
+}
+.mp-pagination .mp-pagination-current {
+  background-color: #ff7a01;
+  border: 0;
+  cursor: default;
+  color: #fff;
+}
+.mp-pagination .mp-pagination-ellipsis {
+  order: 0;
+  background-color: transparent;
+  cursor: text;
+}
+.mp-game-pager {
+  margin: 3px 0 20px;
+  text-align: right;
+  height: 32px;
+}
+.mp-game-pager a {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #d5d5d5;
+  padding: 0 12px;
+  margin-right: 10px;
+  background-color: #fff;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  font-family: arial;
+  vertical-align: top;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.mp-game-pager .mp-game-pager-current {
+  background-color: #ff7a01;
+  border: none;
+  cursor: default;
+  color: #fff;
+}
+.mp-game-pager .mp-game-pager-ellipsis {
+  border: 0;
+  background-color: transparent;
+  cursor: text;
+}
+.mp-game-pager .mp-game-pager-next {
+  margin-right: 0;
+}
+.ie6 .mp-game-pager {
+  /*ie6/7 hover 优先级过高的bug*/
+}
+.ie6 .mp-game-pager a,
+.ie6 .mp-game-pager a:hover {
+  color: #666666;
+}
+.ie6 .mp-game-pager .mp-game-pager-current {
+  color: #fff;
+}
+/**
+ * @file 表单项
+ * @author shenli （shenli03@baidu.com）
+ */
+/*******************************
+             Basic
+*******************************/
+/*doc
+---
+title: form
+name: form
+category: collections
+---
+表单
+
+```html_example
+     <form class="mp-form mp-form-horizontal" id="form">
+        <fieldset>
+            <div class="mp-form-item mp-form-error">
+                <label for="name" class="mp-form-label">用户名:</label>
+                <input id="name" name="username" class="mp-input" data-explain="用户名为邮箱"/>
+                <p class="mp-form-explain">用户名为邮箱</p>
+            </div>
+            <div class="mp-form-item mp-form-focus">
+                <label for="password" class="mp-form-label">密码:</label>
+                <input id="password" class="mp-input" type="password" data-explain="请输入密码"/>
+                <p class="mp-form-explain">请输入密码</p>
+            </div>
+            <div class="mp-form-item mp-form-success">
+                <label for="repassword" class="mp-form-label">重复输入密码:</label>
+                <input id="repassword" class="mp-input" type="password" data-explain="重复输入密码"/>
+                <p class="mp-form-explain">重复输入密码</p>
+            </div>
+            <div class="mp-form-item">
+                <label for="email" class="mp-form-label">邮箱:</label>
+                <input id="email" class="mp-input" type="email"/>
+                <p class="mp-form-explain">请输入邮箱</p>
+            </div>
+            <div class="mp-form-item">
+                <input type="submit" class="mp-btn mp-btn-blue" value="提交"/>
+            </div>
+        </fieldset>
+    </form>
+```
+*/
+/*doc
+---
+title: form（vertical）
+name: form(vertical）
+category: collections
+---
+垂直排版的表单，通过给form添加`mp-form-vertical`实现
+
+```html_example
+     <form class="mp-form mp-form-vertical" id="form">
+        <fieldset>
+            <div class="mp-form-item mp-form-error">
+                <label for="name" class="mp-form-label">用户名:</label>
+                <input id="name" name="username" class="mp-input" data-explain="用户名为邮箱"/>
+                <p class="mp-form-explain">用户名为邮箱</p>
+            </div>
+            <div class="mp-form-item">
+                <label for="email" class="mp-form-label">邮箱:</label>
+                <input id="email" class="mp-input" type="email"/>
+                <p class="mp-form-explain">请输入邮箱</p>
+            </div>
+            <div class="mp-form-item">
+                <input type="submit" class="mp-btn mp-btn-blue" value="提交"/>
+            </div>
+        </fieldset>
+    </form>
+```
+*/
+.mp-form {
+  line-height: 1.5;
+}
+.mp-form fieldset {
+  border: 0;
+}
+.mp-form legend {
+  display: none;
+}
+.mp-form .mp-form-item {
+  zoom: 1;
+}
+.mp-form .mp-form-label {
+  width: 170px;
+  padding-top: 5px;
+  font-size: 14px;
+}
+.mp-form .mp-form-text {
+  display: inline-block;
+  margin-top: 6px;
+}
+.mp-form .mp-form-other {
+  margin-left: 8px;
+}
+.mp-form .mp-form-explain {
+  padding: 8px 0 0;
+  color: #999999;
+}
+.mp-form .mp-input {
+  color: #595959;
+  vertical-align: middle;
+}
+.mp-input {
+  padding: 7px 9px;
+  line-height: 18px;
+  border: 1px solid #c1c1c1;
+  color: #595959;
+  font-size: 12px;
+}
+/*******************************
+             Types
+*******************************/
+.mp-form-error .mp-input {
+  border: 1px solid red;
+  color: red;
+}
+.mp-form-error .mp-form-explain {
+  color: #e74c3c;
+}
+.mp-form-success .mp-form-explain {
+  color: #2ecc71;
+}
+.mp-form-focus .mp-input,
+.mp-form-focus .mp-textarea {
+  border: 1px solid #07f;
+  -webkit-box-shadow: 0 0 3px #8cddff;
+  -moz-box-shadow: 0 0 3px #8cddff;
+  box-shadow: 0 0 3px #8cddff;
+  color: #595959;
+}
+.mp-form-horizontal .mp-form-label {
+  float: left;
+  margin-left: -180px;
+  text-align: right;
+}
+.mp-form-horizontal .mp-form-item {
+  padding: 0 5px 20px 170px;
+}
+.mp-form-vertical .mp-form-label {
+  display: block;
+  margin-bottom: 8px;
+}
+.mp-form-vertical .mp-form-item {
+  padding: 0 5px 20px 0;
+}
+/*******************************
+             States
+*******************************/
+.mp-input:focus,
+.mp-textarea:focus,
+.mp-input-focus {
+  border: 1px solid #07f;
+  -webkit-box-shadow: 0 0 3px #8cddff;
+  -moz-box-shadow: 0 0 3px #8cddff;
+  box-shadow: 0 0 3px #8cddff;
+  color: #595959;
+}
+.mp-input:hover,
+.mp-textarea:hover,
+.mp-input-hover {
+  border: 1px solid #727272;
+  border-top-color: gray;
+}
+.mp-input:disabled,
+.mp-textarea:disabled,
+.mp-input[disabled],
+.mp-textarea[disabled] {
+  border: 1px solid #ccc;
+  background: #f2f2f2;
+}
+/*******************************
+             Variations
+*******************************/
+/**
+ * @file 表格
+ * @author shenli <shenli03@baidu.com>
+ */
+/*******************************
+             Basic
+*******************************/
+/*doc
+---
+title: table
+name: table
+category: collections
+---
+表哥
+
+```html_example
+
+```
+*/
+.mp-table {
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  width: 100%;
+  text-align: left;
+}
+.mp-table th,
+.mp-table td {
+  padding: 0 20px;
+  height: 40px;
+  line-height: _20px;
+  text-align: left;
+  border-bottom: 1px solid #e2e2e2;
+}
+.mp-table th {
+  font-size: 14px;
+  background-color: #F1F1F1;
+}
+/*******************************
+             Types
+*******************************/
+.mp-table-primary {
+  font-size: 14px;
+}
+.mp-table-primary th {
+  height: 32px;
+}
+.mp-table-primary td,
+.mp-table-primary th {
+  padding: 0 5px;
+}
+.mp-table-primary td {
+  height: 37px;
+}
+.mp-table-primary th:hover,
+.mp-table-primary .bg-hover {
+  background-color: #fff1e4;
+}
+.mp-table-primary .status-main,
+.mp-table-primary .status1 {
+  color: #ff7a01;
+}
+.mp-table-primary .status2 {
+  color: green;
+}
+.mp-table-primary .status-gray,
+.mp-table-primary .gametype,
+.mp-table-primary .server-time {
+  color: #999999;
+}
+.mp-table-primary .start-btn {
+  width: 65px;
+  margin-left: 5px;
+  height: 22px;
+  line-height: 22px;
+}
+.mp-table-primary .download-td {
+  padding: 0;
+}
+.mp-table-primary .download-wrap {
+  position: relative;
+}
+.mp-table-primary .download {
+  position: absolute;
+  left: 100%;
+  top: -12px;
+  width: 38px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  visibility: hidden;
+  color: #ffffff;
+}
+.mp-table-primary .item-hover {
+  background: #f1f1f1;
+}
+.mp-table-primary .item-hover .download {
+  visibility: visible;
+}
+/*******************************
+             States
+*******************************/
+/*******************************
+             Variations
+*******************************/
+/**
+ * @tab tab
+ * @author shenli <shenli03@baidu.com>
+ */
+/*******************************
+             Basic
+*******************************/
+/*doc
+---
+title: tab
+name: tab
+category: collections
+---
+tab
+
+```html_example
+
+<ul class="mp-tab mp-tab-secondary">
+  <li class="mp-tab-item active">
+    <p class="mp-tab-line mp-tab-line-no">
+      <span class="mp-tab-txt">游戏名字</span>
+    </p>
+  </li>
+  <li class="mp-tab-item">
+    <p class="mp-tab-line">
+      <span class="mp-tab-txt">游戏名字</span>
+    </p>
+  </li>
+</ul>
+
+```
+*/
+.mp-tab .mp-tab-item {
+  float: left;
+}
+.mp-tab-secondary {
+  height: 25px;
+  font-size: 15px;
+  border-bottom: 2px solid #d3d3d3;
+}
+.mp-tab-secondary .mp-tab-item {
+  _position: relative;
+  height: 25px;
+  width: 88px;
+  text-align: center;
+  cursor: pointer;
+}
+.mp-tab-secondary .mp-tab-line {
+  margin: 8px 0 8px -1px;
+  border-left: 1px solid #d3d3d3;
+  line-height: 10px;
+}
+.mp-tab-secondary .mp-tab-line-no {
+  border-color: #ffffff;
+}
+.mp-tab-secondary .active {
+  color: #ff7a01;
+  border-bottom: 2px solid #ff7a01;
+}
+/*******************************
+             Types
+*******************************/
+/*******************************
+             States
+*******************************/
+/*******************************
+             Variations
+*******************************/
+/**
+ * @file    dialog
+ * @author shenli <shenli03@baidu.com>
+ */
+/*******************************
+             Basic
+*******************************/
+/*doc
+---
+title: dialog
+name: dialog
+category: modules
+---
+dialog
+
+```html_example
+    <div class="mp-dialog">
+    	<div class="mp-dialog-close">×</div>
+    	<div class="mp-dialog-header">dialog标题</div>
+    	<div class="mp-dialog-body">
+    		dialog 内容
+    	</div>
+    	<div class="mp-dialog-footer"></div>
+	</div>
+```
+*/
+.mp-dialog-no-scroll {
+  overflow: hidden;
+  padding-right: 17px;
+  height: 100%;
+}
+.mp-dialog {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#88000000', endColorstr='#88000000');
+  padding: 6px;
+  outline: none;
+  /* http://ued.taobao.com/blog/2011/04/onfocus-this-blur/ */
+}
+.mp-dialog-content,
+.mp-dialog-body {
+  background: #fff;
+  height: 100%;
+}
+.mp-dialog-body {
+  padding: 15px 20px;
+}
+:root .mp-dialog {
+  filter: none\9;
+}
+.mp-dialog-hide {
+  display: none;
+}
+.mp-dialog-close {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  color: #999;
+  cursor: pointer;
+  font-family: tahoma;
+  font-size: 24px;
+  height: 18px;
+  line-height: 14px;
+  text-decoration: none;
+  z-index: 10;
+}
+.mp-dialog-close:hover {
+  color: #666;
+  text-shadow: 0 0 2px #aaa;
+}
+.mp-dialog-header,
+.mp-dialog-footer {
+  height: 45px;
+  font-size: 16px;
+  padding: 0 20px;
+  color: #4d4d4d;
+  background-color: #f9f9f9;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#f9f9f9));
+  background-image: -webkit-linear-gradient(top, #fcfcfc, #f9f9f9);
+  background-image: -moz-linear-gradient(top, #fcfcfc, #f9f9f9);
+  background-image: -o-linear-gradient(top, #fcfcfc, #f9f9f9);
+  background-image: linear-gradient(to bottom, #fcfcfc, #f9f9f9);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#fffcfcfc', endColorstr='#fff9f9f9', GradientType=0);
+}
+.mp-dialog-header {
+  line-height: 45px;
+  border-bottom: 1px solid #E1E1E1;
+}
+.mp-dialog-footer {
+  border-top: 1px solid #E1E1E1;
+}
+.mp-dialog-message {
+  margin-bottom: 15px;
+}
+.mp-dialog-operation {
+  zoom: 1;
+}
+/*doc
+---
+title: dialog(confirm)
+name: dialog(confirm)
+category: modules
+---
+dialog
+
+```html_example
+    <div class="mp-dialog">
+    	<div class="mp-dialog-close">×</div>
+    	<div class="mp-dialog-header">dialog标题</div>
+    	<div class="mp-dialog-body">
+    		dialog 内容
+    	</div>
+    	<div class="mp-dialog-footer">
+    	    <div class="mp-btn mp-btn-primary">确定</div>
+    		<div class="mp-btn mp-btn-default">取消</div>
+    	</div>
+	</div>
+```
+*/
+.mp-dialog-confirm,
+.mp-dialog-cancel {
+  display: inline;
+}
+.mp-dialog-operation .mp-dialog-confirm {
+  margin-right: 4px;
+}
+.mp-dialog-mask {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  opacity: 0.005;
+  filter: alpha(opacity=0.5);
+  background-color: #000000;
+}
+/*******************************
+             Types
+*******************************/
+/*******************************
+             States
+*******************************/
+/*******************************
+             Variations
+*******************************/
